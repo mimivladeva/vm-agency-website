@@ -71,6 +71,42 @@ const en = {
             description:"We drive sustainable growth and maximize your business impact."
         }
 
+    },
+    solutions:{
+
+
+            title1:"Tailored solutions to",
+
+            highlight:"boost",
+
+            title2:"your business.",
+
+            description:"We combine strategy, technology and creativity to deliver solutions that generate real and sustainable results.",
+
+            card1:{
+                number:"01",
+                title:"Web Development",
+                description:"Fast, modern and optimized websites designed to turn visitors into customers."
+            },
+
+            card2:{
+                number:"02",
+                title:"Automation & AI",
+                description:"We automate repetitive processes and connect your tools so you save time and make better decisions."
+            },
+
+            card3:{
+                number:"03",
+                title:"Digital Marketing",
+                description:"Strategies that attract, convert and retain customers through the channels that truly work."
+            },
+
+            card4:{
+                number:"04",
+                title:"Strategic Consulting",
+                description:"We analyze your business, define the right direction and help you grow with confidence and data."
+            }
+
     }
 
 

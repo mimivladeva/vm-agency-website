@@ -72,6 +72,41 @@ const es = {
             description:"Impulsamos el crecimiento sostenible y multiplicamos el impacto en tu negocio."
         }
 
+    },
+    solutions: {
+
+        title1: "Soluciones a medida para",
+
+        highlight: "impulsar",
+
+        title2: "tu negocio.",
+
+        description: "Combinamos estrategia, tecnología y creatividad para ofrecerte soluciones que generan resultados reales y sostenibles.",
+
+        card1: {
+            number: "01",
+            title: "Desarrollo Web",
+            description: "Sitios web rápidos, modernos y optimizados para convertir visitantes en clientes."
+        },
+
+        card2: {
+            number: "02",
+            title: "Automatización e IA",
+            description: "Automatizamos procesos repetitivos y conectamos herramientas para que ahorres tiempo y tomes mejores decisiones."
+        },
+
+        card3: {
+            number: "03",
+            title: "Marketing Digital",
+            description: "Estrategias que atraen, convierten y fidelizan clientes en los canales que realmente funcionan."
+        },
+
+        card4: {
+            number: "04",
+            title: "Consultoría Estratégica",
+            description: "Analizamos tu negocio, definimos el rumbo y te acompañamos para crecer con visión y datos."
+        }
     }
+
 
 };
