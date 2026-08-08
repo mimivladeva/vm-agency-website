@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+    <title>VM Agency</title>
+
+    <meta
+            name="description"
+            content="VM Agency · Estrategia, Automatización, Desarrollo Web, IA y Marketing Digital.">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS BASE -->
+
+    <link rel="stylesheet" href="css/base/reset.css">
+
+    <link rel="stylesheet" href="css/base/variables.css">
+
+    <link rel="stylesheet" href="css/base/global.css">
+
+    <link rel="stylesheet" href="css/base/typography.css">
+
+    <link rel="stylesheet" href="css/base/components.css">
+
+    <!-- LAYOUT -->
+
+    <link rel="stylesheet" href="css/layout/container.css">
+
+    <link rel="stylesheet" href="css/layout/header.css">
+
+    <link rel="stylesheet" href="css/layout/footer.css">
+
+    <!-- SECTIONS -->
+
+    <link rel="stylesheet" href="css/sections/hero.css">
+
+    <link rel="stylesheet" href="css/sections/solutions.css">
+
+    <link rel="stylesheet" href="css/sections/method.css">
+
+    <link rel="stylesheet" href="css/sections/success.css">
+
+    <link rel="stylesheet" href="css/sections/about.css">
+
+    <link rel="stylesheet" href="css/sections/contact.css">
+
+    <!-- RESPONSIVE -->
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ========================================================= -->
+<!-- HEADER -->
+<!-- ========================================================= -->
+
+<header class="header">
+
+    <div class="container">
+
+        <div class="header__wrapper">
+
+            <!-- ===================================================== -->
+            <!-- LOGO -->
+            <!-- ===================================================== -->
+
+            <a
+                    href="#hero"
+                    class="header__logo">
+
+                <img
+                        src="assets/logos/logo.png"
+                        alt="VM Agency Logo">
+
+            </a>
+
+            <!-- ===================================================== -->
+            <!-- NAVIGATION -->
+            <!-- ===================================================== -->
+
+            <nav
+                    class="header__nav"
+                    id="navbar">
+
+                <ul class="header__menu">
+
+                    <li class="header__item">
+
+                        <a
+                                href="#hero"
+                                class="header__link text-sm active"
+                                data-lang="nav.home">
+
+                            Inicio
+
+                        </a>
+
+                    </li>
+
+                    <li class="header__item">
+
+                        <a
+                                href="#method"
+                                class="header__link text-sm"
+                                data-lang="nav.method">
+
+                            Método VM
+
+                        </a>
+
+                    </li>
+
+                    <li class="header__item">
+
+                        <a
+                                href="#success"
+                                class="header__link text-sm"
+                                data-lang="nav.success">
+
+                            Casos de éxito
+
+                        </a>
+
+                    </li>
+
+                    <li class="header__item">
+
+                        <a
+                                href="#about"
+                                class="header__link text-sm"
+                                data-lang="nav.about">
+
+                            Sobre nosotros
+
+                        </a>
+
+                    </li>
+
+                    <li class="header__item header__dropdown">
+
+                        <a
+                                href="#"
+                                class="header__link text-sm"
+                                data-lang="nav.resources">
+
+                            Recursos
+
+                            <svg
+                                    class="header__arrow"
+                                    width="12"
+                                    height="12"
+                                    viewBox="0 0 24 24"
+                                    fill="none">
+
+                                <path
+                                        d="M7 10L12 15L17 10"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+
+                            </svg>
+
+                        </a>
+
+                        <ul class="dropdown">
+
+                            <li>
+
+                                <a
+                                        href="#"
+                                        class="text-sm"
+                                        data-lang="resources.blog">
+
+                                    Blog
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a
+                                        href="#"
+                                        class="text-sm"
+                                        data-lang="resources.guides">
+
+                                    Guías
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a
+                                        href="#"
+                                        class="text-sm"
+                                        data-lang="resources.tools">
+
+                                    Herramientas
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- ===================================================== -->
+            <!-- RIGHT -->
+            <!-- ===================================================== -->
+
+            <div class="header__right">
+
+                <div class="language-selector">
+
+                    <button
+                            class="language-selector__button text-sm active"
+                            data-language="es">
+
+                        ES
+
+                    </button>
+
+                    <button
+                            class="language-selector__button text-sm"
+                            data-language="en">
+
+                        EN
+
+                    </button>
+
+                    <button
+                            class="language-selector__button text-sm"
+                            data-language="bg">
+
+                        BG
+
+                    </button>
+
+                </div>
+
+                <button
+                        id="menu-toggle"
+                        class="header__toggle"
+                        aria-label="Abrir menú">
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ========================================================= -->
+<!-- MAIN -->
+<!-- ========================================================= -->
+
+<main>
+
+    <!-- ========================================================= -->
+    <!-- HERO -->
+    <!-- ========================================================= -->
+
+    <section id="hero" class="hero">
+
+        <div class="container">
+
+            <div class="hero__wrapper">
+
+                <!-- CONTENIDO -->
+
+                <div class="hero__content">
+
+                <span
+                        class="hero__eyebrow text-sm"
+                        data-lang="hero.eyebrow">
+                </span>
+
+                    <h1 class="hero__title title-xl">
+
+                        <span data-lang="hero.titleLine1"></span><br>
+
+                        <span data-lang="hero.titleLine2"></span>
+
+                        <span
+                                class="hero__highlight"
+                                data-lang="hero.highlight">
+                    </span>
+
+                        <br>
+
+                        <span data-lang="hero.titleLine3"></span>
+
+                    </h1>
+
+                    <p
+                            class="hero__description text"
+                            data-lang="hero.description">
+                    </p>
+
+                    <div class="hero__actions">
+
+                        <a
+                                href="#contact"
+                                class="button button--primary">
+
+                            <span data-lang="hero.button"></span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- IMAGEN -->
+
+                <div class="hero__image">
+
+                    <img
+                            src="assets/images/hero.webp"
+                            alt="Equipo de VM Agency trabajando">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="#solutions" class="hero__scroll">
+
+            <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none">
+
+                <path
+                        d="M12 5V18"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"/>
+
+                <path
+                        d="M7 13L12 18L17 13"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+
+            </svg>
+
+        </a>
+    </section>
+
+
+
+</main>
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="footer">
+
+</footer>
+
+<!-- ========================================================= -->
+<!-- LANGUAGES -->
+<!-- ========================================================= -->
+
+<script src="lang/es.js"></script>
+
+<script src="lang/en.js"></script>
+
+<script src="lang/bg.js"></script>
+
+<!-- ========================================================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================================================= -->
+
+<script src="js/language.js"></script>
+
+<script src="js/navbar.js"></script>
+
+<script src="js/animations.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
