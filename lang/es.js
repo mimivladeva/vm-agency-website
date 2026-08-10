@@ -158,6 +158,25 @@ const es = {
 
         }
 
+    },footer:{
+        description:"Ayudamos a empresas a crecer con soluciones inteligentes, medibles y sostenibles.",
+        navigation:"Navegación",
+        home:"Inicio",
+        solutions:"Soluciones",
+        method:"Método VM",
+        success:"Casos de éxito",
+        about:"Sobre nosotros",
+        resources:"Recursos",
+        legal:"Legal",
+        legalNotice:"Aviso Legal",
+        privacy:"Política de privacidad",
+        cookies:"Política de Cookies",
+        contact:"Hablemos",
+        contactDescription:"Cuéntanos tu proyecto y te ayudaremos a hacerlo crecer.",
+        email:"hola@vmagency.com",
+        phone:"+34 600 123 456",
+        location:"Madrid, España",
+        copyright:"© 2026 VM Agency. Todos los derechos reservados."
     },
 
 

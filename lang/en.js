@@ -160,6 +160,26 @@ const en = {
         }
 
     },
+    footer:{
+        description:"We help businesses grow with smart, measurable and sustainable digital solutions.",
+        navigation:"Navigation",
+        home:"Home",
+        solutions:"Solutions",
+        method:"VM Method",
+        success:"Success Stories",
+        about:"About Us",
+        resources:"Resources",
+        legal:"Legal",
+        legalNotice:"Legal Notice",
+        privacy:"Privacy Policy",
+        cookies:"Cookie Policy",
+        contact:"Let's Talk",
+        contactDescription:"Tell us about your project and let's make it grow.",
+        email:"hello@vmagency.com",
+        phone:"+34 600 123 456",
+        location:"Madrid, Spain",
+        copyright:"© 2026 VM Agency. All rights reserved."
+    },
 
 
 };
