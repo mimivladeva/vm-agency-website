@@ -1,19 +1,12 @@
 const es = {
 
     nav:{
-
         home:"Inicio",
-
         method:"Método VM",
-
-        success:"Casos de éxito",
-
+        success:"Soluciones",
         about:"Sobre nosotros",
-
-        resources:"Recursos"
-
+        contactUs:"Contacto"
     },
-
     hero: {
 
         eyebrow: "ESTRATEGIA • TECNOLOGÍA • CRECIMIENTO",
@@ -158,15 +151,15 @@ const es = {
 
         }
 
-    },footer:{
+    },
+    footer:{
         description:"Ayudamos a empresas a crecer con soluciones inteligentes, medibles y sostenibles.",
         navigation:"Navegación",
         home:"Inicio",
-        solutions:"Soluciones",
         method:"Método VM",
-        success:"Casos de éxito",
+        success:"Soluciones",
         about:"Sobre nosotros",
-        resources:"Recursos",
+        contactUs:"Contacto",
         legal:"Legal",
         legalNotice:"Aviso Legal",
         privacy:"Política de privacidad",
@@ -178,6 +171,20 @@ const es = {
         location:"Madrid, España",
         copyright:"© 2026 VM Agency. Todos los derechos reservados."
     },
+        about:{
+            eyebrow:"SOBRE NOSOTROS",
+            titleLine1:"Nuestra historia",
+            titleLine2:"empieza con una idea",
+            highlight:"simple:",
+            titleLine3:"hacer las cosas diferentes.",
+            description:"Vimos que muchas empresas invertían en soluciones sin saber si realmente las necesitaban. Decidimos crear una agencia que entiende, analiza y propone lo que verdaderamente genera impacto.",
+            values:"Estrategia. Tecnología. Resultados.",
+            imageAlt:"VM Agency trabajando con un cliente",
+            statement:"No medimos nuestro éxito por los premios, sino por el crecimiento de nuestros clientes.",
+            founders:"Mimi & Viktor",
+            foundersRole:"Fundadores de VM Agency"
+        },
+
 
 
 };

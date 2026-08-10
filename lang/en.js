@@ -1,17 +1,11 @@
 const en = {
 
     nav:{
-
         home:"Home",
-
         method:"VM Method",
-
-        success:"Success Stories",
-
+        success:"Solutions",
         about:"About us",
-
-        resources:"Resources"
-
+        contactUs:"Contact"
     },
 
     hero:{
@@ -164,11 +158,10 @@ const en = {
         description:"We help businesses grow with smart, measurable and sustainable digital solutions.",
         navigation:"Navigation",
         home:"Home",
-        solutions:"Solutions",
         method:"VM Method",
-        success:"Success Stories",
+        success:"Solutions",
         about:"About Us",
-        resources:"Resources",
+        contactUs:"Contact",
         legal:"Legal",
         legalNotice:"Legal Notice",
         privacy:"Privacy Policy",
@@ -180,6 +173,18 @@ const en = {
         location:"Madrid, Spain",
         copyright:"© 2026 VM Agency. All rights reserved."
     },
-
+        about:{
+            eyebrow:"ABOUT US",
+            titleLine1:"Our story",
+            titleLine2:"starts with a",
+            highlight:"simple",
+            titleLine3:"idea: doing things differently.",
+            description:"We saw that many companies were investing in solutions without knowing if they really needed them. We decided to create an agency that understands, analyzes and proposes what truly generates impact.",
+            values:"Strategy. Technology. Results.",
+            imageAlt:"VM Agency working with a client",
+            statement:"We don't measure our success by awards, but by the growth of our clients.",
+            founders:"Mimi & Viktor",
+            foundersRole:"Founders of VM Agency"
+        },
 
 };
