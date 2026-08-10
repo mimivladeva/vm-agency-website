@@ -1,0 +1,578 @@
+/*==========================================================
+CONTACT
+==========================================================*/
+
+.contact{
+    padding:60px 30px;
+    position:relative;
+    overflow:hidden;
+    background:#ffffff;
+
+}
+.contact .container{
+    padding: 30px;
+    position:relative;
+    z-index:2;
+}
+
+/*==========================================================
+BACKGROUND
+==========================================================*/
+
+.contact::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-140px;
+    transform:translateX(-50%);
+    width:950px;
+    height:950px;
+    background:url("../../assets/logos/logo.png") center center/contain no-repeat;
+    opacity:0.15;
+    pointer-events:none;
+    z-index:0;
+}
+.contact::after{
+    content:"";
+    position:absolute;
+    bottom:-250px;
+    right:-250px;
+    width:620px;
+    height:620px;
+    border-radius:50%;
+    background:radial-gradient(
+            circle,
+            rgba(255,145,77,.10) 0%,
+            rgba(255,145,77,.04) 45%,
+            transparent 75%
+    );
+
+    filter:blur(100px);
+    pointer-events:none;
+
+}
+/*==========================================================
+WRAPPER
+==========================================================*/
+
+.contact__wrapper{
+    display:grid;
+    grid-template-columns:52% 48%;
+    gap:20px;
+    align-items:center;
+}
+
+/*==========================================================
+LEFT
+==========================================================*/
+
+.contact__eyebrow{
+    display:block;
+    margin-bottom:14px;
+    color:var(--color-primary);
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.contact__title{
+    max-width:520px;
+    margin-bottom:18px;
+    line-height:1.08;
+}
+
+.contact__highlight{
+    color:var(--color-primary);
+}
+
+.contact__description{
+    max-width:470px;
+    color:#5d6677;
+    margin-bottom:28px;
+    line-height:1.75;
+
+}
+/*==========================================================
+FEATURES
+==========================================================*/
+.contact__features{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+.contact__feature{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+}
+.contact__icon{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,145,77,.08);
+    color:var(--color-primary);
+    font-size:20px;
+    flex-shrink:0;
+}
+
+.contact__feature-title{
+    margin-bottom:3px;
+    font-size:19px;
+    font-weight:700;
+    line-height:1.2;
+    color:var(--color-black);
+}
+
+.contact__feature p{
+    color:#666;
+    line-height:1.7;
+    max-width:360px;
+}
+/*==========================================================
+CARD
+==========================================================*/
+.contact__card{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:620px;
+
+    margin:0 auto;
+
+    padding:22px;
+
+    border-radius:24px;
+
+    background:#fff;
+
+    border:1px solid #ececec;
+
+    box-shadow:0 22px 55px rgba(0,0,0,.08);
+
+}
+.contact__card-header{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:18px;
+}
+.contact__mail{
+    width:54px;
+    height:54px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,145,77,.08);
+    color:var(--color-primary);
+    font-size:24px;
+    flex-shrink:0;
+}
+.contact__card-title{
+    font-size:18px;
+    font-weight:700;
+    line-height:1.2;
+    margin-bottom:2px;
+
+}
+.contact__card-description{
+    color:#666;
+    line-height:1.7;
+}
+/*==========================================================
+FORM
+==========================================================*/
+.contact__form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+.contact__field{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+.contact__field label{
+    font-size:16px;
+    font-weight:700;
+    color:var(--color-black);
+}
+.contact__field input,
+.contact__field textarea{
+    width:100%;
+    padding:10px 12px;
+    font-size:15px;
+    border-radius:12px;
+    border:1px solid #e7e7e7;
+    background:#fff;
+    font-family:inherit;
+    color:#111;
+    outline:none;
+    transition:border-color .3s ease,box-shadow .3s ease;
+}
+.contact__field textarea{
+    resize:vertical;
+    min-height:70px;
+}
+.contact__field input::placeholder,
+.contact__field textarea::placeholder{
+    color:#b2b2b2;
+}
+.contact__field input:focus,
+.contact__field textarea:focus{
+    border-color:var(--color-primary);
+    box-shadow:0 0 0 4px rgba(255,145,77,.10);
+}
+.contact__submit{
+    width:100%;
+    margin-top:2px;
+    padding:16px;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:700;
+}
+.contact__submit span{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.contact__card:hover{
+    transform:translateY(-6px);
+    transition:transform .4s ease;
+}
+.contact__feature:hover .contact__icon{
+    background:var(--color-primary);
+    color:#fff;
+    transition:.35s ease;
+}
+.contact__feature:hover .contact__feature-title{
+    color:var(--color-primary);
+    transition:color .35s ease;
+}
+
+/*==========================================================
+1200px
+==========================================================*/
+@media (max-width:1200px){
+
+    .contact{
+        padding:60px 20px;
+    }
+
+    .contact__wrapper{
+        grid-template-columns:48% 52%;
+        gap:20px;
+    }
+
+    .contact__title{
+        max-width:430px;
+    }
+
+    .contact__description{
+        max-width:400px;
+    }
+
+    .contact__feature-title{
+        font-size:17px;
+    }
+
+    .contact__feature p{
+        font-size:15px;
+    }
+
+    .contact__card{
+        max-width:100%;
+        padding:20px;
+    }
+
+    .contact__mail{
+        width:48px;
+        height:48px;
+        font-size:22px;
+    }
+
+    .contact__card-title{
+        font-size:17px;
+    }
+
+    .contact__card-description{
+        font-size:14px;
+    }
+
+    .contact__field input,
+    .contact__field textarea{
+        padding:10px 12px;
+        font-size:14px;
+    }
+
+    .contact__submit{
+        padding:14px;
+    }
+
+}/*==========================================================*
+992px
+*==========================================================*/
+/*==========================================================*
+992px
+*==========================================================*/
+
+@media (max-width:992px){
+    .contact::before{
+        content:"";
+        position:absolute;
+        top:-40px;
+        right:-900px;
+        left:auto;
+        bottom:auto;
+        width:950px;
+        height:950px;
+        background:url("../../assets/logos/logo.png") right top/contain no-repeat;
+        opacity:.15;
+        pointer-events:none;
+        z-index:0;
+    }
+    .contact{
+        padding:70px 24px;
+    }
+
+    .contact .container{
+        padding:0;
+    }
+
+    .contact__wrapper{
+        grid-template-columns:1fr;
+
+    }
+
+    .contact__info{
+        width:100%;
+        max-width:620px;
+        margin:0 auto;
+        text-align:center;
+    }
+
+    .contact__eyebrow{
+        margin-bottom:14px;
+    }
+
+    .contact__title{
+        max-width:500px;
+        margin:0 auto 20px;
+    }
+
+    .contact__description{
+        max-width:520px;
+        margin:0 auto 34px;
+    }
+
+    .contact__features{
+        max-width:520px;
+        margin:0 auto;
+        gap:22px;
+    }
+
+    .contact__feature{
+        gap:16px;
+        text-align:left;
+    }
+
+    .contact__icon{
+        width:48px;
+        height:48px;
+        font-size:20px;
+    }
+
+    .contact__feature-title{
+        font-size:18px;
+        margin-bottom:4px;
+    }
+
+    .contact__feature p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .contact__card{
+        width:100%;
+        max-width:520px;
+        margin:0 auto;
+        padding:16px 18px;
+        border-radius:22px;
+    }
+
+    .contact__card-header{
+        align-items:center;
+        gap:10px;
+        margin-bottom:12px;
+    }
+
+    .contact__mail{
+        width:42px;
+        height:42px;
+        border-radius:12px;
+        font-size:20px;
+    }
+
+    .contact__card-title{
+        font-size:16px;
+        margin-bottom:0;
+    }
+
+    .contact__card-description{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+    .contact__form{
+        gap:12px;
+    }
+
+    .contact__field{
+        gap:4px;
+    }
+
+    .contact__field label{
+        font-size:14px;
+    }
+
+    .contact__field input,
+    .contact__field textarea{
+        padding:8px 12px;
+        font-size:14px;
+        border-radius:10px;
+    }
+
+    .contact__field textarea{
+        min-height:52px;
+    }
+
+    .contact__submit{
+        padding:12px;
+        font-size:15px;
+        border-radius:12px;
+        margin-top:0;
+    }
+
+    .contact__card:hover{
+        transform:none;
+    }
+    .contact__features{
+        display:none;
+    }
+
+}
+/*==========================================================
+576px
+==========================================================*/
+@media (max-width:576px){
+
+    .contact{
+        padding:70px 20px;
+    }
+
+    .contact__wrapper{
+        gap:40px;
+    }
+
+    .contact__title{
+        max-width:320px;
+    }
+
+    .contact__description{
+        max-width:320px;
+        margin-bottom:34px;
+    }
+
+    .contact__features{
+        gap:22px;
+    }
+
+    .contact__feature{
+        gap:14px;
+    }
+
+    .contact__icon{
+        width:48px;
+        height:48px;
+        font-size:20px;
+    }
+
+    .contact__feature-title{
+        font-size:18px;
+        margin-bottom:4px;
+    }
+
+    .contact__feature p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .contact__card{
+        padding:22px;
+        border-radius:22px;
+    }
+
+    .contact__card-header{
+        align-items:flex-start;
+        gap:14px;
+        margin-bottom:24px;
+    }
+
+    .contact__mail{
+        width:50px;
+        height:50px;
+        border-radius:14px;
+        font-size:24px;
+    }
+
+    .contact__title{
+        max-width:430px;
+        margin:0 auto 12px;
+    }
+
+    .contact__description{
+        max-width:430px;
+
+        font-size:15px;
+        line-height:1.55;
+    }
+
+    .contact__form{
+        gap:18px;
+    }
+
+    .contact__field{
+        gap:8px;
+    }
+
+    .contact__field label{
+        font-size:14px;
+    }
+
+    .contact__field input,
+    .contact__field textarea{
+        padding:6px 12px;
+        font-size:15px;
+        border-radius:12px;
+    }
+
+    .contact__field textarea{
+        resize:vertical;
+        min-height:32px;
+    }
+
+    .contact__submit{
+        padding:18px;
+        font-size:16px;
+    }
+
+    .contact__card:hover{
+        transform:none;
+    }
+
+}

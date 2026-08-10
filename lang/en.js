@@ -107,7 +107,59 @@ const en = {
                 description:"We analyze your business, define the right direction and help you grow with confidence and data."
             }
 
-    }
+    },
+    contact:{
+
+        eyebrow:"LET'S TALK ABOUT YOUR BUSINESS",
+
+        title1:"Tell us what you ",
+
+        highlight:"need.",
+
+        description:"Every business is different. Leave us your email and we'll study your situation to explain how we can help.",
+
+        feature1:{
+            title:"Tailored solutions",
+            description:"We analyze your business to provide the best strategy."
+        },
+
+        feature2:{
+            title:"Personal response",
+            description:"We'll contact you to explain how we can help."
+        },
+
+        feature3:{
+            title:"Confidential & commitment-free",
+            description:"Your information is safe with us."
+        },
+
+        form:{
+
+            title:"Tell us what you need",
+
+            description:"Complete the form and we'll get in touch with you.",
+
+            name:"Name",
+
+            email:"Email",
+
+            company:"Company (optional)",
+
+            message:"Message (optional)",
+
+            placeholderName:"Your name",
+
+            placeholderEmail:"you@email.com",
+
+            placeholderCompany:"Company name",
+
+            placeholderMessage:"Briefly tell us about your business and what you need...",
+
+            button:"Contact"
+
+        }
+
+    },
 
 
 };

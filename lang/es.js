@@ -106,7 +106,59 @@ const es = {
             title: "Consultoría Estratégica",
             description: "Analizamos tu negocio, definimos el rumbo y te acompañamos para crecer con visión y datos."
         }
-    }
+    },
+    contact:{
+
+        eyebrow:"HABLEMOS SOBRE TU NEGOCIO",
+
+        title1:"Cuéntanos qué ",
+
+        highlight:"necesitas.",
+
+        description:"Cada negocio es diferente. Déjanos tu correo y estudiaremos tu situación para explicarte qué opciones pueden ayudarte.",
+
+        feature1:{
+            title:"Soluciones a medida",
+            description:"Analizamos tu negocio para ofrecerte la mejor estrategia."
+        },
+
+        feature2:{
+            title:"Respuesta personalizada",
+            description:"Te contactamos para explicarte cómo podemos ayudarte."
+        },
+
+        feature3:{
+            title:"Confidencial y sin compromiso",
+            description:"Tu información está segura con nosotros."
+        },
+
+        form:{
+
+            title:"Cuéntanos qué necesitas",
+
+            description:"Completa el formulario y nos pondremos en contacto contigo.",
+
+            name:"Nombre",
+
+            email:"Correo electrónico",
+
+            company:"Empresa (opcional)",
+
+            message:"Mensaje (opcional)",
+
+            placeholderName:"Tu nombre",
+
+            placeholderEmail:"tu@email.com",
+
+            placeholderCompany:"Nombre de tu empresa",
+
+            placeholderMessage:"Cuéntanos brevemente sobre tu negocio y qué necesitas...",
+
+            button:"Contactar"
+
+        }
+
+    },
 
 
 };
