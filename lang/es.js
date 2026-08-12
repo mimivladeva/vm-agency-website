@@ -184,6 +184,56 @@ const es = {
             founders:"Mimi & Viktor",
             foundersRole:"Fundadores de VM Agency"
         },
+    web:{
+        eyebrow:"DESARROLLO WEB",
+        titleLine1:"Webs que convierten.",
+        titleLine2:"Diseñadas para crecer",
+        highlight:"contigo.",
+        description:"Creamos sitios web rápidos, modernos y optimizados para atraer visitantes y convertirlos en clientes.",
+        feature1:{
+            title:"Rápidas",
+            description:"Optimización para máximo rendimiento."
+        },
+        feature2:{
+            title:"Responsivas",
+            description:"Perfectas en cualquier dispositivo."
+        },
+        feature3:{
+            title:"Enfocadas en resultados",
+            description:"Estrategia y diseño pensados para convertir."
+        },
+        buttonProjects:"Ver proyectos",
+        buttonContact:"Hablemos de tu proyecto",
+        imageAlt:"Desarrollo web de VM Agency",
+        includesEyebrow:"LO QUE INCLUYE TU WEB",
+        includesTitle1:"Todo lo necesario para una web",
+        includesTitle2:"profesional que genera",
+        includesHighlight:"resultados.",
+        service1:{
+            title:"Diseño a medida",
+            description:"100% personalizado para tu marca y objetivos."
+        },
+        service2:{
+            title:"SEO técnico",
+            description:"Optimizada para que te encuentren en Google."
+        },
+        service3:{
+            title:"Rendimiento",
+            description:"Carga rápida para mejorar la experiencia y conversiones."
+        },
+        service4:{
+            title:"Seguridad",
+            description:"Protegemos tu web y los datos de tus clientes."
+        },
+        service5:{
+            title:"Fácil de gestionar",
+            description:"Panel intuitivo para que tengas el control."
+        },
+        service6:{
+            title:"Escalable",
+            description:"Preparada para crecer junto a tu negocio."
+        }
+    },
 
 
 
