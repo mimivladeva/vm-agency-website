@@ -1,0 +1,1723 @@
+/* ==========================================================
+   CONSULTORÍA
+========================================================== */
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.consultoria-hero {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 570px;
+
+    overflow: hidden;
+
+    background: #FFFFFF;
+
+}
+
+
+/* ==========================================================
+   HERO CONTAINER
+========================================================== */
+
+.consultoria-hero > .container {
+
+    width: 100%;
+
+    max-width: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+/* ==========================================================
+   HERO WRAPPER
+========================================================== */
+
+.consultoria-hero__wrapper {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 570px;
+
+}
+
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.consultoria-hero__visual {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    width: 100%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+}
+
+
+/*
+   La imagen ocupa todo el Hero.
+*/
+
+.consultoria-hero__visual img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    max-width: none;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+}
+
+
+/* ==========================================================
+   IMAGE FADE
+========================================================== */
+
+.consultoria-hero__visual::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    background:
+            linear-gradient(
+                    90deg,
+
+                    #FFFFFF 0%,
+
+                    rgba(255,255,255,.99) 10%,
+
+                    rgba(255,255,255,.96) 20%,
+
+                    rgba(255,255,255,.88) 29%,
+
+                    rgba(255,255,255,.68) 37%,
+
+                    rgba(255,255,255,.42) 44%,
+
+                    rgba(255,255,255,.18) 51%,
+
+                    rgba(255,255,255,.05) 58%,
+
+                    transparent 68%
+            );
+
+}
+
+
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.consultoria-hero__content {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 3;
+
+    width: 50%;
+
+    max-width: 680px;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding:
+
+            45px
+
+            20px
+
+            45px
+
+            6.8%;
+
+}
+
+
+/* ==========================================================
+   EYEBROW
+========================================================== */
+
+.consultoria-hero__eyebrow {
+
+    display: block;
+
+    margin: 0 0 18px;
+
+    color: #FF914D;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: .16em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.consultoria-hero__title {
+
+    margin: 0;
+
+    color: #111111;
+
+    font-size: clamp(48px, 4.1vw, 70px);
+
+    font-weight: 800;
+
+    line-height: .98;
+
+    letter-spacing: -.055em;
+
+}
+
+
+/* ==========================================================
+   TITLE UNDERLINE
+========================================================== */
+
+.consultoria-hero__underline {
+
+    width: 76px;
+
+    height: 7px;
+
+    margin-top: 14px;
+
+    margin-left: -5px;
+
+    background: #FFDE59;
+
+    border-radius: 50%;
+
+    transform: rotate(-3deg);
+
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.consultoria-hero__description {
+
+    margin: 22px 0 28px;
+
+    color: #222222;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    line-height: 1.48;
+
+    letter-spacing: 0;
+
+}
+
+
+/* ==========================================================
+   HIGHLIGHT
+========================================================== */
+
+.consultoria-hero__highlight {
+
+    position: relative;
+
+    display: inline-block;
+
+    padding: 0 4px;
+
+    color: #222222;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 1em;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    isolation: isolate;
+
+}
+
+
+/* ==========================================================
+   HIGHLIGHT CIRCLE
+========================================================== */
+
+.consultoria-hero__highlight::after {
+
+    content: "";
+
+    position: absolute;
+
+    z-index: -1;
+
+    left: -9px;
+
+    right: -9px;
+
+    top: -5px;
+
+    bottom: -6px;
+
+    border: 2px solid #FF914D;
+
+    border-radius: 50%;
+
+    transform: rotate(-3deg);
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.consultoria-hero__button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    width: fit-content;
+
+    min-height: 49px;
+
+    padding: 14px 24px;
+
+    background: #FFDE59;
+
+    color: #111111;
+
+    border: none;
+
+    border-radius: 11px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+
+            transform .25s ease,
+
+            background-color .25s ease,
+
+            color .25s ease;
+
+}
+
+
+.consultoria-hero__button span:last-child {
+
+    font-size: 20px;
+
+    line-height: 1;
+
+}
+
+
+.consultoria-hero__button:hover {
+
+    background: #FF914D;
+
+    color: #FFFFFF;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   VALUES
+========================================================== */
+
+.consultoria-values {
+
+    position: relative;
+
+    padding: 45px 0 35px;
+
+    background: #FFFFFF;
+
+}
+
+
+/* ==========================================================
+   VALUES WRAPPER
+========================================================== */
+
+.consultoria-values__wrapper {
+
+    display: grid;
+
+    grid-template-columns: 27% 73%;
+
+    align-items: center;
+
+}
+
+
+/* ==========================================================
+   VALUES INTRO
+========================================================== */
+
+.consultoria-values__intro {
+
+    padding:
+
+            0
+
+            35px
+
+            0
+
+            65px;
+
+    border-right: 1px solid rgba(0,0,0,.12);
+
+}
+
+
+/* ==========================================================
+   HANDWRITTEN INTRO
+========================================================== */
+
+.consultoria-values__handwritten {
+
+    margin: 0;
+
+    color: #222222;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+    line-height: 1.35;
+
+}
+
+
+/* ==========================================================
+   BETTER DECISIONS
+========================================================== */
+
+.consultoria-values__handwritten strong {
+
+    position: relative;
+
+    color: #222222;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 1em;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+}
+
+
+/* ==========================================================
+   YELLOW UNDERLINE
+========================================================== */
+
+.consultoria-values__handwritten strong::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: -3px;
+
+    right: -6px;
+
+    bottom: -5px;
+
+    height: 3px;
+
+    background: #FFDE59;
+
+    border-radius: 50%;
+
+    transform: rotate(-2deg);
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   VALUES GRID
+========================================================== */
+
+.consultoria-values__items {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    align-items: stretch;
+
+}
+
+
+/* ==========================================================
+   VALUE
+========================================================== */
+
+.consultoria-value {
+
+    min-height: 145px;
+
+    padding: 0 28px;
+
+    border-right: 1px solid rgba(0,0,0,.10);
+
+}
+
+
+.consultoria-value:last-child {
+
+    border-right: none;
+
+}
+
+
+/* ==========================================================
+   VALUE ICON
+========================================================== */
+
+.consultoria-value__icon {
+
+    margin-bottom: 12px;
+
+    color: #FF914D;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+}
+
+
+/* ==========================================================
+   VALUE TITLE
+========================================================== */
+
+.consultoria-value h3 {
+
+    margin: 0 0 10px;
+
+    color: #111111;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+}
+
+
+/* ==========================================================
+   VALUE DESCRIPTION
+========================================================== */
+
+.consultoria-value p {
+
+    max-width: 190px;
+
+    margin: 0;
+
+    color: rgba(0,0,0,.62);
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+}
+
+
+/* ==========================================================
+   TESTIMONIAL
+========================================================== */
+
+.consultoria-testimonial {
+
+    padding: 25px 0 70px;
+
+    background: #FFFFFF;
+
+}
+
+
+/* ==========================================================
+   TESTIMONIAL BOX
+========================================================== */
+
+.consultoria-testimonial__box {
+
+    display: grid;
+
+    grid-template-columns:
+
+        160px
+
+        minmax(0, 1fr)
+
+        360px;
+
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 25px 50px;
+
+    background:
+            linear-gradient(
+                    135deg,
+                    rgba(255,145,77,.04),
+                    rgba(255,222,89,.06)
+            );
+
+    border-radius: 18px;
+
+}
+
+
+/* ==========================================================
+   TESTIMONIAL PERSON
+========================================================== */
+
+.consultoria-testimonial__person img {
+
+    display: block;
+
+    width: 110px;
+
+    height: 110px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 50%;
+
+}
+
+
+/* ==========================================================
+   TESTIMONIAL QUOTE
+========================================================== */
+
+.consultoria-testimonial__quote {
+
+    color: #FF914D;
+
+    font-family: Georgia, serif;
+
+    font-size: 58px;
+
+    line-height: .5;
+
+}
+
+
+/* ==========================================================
+   TESTIMONIAL TEXT
+========================================================== */
+
+.consultoria-testimonial__content p {
+
+    max-width: 570px;
+
+    margin: 5px 0 12px;
+
+    color: #333333;
+
+    font-size: 17px;
+
+    line-height: 1.55;
+
+}
+
+
+/* ==========================================================
+   TESTIMONIAL AUTHOR
+========================================================== */
+
+.consultoria-testimonial__content small {
+
+    color: rgba(0,0,0,.55);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: .08em;
+
+}
+
+
+/* ==========================================================
+   TESTIMONIAL NOTE
+========================================================== */
+
+.consultoria-testimonial__note {
+
+    padding: 28px;
+
+    background: #FFFFFF;
+
+    border: 1px solid rgba(0,0,0,.08);
+
+    box-shadow:
+            0 12px 35px rgba(0,0,0,.06);
+
+    transform: rotate(-1deg);
+
+}
+
+
+.consultoria-testimonial__note p {
+
+    margin: 0;
+
+    color: #333333;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    text-align: center;
+
+}
+
+
+.consultoria-testimonial__note span {
+
+    color: #FF914D;
+
+}
+
+
+.consultoria-testimonial__note b {
+
+    display: block;
+
+    margin-top: 8px;
+
+    color: #FF914D;
+
+    font-size: 24px;
+
+}
+
+
+/* ==========================================================
+   LARGE TABLET
+   992px — 1200px
+========================================================== */
+
+@media (max-width: 1200px) {
+
+    /* HERO */
+
+    .consultoria-hero {
+
+        min-height: 540px;
+
+    }
+
+
+    .consultoria-hero__wrapper {
+
+        min-height: 540px;
+
+    }
+
+
+    .consultoria-hero__content {
+
+        width: 54%;
+
+        padding-left: 5%;
+
+    }
+
+
+    .consultoria-hero__title {
+
+        font-size: 56px;
+
+    }
+
+
+    .consultoria-hero__description {
+
+        font-size: 21px;
+
+    }
+
+
+    /* VALUES */
+
+    .consultoria-values__wrapper {
+
+        grid-template-columns: 30% 70%;
+
+    }
+
+
+    .consultoria-values__intro {
+
+        padding-left: 35px;
+
+        padding-right: 25px;
+
+    }
+
+
+    .consultoria-value {
+
+        padding: 0 20px;
+
+    }
+
+
+    /* TESTIMONIAL */
+
+    .consultoria-testimonial__box {
+
+        grid-template-columns:
+
+            130px
+
+            minmax(0, 1fr)
+
+            300px;
+
+        gap: 25px;
+
+        padding-left: 35px;
+
+        padding-right: 35px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET
+   768px — 991px
+========================================================== */
+
+@media (max-width: 991px) {
+
+    /* ======================================================
+       HERO
+    ====================================================== */
+
+    .consultoria-hero {
+
+        min-height: 520px;
+
+    }
+
+
+    .consultoria-hero__wrapper {
+
+        min-height: 520px;
+
+    }
+
+
+    /*
+       La imagen SIGUE detrás.
+       No se convierte en columna.
+    */
+
+    .consultoria-hero__visual {
+
+        position: absolute;
+
+        inset: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+    }
+
+
+    .consultoria-hero__visual img {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        object-position: center center;
+
+    }
+
+
+    .consultoria-hero__content {
+
+        width: 60%;
+
+        max-width: 600px;
+
+        height: 100%;
+
+        padding:
+
+                35px
+
+                25px
+
+                35px
+
+                40px;
+
+    }
+
+
+    .consultoria-hero__eyebrow {
+
+        margin-bottom: 14px;
+
+        font-size: 11px;
+
+    }
+
+
+    .consultoria-hero__title {
+
+        font-size: 48px;
+
+        line-height: .99;
+
+    }
+
+
+    .consultoria-hero__underline {
+
+        width: 65px;
+
+        height: 5px;
+
+        margin-top: 11px;
+
+    }
+
+
+    .consultoria-hero__description {
+
+        margin-top: 18px;
+
+        margin-bottom: 22px;
+
+        font-size: 20px;
+
+        line-height: 1.45;
+
+    }
+
+
+    .consultoria-hero__button {
+
+        min-height: 46px;
+
+        padding: 13px 20px;
+
+        font-size: 14px;
+
+    }
+
+
+    /* ======================================================
+       VALUES
+    ====================================================== */
+
+    .consultoria-values {
+
+        padding: 40px 0 35px;
+
+    }
+
+
+    .consultoria-values__wrapper {
+
+        display: block;
+
+    }
+
+
+    .consultoria-values__intro {
+
+        margin-bottom: 30px;
+
+        padding:
+
+                0
+
+                35px;
+
+        border-right: none;
+
+    }
+
+
+    .consultoria-values__handwritten {
+
+        max-width: 450px;
+
+        font-size: 25px;
+
+    }
+
+
+    .consultoria-values__items {
+
+        grid-template-columns:
+
+            repeat(2, minmax(0, 1fr));
+
+        row-gap: 30px;
+
+    }
+
+
+    .consultoria-value {
+
+        min-height: 135px;
+
+        padding: 0 30px;
+
+    }
+
+
+    .consultoria-value:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+
+    .consultoria-value:nth-child(3),
+
+    .consultoria-value:nth-child(4) {
+
+        padding-top: 30px;
+
+        border-top: 1px solid rgba(0,0,0,.10);
+
+    }
+
+
+    .consultoria-value p {
+
+        max-width: 250px;
+
+    }
+
+
+    /* ======================================================
+       TESTIMONIAL
+    ====================================================== */
+
+    .consultoria-testimonial {
+
+        padding: 20px 0 55px;
+
+    }
+
+
+    .consultoria-testimonial__box {
+
+        grid-template-columns:
+
+            110px
+
+            minmax(0, 1fr);
+
+        gap: 25px;
+
+        padding: 25px 30px;
+
+    }
+
+
+    .consultoria-testimonial__note {
+
+        grid-column: 1 / -1;
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL TABLET
+   577px — 767px
+========================================================== */
+
+@media (max-width: 767px) {
+
+    /* ======================================================
+       HERO
+    ====================================================== */
+
+    .consultoria-hero {
+
+        min-height: 610px;
+
+    }
+
+
+    .consultoria-hero__wrapper {
+
+        min-height: 610px;
+
+    }
+
+
+    .consultoria-hero__content {
+
+        width: 68%;
+
+        max-width: 520px;
+
+        padding:
+
+                35px
+
+                20px
+
+                35px
+
+                30px;
+
+    }
+
+
+    .consultoria-hero__title {
+
+        font-size: 44px;
+
+    }
+
+
+    .consultoria-hero__description {
+
+        font-size: 20px;
+
+    }
+
+
+    /*
+       Más blanco detrás del texto en pantallas
+       pequeñas.
+    */
+
+    .consultoria-hero__visual::after {
+
+        background:
+                linear-gradient(
+                        90deg,
+
+                        #FFFFFF 0%,
+
+                        rgba(255,255,255,.99) 20%,
+
+                        rgba(255,255,255,.94) 34%,
+
+                        rgba(255,255,255,.72) 46%,
+
+                        rgba(255,255,255,.35) 58%,
+
+                        rgba(255,255,255,0) 72%
+                );
+
+    }
+
+
+    /* ======================================================
+       VALUES
+    ====================================================== */
+
+    .consultoria-value {
+
+        padding-left: 22px;
+
+        padding-right: 22px;
+
+    }
+
+
+    /* ======================================================
+       TESTIMONIAL
+    ====================================================== */
+
+    .consultoria-testimonial__box {
+
+        padding:
+
+                25px;
+
+        gap: 20px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   <= 576px
+
+   IMPORTANTE:
+   La imagen NO baja debajo del texto.
+   Sigue siendo el fondo del Hero.
+========================================================== */
+
+@media (max-width: 576px) {
+
+    /* ======================================================
+       HERO
+    ====================================================== */
+
+    .consultoria-hero {
+
+        min-height: 650px;
+
+    }
+
+
+    .consultoria-hero__wrapper {
+
+        min-height: 650px;
+
+        display: block;
+
+    }
+
+
+    /*
+       IMAGEN DE FONDO
+    */
+
+    .consultoria-hero__visual {
+
+        position: absolute;
+
+        inset: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        z-index: 1;
+
+    }
+
+
+    .consultoria-hero__visual img {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        /*
+           En móvil centramos la imagen para mantener
+           la taza + libreta + portátil visibles.
+        */
+
+        object-position: center center;
+
+    }
+
+
+    /*
+       Degradado vertical + lateral para mantener
+       legible el texto sin quitar la imagen.
+    */
+
+    .consultoria-hero__visual::after {
+
+        background:
+                linear-gradient(
+                        90deg,
+
+                        rgba(255,255,255,1) 0%,
+
+                        rgba(255,255,255,.98) 22%,
+
+                        rgba(255,255,255,.88) 38%,
+
+                        rgba(255,255,255,.55) 52%,
+
+                        rgba(255,255,255,.18) 66%,
+
+                        rgba(255,255,255,0) 78%
+                );
+
+    }
+
+
+    /*
+       CONTENTO ENCIMA DE LA IMAGEN
+    */
+
+    .consultoria-hero__content {
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        z-index: 3;
+
+        width: 72%;
+
+        max-width: 390px;
+
+        height: 100%;
+
+        padding:
+
+                38px
+
+                18px
+
+                35px
+
+                22px;
+
+        justify-content: center;
+
+    }
+
+
+    .consultoria-hero__eyebrow {
+
+        margin-bottom: 13px;
+
+        font-size: 10px;
+
+        letter-spacing: .14em;
+
+    }
+
+
+    .consultoria-hero__title {
+
+        font-size: 40px;
+
+        line-height: 1;
+
+        letter-spacing: -.045em;
+
+    }
+
+
+    .consultoria-hero__underline {
+
+        width: 65px;
+
+        height: 5px;
+
+        margin-top: 11px;
+
+    }
+
+
+    .consultoria-hero__description {
+
+        max-width: 350px;
+
+        margin:
+
+                19px
+
+                0
+
+                23px;
+
+        font-size: 20px;
+
+        line-height: 1.45;
+
+    }
+
+
+    .consultoria-hero__highlight {
+
+        padding: 0 3px;
+
+    }
+
+
+    .consultoria-hero__highlight::after {
+
+        left: -7px;
+
+        right: -7px;
+
+        top: -4px;
+
+        bottom: -5px;
+
+        border-width: 2px;
+
+    }
+
+
+    .consultoria-hero__button {
+
+        width: fit-content;
+
+        min-height: 46px;
+
+        padding: 13px 18px;
+
+        gap: 14px;
+
+        font-size: 13px;
+
+    }
+
+
+    /* ======================================================
+       VALUES
+    ====================================================== */
+
+    .consultoria-values {
+
+        padding: 38px 0 30px;
+
+    }
+
+
+    .consultoria-values__wrapper {
+
+        display: block;
+
+    }
+
+
+    .consultoria-values__intro {
+
+        margin-bottom: 28px;
+
+        padding:
+
+                0
+
+                22px;
+
+    }
+
+
+    .consultoria-values__handwritten {
+
+        font-size: 23px;
+
+        line-height: 1.35;
+
+    }
+
+
+    .consultoria-values__items {
+
+        grid-template-columns: 1fr;
+
+        row-gap: 0;
+
+    }
+
+
+    .consultoria-value {
+
+        min-height: auto;
+
+        padding:
+
+                14px
+
+                12px;
+
+        border-right: none;
+
+        border-bottom: 1px solid rgba(0,0,0,.10);
+
+    }
+
+
+    .consultoria-value:nth-child(2),
+
+    .consultoria-value:nth-child(3),
+
+    .consultoria-value:nth-child(4) {
+
+        padding-top: 24px;
+
+        border-top: none;
+
+    }
+
+
+    .consultoria-value:last-child {
+
+        border-bottom: none;
+
+    }
+
+
+    .consultoria-value p {
+
+        max-width: 100%;
+
+    }
+
+
+    /* ======================================================
+       TESTIMONIAL
+    ====================================================== */
+
+    .consultoria-testimonial {
+
+        padding: 15px 0 45px;
+
+    }
+
+
+    .consultoria-testimonial__box {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+        padding:
+
+                25px
+
+                22px;
+
+    }
+
+
+    .consultoria-testimonial__person img {
+
+        width: 85px;
+
+        height: 85px;
+
+    }
+
+
+    .consultoria-testimonial__content {
+
+        width: 100%;
+
+    }
+
+
+    .consultoria-testimonial__content p {
+
+        font-size: 15px;
+
+    }
+
+
+    .consultoria-testimonial__note {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+   <= 380px
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .consultoria-hero {
+
+        min-height: 620px;
+
+    }
+
+
+    .consultoria-hero__wrapper {
+
+        min-height: 620px;
+
+    }
+
+
+    .consultoria-hero__content {
+
+        width: 76%;
+
+        padding:
+
+                32px
+
+                15px
+
+                30px
+
+                17px;
+
+    }
+
+
+    .consultoria-hero__title {
+
+        font-size: 36px;
+
+    }
+
+
+    .consultoria-hero__description {
+
+        font-size: 19px;
+
+        line-height: 1.4;
+
+    }
+
+
+    .consultoria-hero__button {
+
+        padding:
+
+                12px
+
+                16px;
+
+        font-size: 12px;
+
+    }
+
+
+    .consultoria-values__intro {
+
+        padding-left: 17px;
+
+        padding-right: 17px;
+
+    }
+
+
+    .consultoria-values__handwritten {
+
+        font-size: 21px;
+
+    }
+
+
+    .consultoria-value {
+
+        padding-left: 17px;
+
+        padding-right: 17px;
+
+    }
+
+}

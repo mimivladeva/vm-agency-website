@@ -234,6 +234,336 @@ const es = {
             description:"Preparada para crecer junto a tu negocio."
         }
     },
+    ai: {
+
+        eyebrow: "AUTOMATIZACIÓN · IA · EFICIENCIA",
+
+        titleLine1: "Automatizamos",
+
+        titleLine2: "procesos. Potenciamos",
+
+        titleLine3: "resultados con",
+
+        highlight: "IA.",
+
+        description:
+            "Diseñamos soluciones inteligentes que ahorran tiempo, reducen errores y te permiten escalar tu negocio.",
+
+        button:
+            "Hablemos de tu proyecto",
+
+        nodeData:
+            "Datos",
+
+        nodeAutomation:
+            "Automatización",
+
+        nodeAnalysis:
+            "Análisis",
+
+        nodeResults:
+            "Resultados",
+
+
+        benefit1: {
+
+            title:
+                "Menos tareas repetitivas",
+
+            description:
+                "Automatizamos lo manual para que te enfoques en lo importante."
+
+        },
+
+
+        benefit2: {
+
+            title:
+                "Inteligencia aplicada",
+
+            description:
+                "Usamos IA para analizar, predecir y tomar mejores decisiones."
+
+        },
+
+
+        benefit3: {
+
+            title:
+                "Ahorro de tiempo",
+
+            description:
+                "Procesos más rápidos, eficientes y escalables."
+
+        },
+
+
+        benefit4: {
+
+            title:
+                "Más resultados",
+
+            description:
+                "Mejor rendimiento, menos costes y mayor crecimiento."
+
+        }
+
+    },
+    marketing:{
+        eyebrow:"SERVICIOS",
+
+        titleLine1:"Marketing",
+        titleLine2:"Digital",
+
+        description:"Estrategias que atraen, convierten y fidelizan clientes en los canales que realmente funcionan.",
+
+        description2:"Combinamos estrategia, contenido y campañas basadas en datos para hacer crecer tu marca.",
+
+        button:"Hablemos de tu proyecto",
+
+        imageAlt:"Marketing digital VM Agency",
+
+        benefit1:{
+            title:"Estar en internet no significa estar llegando a tus clientes.",
+            description:"Construimos una estrategia para que tu marca llegue a las personas adecuadas."
+        },
+
+        benefit2:{
+            title:"Publicas, pero no sabes qué funciona.",
+            description:"Analizamos los datos para entender qué contenido genera resultados."
+        },
+
+        benefit3:{
+            title:"Inviertes en publicidad sin una estrategia clara.",
+            description:"Diseñamos campañas orientadas a objetivos concretos y medibles."
+        },
+
+        benefit4:{
+            title:"Generas contenido, pero no conviertes.",
+            description:"Te ayudamos a convertir la atención en oportunidades reales de negocio."
+        },
+
+        ctaEyebrow:"MARKETING DIGITAL",
+
+        ctaTitle:"Convierte tu presencia digital en crecimiento.",
+
+        ctaButton:"Hablemos"
+    },
+
+
+        nav: {
+            home: "Inicio",
+            method: "Método VM",
+            success: "Soluciones",
+            about: "Sobre nosotros",
+            contactUs: "Contacto"
+        },
+
+
+        consulting: {
+
+            eyebrow: "SERVICIOS",
+
+            titleLine1: "Consultoría",
+
+            titleLine2: "Estratégica",
+
+            description:
+                "Analizamos tu negocio, definimos el rumbo y te acompañamos para crecer con visión y datos.",
+
+            button:
+                "Hablemos de tu proyecto",
+
+            imageAlt:
+                "Espacio de trabajo para consultoría estratégica",
+
+
+            valuesIntro:
+                "No se trata de tener más datos, sino de tomar mejores decisiones.",
+
+
+            value1: {
+                title: "Cercanía real",
+                description:
+                    "Nos involucramos en tu negocio como si fuera nuestro. Escuchamos, entendemos y te hablamos claro."
+            },
+
+            value2: {
+                title: "Estrategia a medida",
+                description:
+                    "No usamos fórmulas genéricas. Creamos planes adaptados a tu objetivo, tu mercado y tus recursos."
+            },
+
+            value3: {
+                title: "Decisiones con impacto",
+                description:
+                    "Te damos claridad para priorizar lo que realmente mueve la aguja y genera resultados."
+            },
+
+            value4: {
+                title: "Acompañamiento continuo",
+                description:
+                    "No te dejamos solo con el plan. Estamos contigo para ajustarlo, medirlo y hacerlo crecer."
+            },
+
+
+            testimonial: {
+
+                text:
+                    "Trabajar con VM Agency fue un antes y un después. Nos ayudaron a ordenar nuestras ideas y convertirlas en un plan que realmente funciona.",
+
+                author:
+                    "— MARÍA G., FUNDADORA DE MIGA STUDIO",
+
+                note:
+                    "Tu visión + nuestra estrategia",
+
+                result:
+                    "= resultados reales"
+            }
+        },
+
+
+        footer: {
+
+            description:
+                "Ayudamos a empresas a crecer con soluciones inteligentes, medibles y sostenibles.",
+
+            navigation:
+                "Navegación",
+
+            home:
+                "Inicio",
+
+            solutions:
+                "Soluciones",
+
+            method:
+                "Método VM",
+
+            about:
+                "Sobre nosotros",
+
+            contactUs:
+                "Contacto",
+
+            legal:
+                "Legal",
+
+            legalNotice:
+                "Aviso Legal",
+
+            privacy:
+                "Política de privacidad",
+
+            cookies:
+                "Política de Cookies",
+
+            contact:
+                "Hablemos",
+
+            contactDescription:
+                "Cuéntanos tu proyecto y te ayudaremos a hacerlo crecer.",
+
+            email:
+                "hola@vmagency.com",
+
+            copyright:
+                "© 2026 VM Agency. Todos los derechos reservados."
+        },
+    consulting: {
+
+        eyebrow: "SERVICIOS",
+
+        titleLine1: "Consultoría",
+
+        titleLine2: "Estratégica",
+
+        descriptionLine1:
+            "Analizamos tu negocio,",
+
+        descriptionLine2:
+            "definimos el rumbo y te acompañamos",
+
+        descriptionLine3:
+            "para crecer con",
+
+        descriptionHighlight:
+            "visión y datos.",
+
+        button:
+            "Hablemos de tu proyecto",
+
+        imageAlt:
+            "Espacio de trabajo para consultoría estratégica",
+
+
+        valuesIntroLine1:
+            "No se trata de tener",
+
+        valuesIntroLine2:
+            "más datos, sino de tomar",
+
+        valuesIntroHighlight:
+            "mejores decisiones.",
+
+
+        value1: {
+
+            title:
+                "Cercanía real",
+
+            description:
+                "Nos involucramos en tu negocio como si fuera nuestro. Escuchamos, entendemos y te hablamos claro."
+        },
+
+
+        value2: {
+
+            title:
+                "Estrategia a medida",
+
+            description:
+                "No usamos fórmulas genéricas. Creamos planes adaptados a tu objetivo, tu mercado y tus recursos."
+        },
+
+
+        value3: {
+
+            title:
+                "Decisiones con impacto",
+
+            description:
+                "Te damos claridad para priorizar lo que realmente mueve la aguja y genera resultados."
+        },
+
+
+        value4: {
+
+            title:
+                "Acompañamiento continuo",
+
+            description:
+                "No te dejamos solo con el plan. Estamos contigo para ajustarlo, medirlo y hacerlo crecer."
+        },
+
+
+        testimonial: {
+
+            text:
+                "No necesitas tenerlo todo claro para empezar. Nosotros te ayudamos a ordenar tus ideas, encontrar el camino y convertirlas en resultados reales.",
+
+            author:
+                "— Viktor G., FUNDADOR DE VM Agency",
+
+            note:
+                "Tu visión + nuestra estrategia",
+
+            result:
+                "= resultados reales"
+        }
+
+    },
 
 
 

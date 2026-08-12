@@ -235,5 +235,211 @@ const en = {
             title:"Scalable",
             description:"Built to grow alongside your business."
         }
+    },ai: {
+
+        eyebrow: "AUTOMATION · AI · EFFICIENCY",
+
+        titleLine1: "We automate",
+
+        titleLine2: "processes. We boost",
+
+        titleLine3: "results with",
+
+        highlight: "AI.",
+
+        description:
+            "We design intelligent solutions that save time, reduce errors and help your business scale.",
+
+        button:
+            "Let's talk about your project",
+
+        nodeData:
+            "Data",
+
+        nodeAutomation:
+            "Automation",
+
+        nodeAnalysis:
+            "Analysis",
+
+        nodeResults:
+            "Results",
+
+
+        benefit1: {
+
+            title:
+                "Fewer repetitive tasks",
+
+            description:
+                "We automate manual work so you can focus on what matters."
+
+        },
+
+
+        benefit2: {
+
+            title:
+                "Applied intelligence",
+
+            description:
+                "We use AI to analyze, predict and make better decisions."
+
+        },
+
+
+        benefit3: {
+
+            title:
+                "Time savings",
+
+            description:
+                "Faster, more efficient and scalable processes."
+
+        },
+
+
+        benefit4: {
+
+            title:
+                "More results",
+
+            description:
+                "Better performance, lower costs and greater growth."
+
+        }
+
+    },marketing:{
+        eyebrow:"SERVICES",
+
+        titleLine1:"Digital",
+        titleLine2:"Marketing",
+
+        description:"Strategies that attract, convert and retain customers through the channels that truly work.",
+
+        description2:"We combine strategy, content and data-driven campaigns to help your brand grow.",
+
+        button:"Let's talk about your project",
+
+        imageAlt:"VM Agency digital marketing",
+
+        benefit1:{
+            title:"Being online doesn't mean reaching your customers.",
+            description:"We build a strategy that puts your brand in front of the right people."
+        },
+
+        benefit2:{
+            title:"You publish, but you don't know what works.",
+            description:"We analyze the data to understand which content generates results."
+        },
+
+        benefit3:{
+            title:"You invest in advertising without a clear strategy.",
+            description:"We design campaigns focused on concrete and measurable objectives."
+        },
+
+        benefit4:{
+            title:"You create content, but it doesn't convert.",
+            description:"We help turn attention into real business opportunities."
+        },
+
+        ctaEyebrow:"DIGITAL MARKETING",
+
+        ctaTitle:"Turn your digital presence into growth.",
+
+        ctaButton:"Let's talk"
+    },
+    consulting: {
+
+        eyebrow: "SERVICES",
+
+        titleLine1: "Strategic",
+
+        titleLine2: "Consulting",
+
+        descriptionLine1:
+            "We analyze your business,",
+
+        descriptionLine2:
+            "define the direction and guide you",
+
+        descriptionLine3:
+            "to grow with",
+
+        descriptionHighlight:
+            "vision and data.",
+
+        button:
+            "Let's talk about your project",
+
+        imageAlt:
+            "Workspace for strategic consulting",
+
+
+        valuesIntroLine1:
+            "It's not about having",
+
+        valuesIntroLine2:
+            "more data, but making",
+
+        valuesIntroHighlight:
+            "better decisions.",
+
+
+        value1: {
+
+            title:
+                "Real partnership",
+
+            description:
+                "We get involved in your business as if it were our own. We listen, understand and speak clearly."
+        },
+
+
+        value2: {
+
+            title:
+                "Tailored strategy",
+
+            description:
+                "We don't use generic formulas. We create plans adapted to your goals, your market and your resources."
+        },
+
+
+        value3: {
+
+            title:
+                "Decisions that matter",
+
+            description:
+                "We give you clarity to prioritize what really moves your business forward and generates results."
+        },
+
+
+        value4: {
+
+            title:
+                "Continuous support",
+
+            description:
+                "We don't leave you alone with the plan. We're with you to adjust it, measure it and help it grow."
+        },
+
+
+        testimonial: {
+
+            text:
+                "You don't need to have everything figured out to get started. We'll help you organize your ideas, find the right path and turn them into real results.",
+
+            author:
+                "— Viktor G., FOUNDER OF VM Agency",
+
+            note:
+                "Your vision + our strategy",
+
+            result:
+                "= real results"
+        }
+
     },
 };
