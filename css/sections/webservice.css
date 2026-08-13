@@ -1,0 +1,2380 @@
+/* ==========================================================
+   WEB SERVICE
+   SERVICE 01 — WEB DESIGN
+========================================================== */
+
+
+/* ==========================================================
+   GOOGLE FONT — HANDWRITTEN
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+.webservice-hero {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100vh;
+    min-height: 700px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    color: #111111;
+}
+
+
+/* ==========================================================
+   MAIN IMAGE
+========================================================== */
+
+.webservice-hero__visual {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    width: 100%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    pointer-events: none;
+}
+
+
+.webservice-hero__visual img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    max-width: none;
+
+    object-fit: cover;
+
+    /*
+       La imagen estaba demasiado arriba.
+       Bajamos ligeramente el encuadre.
+    */
+
+    object-position: center 58%;
+}
+
+
+/* ==========================================================
+   IMAGE OVERLAY
+========================================================== */
+
+.webservice-hero__visual::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    background:
+
+            linear-gradient(
+                    90deg,
+
+                    rgba(255,255,255,1) 0%,
+
+                    rgba(255,255,255,.99) 9%,
+
+                    rgba(255,255,255,.96) 19%,
+
+                    rgba(255,255,255,.88) 30%,
+
+                    rgba(255,255,255,.67) 40%,
+
+                    rgba(255,255,255,.40) 50%,
+
+                    rgba(255,255,255,.16) 61%,
+
+                    rgba(255,255,255,.04) 70%,
+
+                    rgba(255,255,255,0) 78%
+
+            );
+}
+
+
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.webservice-hero__content {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 5;
+
+    width: 52%;
+
+    max-width: 720px;
+
+    height: 100%;
+
+    padding:
+
+            100px
+
+            30px
+
+            70px
+
+            6.5%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+/* ==========================================================
+   EYEBROW
+========================================================== */
+.webservice-hero__eyebrow{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:28px;
+    color:#ff914d;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+}
+
+
+.webservice-hero__eyebrow-line {
+
+    display: block;
+
+    width: 68px;
+
+    height: 1px;
+
+    background: #ff914d;
+}
+
+
+/* ==========================================================
+   MAIN TITLE
+========================================================== */
+.webservice-hero__title{
+    position:relative;
+    margin:0;
+    color:#111111;
+    letter-spacing:-.065em;
+}
+
+/* ==========================================================
+   TITLE — "CONVIERTEN"
+========================================================== */
+
+.webservice-hero__title-accent {
+
+    position: relative;
+
+    display: inline-block;
+
+    z-index: 1;
+
+    isolation: isolate;
+}
+
+
+/*
+   CÍRCULO AMARILLO
+   Rodea la palabra completa.
+*/
+
+.webservice-hero__title-accent::after {
+
+    content: "";
+
+    position: absolute;
+
+    z-index: -1;
+
+    left: -18px;
+
+    right: -22px;
+
+    top: 50%;
+
+    height: 92%;
+
+    border: 4px solid #ffde59;
+
+    border-radius: 50%;
+
+    transform:
+
+            translateY(-48%)
+
+            rotate(-5deg)
+
+            skewX(-5deg);
+
+    pointer-events: none;
+}
+
+
+/*
+   Segunda línea del círculo para que parezca
+   dibujado a mano.
+*/
+
+.webservice-hero__title-accent::before {
+
+    content: "";
+
+    position: absolute;
+
+    z-index: -1;
+
+    left: -12px;
+
+    right: -17px;
+
+    top: 52%;
+
+    height: 86%;
+
+    border: 2px solid rgba(255,145,77,.35);
+
+    border-radius: 48%;
+
+    transform:
+
+            translateY(-50%)
+
+            rotate(-7deg);
+
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   HANDWRITTEN SUBTITLE
+========================================================== */
+
+.webservice-hero__subtitle {
+
+    margin:
+
+            30px
+
+            0
+
+            8px;
+
+    color: #222222;
+
+    font-family: "Caveat", cursive;
+
+    font-size: clamp(
+            28px,
+            2.2vw,
+            38px
+    );
+
+    font-weight: 500;
+
+    line-height: 1.15;
+
+    letter-spacing: .01em;
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+.webservice-hero__description{
+    max-width:530px;
+    margin:12px 0 30px;
+    color:#333333;
+}
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.webservice-hero__button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    width: fit-content;
+
+    min-height: 54px;
+
+    padding:
+
+            15px
+
+            25px;
+
+    background: #ffde59;
+
+    color: #111111;
+
+    border: none;
+
+    border-radius: 11px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+
+            transform .25s ease,
+
+            background-color .25s ease;
+}
+
+
+.webservice-hero__button-arrow {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 21px;
+
+    line-height: 1;
+
+    transition:
+
+            transform .25s ease;
+}
+
+
+.webservice-hero__button:hover {
+
+    background: #ff914d;
+
+    transform: translateY(-2px);
+}
+
+
+.webservice-hero__button:hover
+.webservice-hero__button-arrow {
+
+    transform: translateX(5px);
+}
+
+
+/* ==========================================================
+   PHILOSOPHY
+========================================================== */
+
+.webservice-hero__philosophy {
+
+    margin-top: 48px;
+
+    max-width: 400px;
+}
+
+
+.webservice-hero__philosophy-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    width: fit-content;
+
+    padding-bottom: 7px;
+
+    border-bottom: 2px solid #ffde59;
+
+    color: #111111;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 27px;
+
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+.webservice-hero__philosophy-icon {
+
+    color: var(--color-secondary);
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 28px;
+
+    line-height: 1;
+}
+
+
+.webservice-hero__philosophy-text {
+
+    margin: 18px 0 0;
+
+    color: #333333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   HANDWRITTEN NOTE
+========================================================== */
+
+.webservice-hero__note {
+
+    position: absolute;
+
+    top: 90px;
+
+    left: 37%;
+
+    z-index: 7;
+
+    width: 205px;
+
+    min-height: 280px;
+
+    padding:
+
+            35px
+
+            30px
+
+            30px;
+
+    background: #f8f4ec;
+
+    box-shadow:
+
+            0 14px 35px rgba(0,0,0,.08);
+
+    transform:
+
+            rotate(-2deg);
+}
+
+
+.webservice-hero__note::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -10px;
+
+    left: 50%;
+
+    width: 70px;
+
+    height: 25px;
+
+    background: rgba(210,170,90,.48);
+
+    transform:
+
+            translateX(-50%)
+
+            rotate(1deg);
+}
+
+
+.webservice-hero__note p {
+
+    margin: 0;
+
+    color: #171717;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    line-height: 1.25;
+}
+
+
+.webservice-hero__note-heart {
+
+    position: absolute;
+
+    right: 22px;
+
+    bottom: 16px;
+
+    color: #111111;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 32px;
+
+    line-height: 1;
+}
+
+
+/* ==========================================================
+   UX PAPER
+========================================================== */
+
+.webservice-hero__ux {
+
+    position: absolute;
+
+    top: 58px;
+
+    right: 7%;
+
+    z-index: 6;
+
+    width: 350px;
+
+    min-height: 360px;
+
+    padding:
+
+            45px
+
+            45px
+
+            40px;
+
+    background: rgba(249,247,242,.94);
+
+    transform:
+
+            rotate(1.5deg);
+
+    box-shadow:
+
+            0 15px 35px rgba(0,0,0,.08);
+}
+
+
+.webservice-hero__ux::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -8px;
+
+    left: 50%;
+
+    width: 78px;
+
+    height: 24px;
+
+    background: rgba(30,30,30,.9);
+
+    transform:
+
+            translateX(-50%)
+
+            rotate(-1deg);
+}
+
+
+.webservice-hero__ux-title {
+
+    display: block;
+
+    margin-bottom: 48px;
+
+    color: #222222;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    line-height: 1.8;
+
+    letter-spacing: .32em;
+
+    text-transform: uppercase;
+}
+
+
+.webservice-hero__ux-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+
+    color: #222222;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 23px;
+
+    font-weight: 500;
+}
+
+
+.webservice-hero__ux-line {
+
+    position: relative;
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #222222;
+}
+
+
+.webservice-hero__ux-line::after {
+
+    content: "→";
+
+    position: absolute;
+
+    right: -3px;
+
+    top: -12px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   WEBSITE SCREEN
+========================================================== */
+
+.webservice-hero__screen {
+
+    position: absolute;
+
+    right: 8%;
+
+    bottom: 35px;
+
+    z-index: 8;
+
+    width: 520px;
+
+    height: 350px;
+
+    padding: 55px 50px;
+
+    background: #eee9df;
+
+    border: 10px solid #111111;
+
+    border-radius: 25px 25px 8px 8px;
+
+    box-shadow:
+
+            0 20px 35px rgba(0,0,0,.16);
+
+    transform:
+
+            rotate(4deg);
+}
+
+
+.webservice-hero__screen-content {
+
+    width: 100%;
+
+    height: 100%;
+
+    padding: 35px;
+
+    background: #f8f5ed;
+}
+
+
+.webservice-hero__screen h2 {
+
+    margin: 0;
+
+    color: #111111;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 39px;
+
+    font-weight: 400;
+
+    line-height: .95;
+
+    letter-spacing: -.04em;
+}
+
+
+.webservice-hero__screen p {
+
+    max-width: 240px;
+
+    margin: 25px 0;
+
+    color: #333333;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+.webservice-hero__screen-button {
+
+    padding:
+
+            9px
+
+            15px;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    border: 0;
+
+    border-radius: 5px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================================
+   DESIGNER CARD
+========================================================== */
+
+.webservice-hero__designer {
+
+    position: absolute;
+
+    right: 20%;
+
+    bottom: 45px;
+
+    z-index: 10;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    width: 355px;
+
+    min-height: 175px;
+
+    padding: 25px;
+
+    background: #181818;
+
+    color: #ffffff;
+
+    box-shadow:
+
+            0 15px 30px rgba(0,0,0,.18);
+
+    transform:
+
+            rotate(-2deg);
+}
+
+
+.webservice-hero__designer-photo {
+
+    flex: 0 0 55px;
+
+    width: 55px;
+
+    height: 55px;
+
+    overflow: hidden;
+
+    margin-right: 18px;
+
+    border-radius: 50%;
+}
+
+
+.webservice-hero__designer-photo img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+.webservice-hero__designer-content {
+
+    position: relative;
+
+    flex: 1;
+}
+
+
+.webservice-hero__designer-quote-mark {
+
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #ffde59;
+
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    line-height: .6;
+}
+
+
+.webservice-hero__designer-quote {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 19px;
+
+    font-weight: 400;
+
+    line-height: 1.25;
+}
+
+
+.webservice-hero__designer-role {
+
+    display: block;
+
+    margin-top: 13px;
+
+    color: #ffde59;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 17px;
+
+    font-weight: 500;
+}
+
+
+/* ==========================================================
+   CONTENT BELOW HERO
+========================================================== */
+
+.webservice-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding:
+
+            90px
+
+            0
+
+            110px;
+
+    background: #ffffff;
+}
+
+
+.webservice-content__header {
+
+    max-width: 850px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+}
+
+
+.webservice-content__eyebrow {
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #ff914d;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+}
+
+
+.webservice-content__title {
+
+    margin: 0;
+
+    color: #111111;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(
+            32px,
+            3vw,
+            48px
+    );
+
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: -.045em;
+}
+
+
+.webservice-content__highlight {
+
+    color: #ff914d;
+}
+
+
+/* ==========================================================
+   FEATURES GRID
+========================================================== */
+
+.webservice-content__grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(6, 1fr);
+
+    width: 100%;
+
+    border-top: 1px solid #dddddd;
+}
+
+
+.webservice-content__item {
+
+    min-height: 180px;
+
+    padding:
+
+            30px
+
+            28px;
+
+    border-right: 1px solid #dddddd;
+}
+
+
+.webservice-content__item:last-child {
+
+    border-right: 0;
+}
+
+
+.webservice-content__icon {
+
+    margin-bottom: 20px;
+
+    color: #111111;
+
+    font-size: 25px;
+
+    line-height: 1;
+}
+
+
+.webservice-content__item h3 {
+
+    margin: 0 0 10px;
+
+    color: #111111;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.webservice-content__item p {
+
+    margin: 0;
+
+    color: #666666;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+/* ==========================================================
+   HERO — SCROLL ARROW
+========================================================== */
+.webservice-hero__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    color: #333131;
+    background: rgb(237, 225, 173);
+    border: 2px solid rgba(17,17,17,.75);
+    border-radius: 50%;
+    text-decoration: none;
+    transform: translateX(-50%);
+    transition:
+            transform .3s ease,
+            background-color .3s ease;
+}
+
+.webservice-hero__scroll svg {
+
+    display: block;
+
+    width: 28px;
+    height: 28px;
+}
+
+
+.webservice-hero__scroll:hover {
+
+    background: #ff914d;
+
+    transform:
+            translateX(-50%)
+            translateY(4px);
+}
+
+/* ==========================================================
+   WEB FEATURES
+========================================================== */
+.web-features {
+    width: 100%;
+    padding: 45px 0 50px;
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.web-features__container {
+    width: min(1500px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.web-features__header {
+    max-width: 850px;
+    margin: 0 auto 75px;
+    text-align: center;
+}
+
+.web-features__eyebrow{
+    display:block;
+    margin-bottom:18px;
+    color:#ff914d;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+}
+
+.web-features__title{
+    margin:0;
+    color:#111111;
+    letter-spacing:-.055em;
+}
+.web-features__title-accent {
+    position: relative;
+    display: inline-block;
+
+    color: #ff914d;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.web-features__title-accent::after {
+    content: "";
+
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: -7px;
+
+    height: 7px;
+
+    border-bottom: 2px solid #ffde59;
+    border-radius: 50%;
+
+    transform: rotate(-2deg);
+}
+
+
+/* ==========================================================
+   FEATURES FLOW
+========================================================== */
+
+.web-features__flow {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+
+    width: 100%;
+}
+
+
+/* ==========================================================
+   FEATURE
+========================================================== */
+
+.web-feature {
+    position: relative;
+
+    min-width: 0;
+
+    padding: 0 32px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* IMPORTANTE:
+       NO borders entre las casillas */
+    border: none;
+}
+
+
+/* ==========================================================
+   NUMBER
+========================================================== */
+
+.web-feature__number {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #ff914d;
+
+    font-family: "Caveat", cursive;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.web-feature__icon {
+    width: 72px;
+    height: 72px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.web-feature__icon img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================================
+   ARROWS
+========================================================== */
+/* ==========================================================
+   DESKTOP — ARROWS BETWEEN ICONS
+========================================================== */
+
+.web-feature-step {
+    position: relative;
+    min-width: 0;
+}
+
+.web-feature__arrow {
+    position: absolute;
+
+    /* altura de los iconos */
+    top: 72px;
+
+    /* CENTRO DEL ESPACIO ENTRE DOS FEATURES */
+    left: 76%;
+
+    width: 78px;
+    height: auto;
+
+    display: block;
+    z-index: 20;
+
+    object-fit: contain;
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+}
+
+/* 01 → 02 */
+.web-feature-step:nth-child(1) .web-feature__arrow {
+    display: block;
+    top: 72px;
+    left: 76%;
+    transform: translate(-50%, -50%) rotate(-3deg);
+}
+
+/* 02 → 03 */
+.web-feature-step:nth-child(2) .web-feature__arrow {
+    display: block;
+    top: 72px;
+    left: 76%;
+    transform: translate(-50%, -50%) rotate(2deg);
+}
+
+/* 03 → 04 */
+.web-feature-step:nth-child(3) .web-feature__arrow {
+    display: block;
+    top: 72px;
+    left: 76%;
+    transform: translate(-50%, -50%) rotate(-2deg);
+}
+
+/* 04 → 05 */
+.web-feature-step:nth-child(4) .web-feature__arrow {
+    display: block;
+    top: 72px;
+    left: 76%;
+    transform: translate(-50%, -50%) rotate(2deg);
+}
+
+/* 05 → 06 */
+.web-feature-step:nth-child(5) .web-feature__arrow {
+    display: block;
+    top: 72px;
+    left: 76%;
+    transform: translate(-50%, -50%) rotate(-3deg);
+}
+
+/* 06 no tiene flecha */
+.web-feature-step:nth-child(6) .web-feature__arrow {
+    display: none;
+}
+/* ==========================================================
+   FEATURE TITLE
+========================================================== */
+
+.web-feature__title {
+    margin: 0 0 6px;
+
+    color: #111111;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -.025em;
+}
+
+
+/* ==========================================================
+   HAND-DRAWN UNDERLINE
+========================================================== */
+
+.web-feature__underline {
+    position: relative;
+
+    width: 48px;
+    height: 7px;
+
+    margin-bottom: 10px;
+}
+
+.web-feature__underline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 2px;
+
+    width: 100%;
+    height: 3px;
+
+    background: #ffde59;
+
+    border-radius: 50%;
+
+    transform: rotate(-2deg);
+}
+
+.web-feature__underline::after {
+    content: "";
+
+    position: absolute;
+
+    left: 4px;
+    top: 5px;
+
+    width: 70%;
+    height: 1px;
+
+    background: rgba(255, 145, 77, .5);
+
+    border-radius: 50%;
+
+    transform: rotate(1deg);
+}
+
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.web-feature__text {
+    max-width: 190px;
+
+    margin: 0;
+
+    color: #555555;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   CEO CARD
+========================================================== */
+
+.web-features__ceo {
+    position: relative;
+
+    width: min(850px, 90%);
+
+    min-height: 170px;
+
+    margin: 75px auto 0;
+    padding: 30px 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+
+    background: #faf8f3;
+
+    border: 1px solid #ebe5dc;
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .055);
+
+    transform: rotate(-.3deg);
+}
+
+
+/* ==========================================================
+   CEO TAPE
+========================================================== */
+
+.web-features__ceo-tape {
+    position: absolute;
+
+    top: -13px;
+    left: 50%;
+
+    width: 105px;
+    height: 27px;
+
+    background: rgba(255, 222, 89, .42);
+
+    transform:
+            translateX(-50%)
+            rotate(-1deg);
+
+    z-index: 2;
+}
+
+
+/* ==========================================================
+   CEO PORTRAIT
+========================================================== */
+
+.web-features__ceo-portrait {
+    flex: 0 0 95px;
+
+    width: 95px;
+    height: 95px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background: #e9e5de;
+    border: 2px solid #ffffff;
+
+    box-shadow: 0 5px 16px rgba(0, 0, 0, .08);
+}
+
+.web-features__ceo-portrait img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ==========================================================
+   CEO CONTENT
+========================================================== */
+
+.web-features__ceo-content {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* ==========================================================
+   CEO TITLE
+========================================================== */
+
+.web-features__ceo-title {
+    position: relative;
+
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    color: #ff914d;
+
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.web-features__ceo-title::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 90px;
+    height: 4px;
+
+    border-bottom: 2px solid #ffde59;
+    border-radius: 50%;
+
+    transform: rotate(-2deg);
+}
+
+
+/* ==========================================================
+   CEO TEXT
+========================================================== */
+
+.web-features__ceo-text {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #444444;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* ==========================================================
+   CEO HEART
+========================================================== */
+
+.web-features__ceo-heart {
+    flex: 0 0 auto;
+
+    align-self: flex-end;
+
+    margin-bottom: 5px;
+
+    color: #ff914d;
+
+    font-family: Georgia, serif;
+    font-size: 40px;
+    line-height: 1;
+
+    transform: rotate(-8deg);
+}
+
+/* ==========================================================
+   WEB FEATURES — TABLET
+========================================================== */
+@media (max-width: 1200px) {
+
+
+    .web-features__container {
+        width: min(1000px, calc(100% - 60px));
+        margin: 0 auto;
+    }
+
+    .web-features__flow {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 20px;
+        row-gap: 7px;
+        width: 100%;
+    }
+
+    .web-feature-step {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+    }
+
+
+
+    .web-feature {
+        padding: 0 15px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: none !important;
+    }
+
+    .web-feature__number {
+        margin-bottom: 16px;
+        font-size: 26px;
+    }
+
+    .web-feature__icon {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 18px;
+    }
+
+    .web-feature__title {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+        line-height: 1.35;
+    }
+
+    .web-feature__underline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .web-feature__text {
+        max-width: 210px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* FLECHAS */
+    .web-feature-step .web-feature__arrow {
+        position: absolute;
+        top: 72px;
+        left: calc(100% + 10px);
+        width: clamp(55px, 6vw, 75px);
+        height: auto;
+        display: none !important;
+        z-index: 20;
+        object-fit: contain;
+        pointer-events: none;
+        transform: translateX(-50%);
+    }
+    .web-feature-step:nth-child(1) .web-feature__arrow,
+    .web-feature-step:nth-child(2) .web-feature__arrow,
+    .web-feature-step:nth-child(4) .web-feature__arrow,
+    .web-feature-step:nth-child(5) .web-feature__arrow {
+        display: block !important;
+    }
+    .web-feature-step:nth-child(3) .web-feature__arrow,
+    .web-feature-step:nth-child(6) .web-feature__arrow {
+        display: none !important;
+    }
+    .web-feature-step:nth-child(1) .web-feature__arrow {
+        top: 72px;
+        left: calc(100% + 10px);
+        transform: translateX(-50%) rotate(-3deg);
+    }
+    .web-feature-step:nth-child(2) .web-feature__arrow {
+        top: 72px;
+        left: calc(100% + 10px);
+        transform: translateX(-50%) rotate(2deg);
+    }
+    .web-feature-step:nth-child(4) .web-feature__arrow {
+        top: 72px;
+        left: calc(100% + 10px);
+        transform: translateX(-50%) rotate(2deg);
+    }
+    .web-feature-step:nth-child(5) .web-feature__arrow {
+        top: 72px;
+        left: calc(100% + 10px);
+        transform: translateX(-50%) rotate(-3deg);
+    }
+
+    /* 06 NO */
+    .web-feature-step:nth-child(6) .web-feature__arrow {
+        display: none !important;
+    }
+
+    .web-features__ceo {
+        width: 90%;
+        margin-top: 60px;
+        padding: 28px 32px;
+        gap: 22px;
+    }
+
+    .web-features__ceo-portrait {
+        flex: 0 0 85px;
+        width: 85px;
+        height: 85px;
+    }
+
+    .web-features__ceo-text {
+        font-size: 13px;
+    }
+
+    .web-features__ceo-heart {
+        font-size: 34px;
+    }
+}
+/* ===/* ==========================================================
+   WEB FEATURES — SMALL TABLET
+========================================================== */
+@media (max-width: 850px) {
+    .web-features {
+        padding: 70px 0 80px;
+    }
+    .web-features__container {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+    .web-features__header {
+        margin: 0 auto 55px;
+        text-align: center;
+    }
+
+    .web-features__title {
+        line-height: 1.05;
+    }
+    .web-features__flow {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 20px;
+        row-gap: 50px;
+        width: 100%;
+    }
+    .web-feature-step {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+    }
+    .web-feature {
+        position: relative;
+        min-width: 0;
+        padding: 0 18px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: none !important;
+    }
+    .web-feature__number {
+        margin-bottom: 15px;
+        font-size: 25px;
+        line-height: 1;
+    }
+    .web-feature__icon {
+        width: 66px;
+        height: 66px;
+        margin-bottom: 17px;
+        flex-shrink: 0;
+    }
+    .web-feature__title {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+        line-height: 1.35;
+    }
+    .web-feature__underline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .web-feature__text {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+        line-height: 1.6;
+        text-align: center;
+    }
+    /* ======================================================
+       ARROWS
+    ====================================================== */
+    .web-feature-step .web-feature__arrow {
+        position: absolute;
+        top: clamp(62px, 8vw, 78px);
+        left: calc(100% + 10px);
+        width: clamp(52px, 8vw, 78px);
+        height: auto;
+        display: none !important;
+        z-index: 20;
+        object-fit: contain;
+        pointer-events: none;
+        transform: translateX(-50%);
+    }
+    /* 01 → 02 */
+    .web-feature-step:nth-child(1) .web-feature__arrow {
+        display: block !important;
+        top: clamp(62px, 8vw, 78px);
+        transform: translateX(-50%);
+    }
+    /* 03 → 04 */
+    .web-feature-step:nth-child(3) .web-feature__arrow {
+        display: block !important;
+        top: clamp(62px, 8vw, 78px);
+        left: calc(100% + 22px);
+        transform: translateX(-50%) rotate(2deg);
+    }
+    /* 05 → 06 */
+    .web-feature-step:nth-child(5) .web-feature__arrow {
+        display: block !important;
+        top: clamp(62px, 8vw, 78px);
+        transform: translateX(-50%) rotate(2deg);
+    }
+    /* 02, 04 y 06 no llevan flecha */
+    .web-feature-step:nth-child(2) .web-feature__arrow,
+    .web-feature-step:nth-child(4) .web-feature__arrow,
+    .web-feature-step:nth-child(6) .web-feature__arrow {
+        display: none !important;
+    }
+    .web-features__ceo {
+        width: 100%;
+        margin-top: 55px;
+        padding: 28px 25px;
+    }
+}
+
+/* ==========================================================
+   WEB FEATURES — SMALL MOBILE
+========================================================== */
+@media (max-width: 480px) {
+    .web-features {
+        padding: 55px 0 65px;
+    }
+
+    .web-features__container {
+        width: calc(100% - 28px);
+        margin: 0 auto;
+    }
+
+    .web-features__header {
+        margin-bottom: 38px;
+        text-align: left;
+    }
+
+    .web-features__eyebrow {
+        letter-spacing: .14em;
+    }
+
+    .web-features__title {
+
+        line-height: 1.06;
+    }
+
+    .web-features__flow {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 0;
+        width: 100%;
+    }
+
+    .web-feature-step {
+        position: relative;
+        width: 100%;
+    }
+
+    .web-feature {
+        position: relative;
+        min-width: 0;
+        padding: 18px 0 32px;
+        display: grid;
+        grid-template-columns: 82px minmax(0, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "icon heading"
+            "icon underline"
+            "icon text";
+        align-items: start;
+        border: none !important;
+        text-align: left;
+    }
+
+    .web-feature__icon {
+        grid-area: icon;
+        width: 64px;
+        height: 64px;
+        margin: 0;
+        justify-self: center;
+        align-self: start;
+        flex-shrink: 0;
+    }
+
+    .web-feature__icon img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .web-feature__number {
+        position: absolute;
+        top: 18px;
+        left: 82px;
+        margin: 0;
+        color: #ff914d;
+        font-family: "Caveat", cursive;
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 1;
+        z-index: 2;
+    }
+
+    .web-feature__title {
+        grid-area: heading;
+        margin: 0;
+        padding-left: 42px;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .web-feature__underline {
+        grid-area: underline;
+        width: 100%;
+        max-width: 125px;
+        height: 7px;
+        margin: 4px 0 7px;
+    }
+
+    .web-feature__text {
+        grid-area: text;
+        max-width: 240px;
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    /* ==========================================================
+       MOBILE — ARROWS
+    ========================================================== */
+    /* ==========================================================
+       MOBILE — ARROWS
+    ========================================================== */
+    .web-feature-step .web-feature__arrow {
+        position: absolute;
+        top: clamp(100px, 24vw, 125px);
+        left: 41px !important;
+        width: clamp(42px, 11vw, 52px);
+        height: auto;
+        display: block !important;
+        z-index: 20;
+        object-fit: contain;
+        pointer-events: none;
+        transform: translateX(-50%) rotate(90deg) !important;
+        transform-origin: center center;
+    }
+    /* ==========================================================
+       INDIVIDUAL ARROWS
+    ========================================================== */
+    .web-feature-step:nth-child(1) .web-feature__arrow {
+        display: block !important;
+        left: 41px !important;
+        top: clamp(100px, 24vw, 125px);
+    }
+    .web-feature-step:nth-child(2) .web-feature__arrow {
+        display: block !important;
+        left: 41px !important;
+        top: clamp(100px, 24vw, 125px);
+    }
+    .web-feature-step:nth-child(3) .web-feature__arrow {
+        display: block !important;
+        left: 41px !important;
+        top: clamp(100px, 24vw, 125px);
+    }
+    .web-feature-step:nth-child(4) .web-feature__arrow {
+        display: block !important;
+        left: 41px !important;
+        top: clamp(100px, 24vw, 125px);
+    }
+    .web-feature-step:nth-child(5) .web-feature__arrow {
+        display: block !important;
+        left: 41px !important;
+        top: clamp(100px, 24vw, 125px);
+    }
+    /* ==========================================================
+       NO ARROW AFTER 06
+    ========================================================== */
+    .web-feature-step:nth-child(6) .web-feature__arrow {
+        display: none !important;
+    }
+
+    .web-features__ceo {
+        width: 100%;
+        margin-top: 45px;
+        padding: 35px 22px 25px;
+        display: block;
+    }
+
+    .web-features__ceo-portrait {
+        margin-bottom: 18px;
+    }
+
+
+}
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 1100px) {
+
+    .webservice-hero {
+
+        min-height: 760px;
+    }
+
+
+    .webservice-hero__content {
+
+        width: 55%;
+
+        padding-left: 5%;
+
+        padding-top: 90px;
+    }
+
+
+    .webservice-hero__title {
+
+        font-size: clamp(
+                52px,
+                6vw,
+                70px
+        );
+    }
+
+
+    .webservice-hero__note {
+
+        left: 38%;
+
+        top: 75px;
+
+        width: 175px;
+
+        min-height: 245px;
+
+        padding: 28px 25px;
+    }
+
+
+    .webservice-hero__note p {
+
+        font-size: 22px;
+    }
+
+
+    .webservice-hero__ux {
+
+        right: 4%;
+
+        width: 300px;
+
+        min-height: 310px;
+
+        padding: 35px;
+    }
+
+
+    .webservice-hero__screen {
+
+        right: 4%;
+
+        width: 440px;
+
+        height: 300px;
+    }
+
+
+    .webservice-hero__designer {
+
+        right: 18%;
+
+        width: 315px;
+    }
+
+
+    .webservice-content__grid {
+
+        grid-template-columns:
+
+            repeat(3, 1fr);
+    }
+
+
+    .webservice-content__item {
+
+        border-bottom: 1px solid #dddddd;
+    }
+}
+
+
+/* ==========================================================
+   SMALL TABLET
+========================================================== */
+
+@media (max-width: 850px) {
+
+    .webservice-hero {
+
+        min-height: 700px;
+    }
+
+
+    .webservice-hero__content {
+
+        width: 64%;
+
+        padding:
+
+                75px
+
+                25px
+
+                60px
+
+                5%;
+    }
+
+
+    .webservice-hero__title {
+
+        font-size: 55px;
+    }
+
+
+    .webservice-hero__subtitle {
+
+        font-size: 30px;
+    }
+
+
+    .webservice-hero__description {
+
+        font-size: 15px;
+
+        max-width: 400px;
+    }
+
+
+    .webservice-hero__note {
+
+        left: auto;
+
+        right: 7%;
+
+        top: 45px;
+
+        transform: rotate(-3deg) scale(.85);
+    }
+
+
+    .webservice-hero__ux {
+
+        display: none;
+    }
+
+
+    .webservice-hero__screen {
+
+        right: 3%;
+
+        bottom: 30px;
+
+        width: 390px;
+
+        height: 260px;
+
+        padding: 35px;
+    }
+
+
+    .webservice-hero__designer {
+
+        right: 18%;
+
+        bottom: 25px;
+
+        width: 290px;
+
+        min-height: 145px;
+
+        padding: 20px;
+    }
+
+
+    .webservice-hero__designer-quote {
+
+        font-size: 17px;
+    }
+}
+
+/* ==========================================================
+   HERO — MOBILE / 600px
+========================================================== */
+
+@media (max-width: 600px) {
+
+    .webservice-hero__title {
+        font-size: 48px;
+    }
+
+    .webservice-hero__subtitle {
+        font-size: 27px;
+    }
+
+    .webservice-hero__description {
+        font-size: 14px;
+        max-width: 300px;
+    }
+    .webservice-hero__scroll{
+        width:51px;
+        height:51px;
+    }
+    .webservice-hero__scroll svg{
+        width:20px;
+        height:20px;
+    }
+}
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 470px) {
+
+    .webservice-hero {
+
+        min-height: 750px;
+    }
+
+
+    .webservice-hero__content {
+
+        width: 82%;
+
+        padding:
+
+                68px
+
+                15px
+
+                35px
+
+                18px;
+    }
+
+
+    .webservice-hero__title {
+
+        font-size: 43px;
+    }
+
+
+    .webservice-hero__subtitle {
+
+        font-size: 25px;
+    }
+
+
+    .webservice-hero__description {
+
+        font-size: 13px;
+
+        max-width: 270px;
+    }
+
+
+    .webservice-hero__note {
+
+        width: 140px;
+
+        min-height: 185px;
+
+        padding:
+
+                24px
+
+                18px;
+    }
+
+
+    .webservice-hero__note p {
+
+        font-size: 17px;
+    }
+
+
+    .webservice-hero__screen {
+
+        right: -75px;
+
+        width: 290px;
+
+        height: 200px;
+    }
+
+
+    .webservice-hero__designer {
+
+        right: 8px;
+
+        width: 225px;
+
+        min-height: 115px;
+    }
+
+
+    .webservice-hero__designer-quote {
+
+        font-size: 14px;
+    }
+
+
+    .webservice-content__grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .webservice-content__item {
+
+        border-right: 0;
+    }
+    .webservice-hero__scroll{
+        width:45px;
+        height:45px;
+    }
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .webservice-hero__button,
+    .webservice-hero__button-arrow {
+
+        transition: none;
+    }
+}

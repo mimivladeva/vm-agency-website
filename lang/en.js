@@ -186,7 +186,7 @@ const en = {
             founders:"Mimi & Viktor",
             foundersRole:"Founders of VM Agency"
         },
-    web:{
+    /*web:{
         eyebrow:"WEB DEVELOPMENT",
         titleLine1:"Websites that convert.",
         titleLine2:"Designed to grow",
@@ -235,7 +235,268 @@ const en = {
             title:"Scalable",
             description:"Built to grow alongside your business."
         }
-    },ai: {
+    },
+    */
+    web: {
+
+        eyebrow: "SERVICE 01",
+
+        titleLine1: "Websites that",
+
+        titleLine2: "convert.",
+
+        subtitle:
+            "Designed to grow with you.",
+
+        description:
+            "We create fast, modern and optimized websites to attract visitors and turn them into customers.",
+
+        cta:
+            "Let's talk about your project",
+
+
+        /* =====================================================
+           PHILOSOPHY
+        ====================================================== */
+
+        philosophyTitle:
+            "Design with purpose",
+
+        philosophyText:
+            "We don't design just for the sake of design. We create digital experiences that connect, communicate and convert.",
+
+
+        /* =====================================================
+           UX
+        ====================================================== */
+
+        uxClarity:
+            "clarity",
+
+        uxFlow:
+            "flow",
+
+        uxTrust:
+            "trust",
+
+
+        /* =====================================================
+           CREATIVE NOTE
+        ====================================================== */
+
+        note:
+            "Every detail matters.<br>Every decision<br>has a purpose.<br><br>Every website is<br>made for people,<br>not for templates.",
+
+
+        /* =====================================================
+           SCREEN
+        ====================================================== */
+
+        screenTitle:
+            "Simplicity<br>that works.",
+
+        screenText:
+            "We design digital experiences built to convert.",
+
+        screenButton:
+            "View project",
+
+
+        /* =====================================================
+           DESIGNER
+        ====================================================== */
+
+        designerQuote:
+            "I design through listening, empathy and strategy. Your business is unique. Your website should be too.",
+
+        designerRole:
+            "UX/UI Designer",
+
+
+        /* =====================================================
+           FEATURES
+        ====================================================== */
+
+        includesEyebrow:
+            "WHAT YOUR WEBSITE INCLUDES",
+
+        includesTitle1:
+            "Everything you need for a",
+
+        includesTitle2:
+            "professional website that delivers",
+
+        includesHighlight:
+            "results.",
+
+
+        service1: {
+
+            title:
+                "Custom design",
+
+            description:
+                "100% tailored to your brand and goals."
+
+        },
+
+
+        service2: {
+
+            title:
+                "Technical SEO",
+
+            description:
+                "Optimized to help customers find you on Google."
+
+        },
+
+
+        service3: {
+
+            title:
+                "Performance",
+
+            description:
+                "Fast loading to improve experience and conversions."
+
+        },
+
+
+        service4: {
+
+            title:
+                "Security",
+
+            description:
+                "We protect your website and your customers' data."
+
+        },
+
+
+        service5: {
+
+            title:
+                "Easy to manage",
+
+            description:
+                "An intuitive interface that keeps you in control."
+
+        },
+
+
+        service6: {
+
+            title:
+                "Scalable",
+
+            description:
+                "Built to grow alongside your business."
+
+        },
+
+
+        imageAlt:
+            "Custom web design by VM Agency"
+
+    },
+    webFeatures: {
+
+        eyebrow:
+            "EVERYTHING YOUR WEBSITE NEEDS",
+
+        titleLine1:
+            "We include everything you need",
+
+        titleLine2:
+            "to make your website",
+
+        titleAccent:
+            "work.",
+
+
+        custom: {
+
+            title:
+                "Custom design",
+
+            text:
+                "100% tailored to your brand and goals."
+
+        },
+
+
+        seo: {
+
+            title:
+                "Technical SEO",
+
+            text:
+                "Optimized so people can find you on Google."
+
+        },
+
+
+        performance: {
+
+            title:
+                "Performance",
+
+            text:
+                "Fast loading to improve the experience and conversions."
+
+        },
+
+
+        security: {
+
+            title:
+                "Security",
+
+            text:
+                "We protect your website and your customers' data."
+
+        },
+
+
+        management: {
+
+            title:
+                "Easy to manage",
+
+            text:
+                "An intuitive panel that gives you control without depending on anyone."
+
+        },
+
+
+        scalable: {
+
+            title:
+                "Scalable",
+
+            text:
+                "Built to grow alongside your business without limits."
+
+        },
+
+
+        ceo: {
+
+            title:
+                "From the CEO's vision",
+
+            text:
+                "We don't create websites just for the sake of creating them. Every decision we make has a purpose: helping you connect with the right people and grow your business.",
+
+            imageAlt:
+                "VM Agency CEO"
+
+        }
+
+    },
+    ai: {
+
 
         eyebrow: "AUTOMATION · AI · EFFICIENCY",
 

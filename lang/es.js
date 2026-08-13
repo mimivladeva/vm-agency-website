@@ -184,7 +184,7 @@ const es = {
             founders:"Mimi & Viktor",
             foundersRole:"Fundadores de VM Agency"
         },
-    web:{
+    /*web:{
         eyebrow:"DESARROLLO WEB",
         titleLine1:"Webs que convierten.",
         titleLine2:"Diseñadas para crecer",
@@ -233,6 +233,266 @@ const es = {
             title:"Escalable",
             description:"Preparada para crecer junto a tu negocio."
         }
+    },
+
+     */
+    web: {
+
+        eyebrow: "SERVICIO 01",
+
+        titleLine1: "Webs que",
+
+        titleLine2: "convierten.",
+
+        subtitle:
+            "Diseñadas para crecer contigo.",
+
+        description:
+            "Creamos sitios web rápidos, modernos y optimizados para atraer visitantes y convertirlos en clientes.",
+
+        cta:
+            "Hablemos de tu proyecto",
+
+
+        /* =====================================================
+           PHILOSOPHY
+        ====================================================== */
+
+        philosophyTitle:
+            "Diseño con propósito",
+
+        philosophyText:
+            "No diseñamos por diseñar. Diseñamos experiencias digitales que conectan, comunican y convierten.",
+
+
+        /* =====================================================
+           UX
+        ====================================================== */
+
+        uxClarity:
+            "claridad",
+
+        uxFlow:
+            "fluidez",
+
+        uxTrust:
+            "confianza",
+
+
+        /* =====================================================
+           CREATIVE NOTE
+        ====================================================== */
+
+        note:
+            "Cada detalle importa.<br>Cada decisión<br>tiene un porqué.<br><br>Cada web está<br>hecha para las<br>personas, no para<br>las plantillas.",
+
+
+        /* =====================================================
+           SCREEN
+        ====================================================== */
+
+        screenTitle:
+            "Simplicidad<br>que funciona.",
+
+        screenText:
+            "Diseñamos experiencias digitales pensadas para convertir.",
+
+        screenButton:
+            "Ver proyecto",
+
+
+        /* =====================================================
+           DESIGNER
+        ====================================================== */
+
+        designerQuote:
+            "Diseño desde la escucha, la empatía y la estrategia. Tu negocio es único. Tu web también debería serlo.",
+
+        designerRole:
+            "Diseñadora UX/UI",
+
+
+        /* =====================================================
+           FEATURES
+        ====================================================== */
+
+        includesEyebrow:
+            "LO QUE INCLUYE TU WEB",
+
+        includesTitle1:
+            "Todo lo necesario para una web",
+
+        includesTitle2:
+            "profesional que genera",
+
+        includesHighlight:
+            "resultados.",
+
+
+        service1: {
+
+            title:
+                "Diseño a medida",
+
+            description:
+                "100% personalizado para tu marca y objetivos."
+
+        },
+
+
+        service2: {
+
+            title:
+                "SEO técnico",
+
+            description:
+                "Optimizada para que te encuentren en Google."
+
+        },
+
+
+        service3: {
+
+            title:
+                "Rendimiento",
+
+            description:
+                "Carga rápida para mejorar la experiencia y conversiones."
+
+        },
+
+
+        service4: {
+
+            title:
+                "Seguridad",
+
+            description:
+                "Protegemos tu web y los datos de tus clientes."
+
+        },
+
+
+        service5: {
+
+            title:
+                "Fácil de gestionar",
+
+            description:
+                "Panel intuitivo para que tengas el control."
+
+        },
+
+
+        service6: {
+
+            title:
+                "Escalable",
+
+            description:
+                "Preparada para crecer junto a tu negocio."
+
+        },
+
+
+        imageAlt:
+            "Diseño web personalizado de VM Agency"
+
+    },
+    webFeatures: {
+
+        eyebrow:
+            "TODO LO QUE TU WEB NECESITA",
+
+        titleLine1:
+            "Incluimos todo lo necesario",
+
+        titleLine2:
+            "para que tu web",
+
+        titleAccent:
+            "funcione.",
+
+
+        custom: {
+
+            title:
+                "Diseño a medida",
+
+            text:
+                "100% personalizado para tu marca y objetivos."
+
+        },
+
+
+        seo: {
+
+            title:
+                "SEO técnico",
+
+            text:
+                "Optimizada para que te encuentren en Google."
+
+        },
+
+
+        performance: {
+
+            title:
+                "Rendimiento",
+
+            text:
+                "Carga rápida para mejorar la experiencia y conversiones."
+
+        },
+
+
+        security: {
+
+            title:
+                "Seguridad",
+
+            text:
+                "Protegemos tu web y los datos de tus clientes."
+
+        },
+
+
+        management: {
+
+            title:
+                "Fácil de gestionar",
+
+            text:
+                "Panel intuitivo para que tengas el control sin depender de nadie."
+
+        },
+
+
+        scalable: {
+
+            title:
+                "Escalable",
+
+            text:
+                "Preparada para crecer junto a tu negocio sin límites."
+
+        },
+
+
+        ceo: {
+
+            title:
+                "Desde la visión de la CEO",
+
+            text:
+                "No creamos webs por crear. Cada decisión que tomamos tiene un propósito: ayudarte a conectar con las personas adecuadas y hacer crecer tu negocio.",
+
+            imageAlt:
+                "CEO de VM Agency"
+
+        }
+
     },
     ai: {
 
