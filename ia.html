@@ -1,774 +1,302 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
   <meta charset="UTF-8">
-
-  <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-  <title>IA y Automatización | VM Agency</title>
-
-  <meta
-          name="description"
-          content="Automatización e inteligencia artificial para optimizar procesos, ahorrar tiempo y mejorar resultados.">
-
-  <!-- GOOGLE FONTS -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatización e IA | VM Agency</title>
+  <meta name="description" content="Diseñamos soluciones inteligentes que ahorran tiempo, reducen errores y te permiten escalar tu negocio.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-  <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-  <!-- LUCIDE -->
-
-  <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css">
-
-  <!-- CSS BASE -->
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css">
   <link rel="stylesheet" href="css/base/reset.css">
   <link rel="stylesheet" href="css/base/variables.css">
   <link rel="stylesheet" href="css/base/global.css">
   <link rel="stylesheet" href="css/base/typography.css">
   <link rel="stylesheet" href="css/base/components.css">
-
-  <!-- LAYOUT -->
-
   <link rel="stylesheet" href="css/layout/container.css">
   <link rel="stylesheet" href="css/layout/header.css">
   <link rel="stylesheet" href="css/layout/footer.css">
-
-  <!-- IA -->
-
-  <link rel="stylesheet" href="css/sections/ia.css">
-
-  <!-- RESPONSIVE -->
-
+  <link rel="stylesheet" href="css/sections/iaservice.css">
   <link rel="stylesheet" href="css/responsive.css">
-
 </head>
-
-
 <body>
-
-
-<!-- ========================================================= -->
-<!-- HEADER -->
-<!-- ========================================================= -->
-
 <header class="header">
-
   <div class="container">
-
     <div class="header__wrapper">
-
-
-      <!-- LOGO -->
-
-      <a
-              href="index.html#hero"
-              class="header__logo">
-
-        <img
-                src="assets/logos/logo.png"
-                alt="VM Agency Logo">
-
+      <a href="index.html#hero" class="header__logo">
+        <img src="assets/logos/logo.png" alt="VM Agency Logo">
       </a>
-
-
-      <!-- NAVIGATION -->
-
-      <nav
-              class="header__nav"
-              id="navbar">
-
+      <nav class="header__nav" id="navbar">
         <ul class="header__menu">
-
-
           <li class="header__item">
-
-            <a
-                    href="index.html#hero"
-                    class="header__link text-sm"
-                    data-lang="nav.home">
-
-              Inicio
-
-            </a>
-
+            <a href="index.html#hero" class="header__link text-sm" data-lang="nav.home">Inicio</a>
           </li>
-
-
           <li class="header__item">
-
-            <a
-                    href="index.html#method"
-                    class="header__link text-sm"
-                    data-lang="nav.method">
-
-              Método VM
-
-            </a>
-
+            <a href="index.html#method" class="header__link text-sm" data-lang="nav.method">Método VM</a>
           </li>
-
-
           <li class="header__item">
-
-            <a
-                    href="index.html#solutions"
-                    class="header__link text-sm active"
-                    data-lang="nav.success">
-
-              Soluciones
-
-            </a>
-
+            <a href="index.html#solutions" class="header__link text-sm active" data-lang="nav.success">Soluciones</a>
           </li>
-
-
           <li class="header__item">
-
-            <a
-                    href="index.html#about"
-                    class="header__link text-sm"
-                    data-lang="nav.about">
-
-              Sobre nosotros
-
-            </a>
-
+            <a href="index.html#about" class="header__link text-sm" data-lang="nav.about">Sobre nosotros</a>
           </li>
-
-
           <li class="header__item">
-
-            <a
-                    href="index.html#contact"
-                    class="header__link text-sm"
-                    data-lang="nav.contactUs">
-
-              Contacto
-
-            </a>
-
+            <a href="index.html#contact" class="header__link text-sm" data-lang="nav.contactUs">Contacto</a>
           </li>
-
-
         </ul>
-
       </nav>
-
-
-      <!-- RIGHT -->
-
       <div class="header__right">
-
-
         <div class="language-selector">
-
-          <button
-                  class="language-selector__button text-sm active"
-                  data-language="es">
-
-            ES
-
-          </button>
-
-          <button
-                  class="language-selector__button text-sm"
-                  data-language="en">
-
-            EN
-
-          </button>
-
-          <button
-                  class="language-selector__button text-sm"
-                  data-language="bg">
-
-            BG
-
-          </button>
-
+          <button class="language-selector__button text-sm active" data-language="es">ES</button>
+          <button class="language-selector__button text-sm" data-language="en">EN</button>
+          <button class="language-selector__button text-sm" data-language="bg">BG</button>
         </div>
-
-
-        <button
-                id="menu-toggle"
-                class="header__toggle"
-                aria-label="Abrir menú">
-
+        <button id="menu-toggle" class="header__toggle" aria-label="Abrir menú">
           <span></span>
           <span></span>
           <span></span>
-
         </button>
-
-
       </div>
-
-
     </div>
-
   </div>
-
 </header>
-
-
-
-<!-- ========================================================= -->
-<!-- MAIN -->
-<!-- ========================================================= -->
-
 <main>
-
-
-  <!-- ========================================================= -->
-  <!-- AI HERO -->
-  <!-- ========================================================= -->
-
-  <section
-          class="ai-hero"
-          id="ai-hero">
-
-    <div class="container">
-
-      <div class="ai-hero__wrapper">
-
-
-        <!-- ================================================= -->
-        <!-- LEFT -->
-        <!-- ================================================= -->
-
-        <div class="ai-hero__content">
-
-
-                    <span
-                            class="ai-hero__eyebrow text-sm"
-                            data-lang="ai.eyebrow">
-
-                        AUTOMATIZACIÓN · IA · EFICIENCIA
-
-                    </span>
-
-
-          <h1 class="ai-hero__title">
-
-                        <span data-lang="ai.titleLine1">
-                            Automatizamos
-                        </span>
-
-            <br>
-
-            <span data-lang="ai.titleLine2">
-                            procesos. Potenciamos
-                        </span>
-
-            <br>
-
-            <span data-lang="ai.titleLine3">
-                            resultados con
-                        </span>
-
-            <span
-                    class="ai-hero__highlight"
-                    data-lang="ai.highlight">
-
-                            IA.
-
-                        </span>
-
-          </h1>
-
-
-          <p
-                  class="ai-hero__description text"
-                  data-lang="ai.description">
-
-            Diseñamos soluciones inteligentes que ahorran tiempo,
-            reducen errores y te permiten escalar tu negocio.
-
-          </p>
-
-
-          <div class="ai-hero__actions">
-
-            <a
-                    href="index.html#contact"
-                    class="button button--primary">
-
-                            <span data-lang="ai.button">
-
-                                Hablemos de tu proyecto
-
-                            </span>
-
-            </a>
-
-          </div>
-
-
-        </div>
-
-
-
-        <!-- ================================================= -->
-        <!-- RIGHT — AI DIAGRAM -->
-        <!-- ================================================= -->
-
-        <div class="ai-hero__visual">
-
-
-          <div class="ai-diagram">
-
-
-            <!-- CONNECTIONS -->
-
-            <div class="ai-line ai-line--top-left"></div>
-
-            <div class="ai-line ai-line--top-right"></div>
-
-            <div class="ai-line ai-line--bottom-left"></div>
-
-            <div class="ai-line ai-line--bottom-right"></div>
-
-
-
-            <!-- CENTER -->
-
-            <div class="ai-center">
-
-              <span>IA</span>
-
-              <i class="icon-sparkles"></i>
-
-            </div>
-
-
-
-            <!-- DATA -->
-
-            <div class="ai-node ai-node--data">
-
-              <div class="ai-node__icon">
-
-                <i class="icon-file-text"></i>
-
-              </div>
-
-              <strong data-lang="ai.nodeData">
-                Datos
-              </strong>
-
-            </div>
-
-
-
-            <!-- AUTOMATION -->
-
-            <div class="ai-node ai-node--automation">
-
-              <div class="ai-node__icon">
-
-                <i class="icon-settings"></i>
-
-              </div>
-
-              <strong data-lang="ai.nodeAutomation">
-                Automatización
-              </strong>
-
-            </div>
-
-
-
-            <!-- ANALYSIS -->
-
-            <div class="ai-node ai-node--analysis">
-
-              <div class="ai-node__icon">
-
-                <i class="icon-chart-column"></i>
-
-              </div>
-
-              <strong data-lang="ai.nodeAnalysis">
-                Análisis
-              </strong>
-
-            </div>
-
-
-
-            <!-- RESULTS -->
-
-            <div class="ai-node ai-node--results">
-
-              <div class="ai-node__icon">
-
-                <i class="icon-circle-check"></i>
-
-              </div>
-
-              <strong data-lang="ai.nodeResults">
-                Resultados
-              </strong>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-
-      </div>
-
+  <section class="iaservice-hero" id="ia-service">
+    <div class="iaservice-hero__visual">
+      <img src="assets/images/IA_service.png" alt="Automatización e inteligencia artificial" data-lang-alt="ia.imageAlt">
     </div>
+    <div class="iaservice-hero__overlay"></div>
+    <div class="iaservice-hero__content">
+      <span class="iaservice-hero__eyebrow text-sm" data-lang="ia.eyebrow">AUTOMATIZACIÓN & IA</span>
+      <h1 class="iaservice-hero__title title-xl">
+        <span data-lang="ia.titleLine1">Menos tareas.</span>
+        <br>
+        <span data-lang="ia.titleLine2">Más resultados con</span>
+        <span class="iaservice-hero__accent" data-lang="ia.highlight"> IA.</span>
+      </h1>
+      <p class="iaservice-hero__description text" data-lang="ia.description">Diseñamos soluciones inteligentes que ahorran tiempo, reducen errores y te permiten escalar tu negocio.</p>
+      <a href="index.html#contact" class="iaservice-hero__button">
+        <span data-lang="ia.cta">Hablemos de tu proyecto</span>
+        <span class="iaservice-hero__button-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+    <a href="#ia-problem"
+       class="iaservice-hero__scroll"
+       aria-label="Ir a la siguiente sección">
 
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path
+                d="M12 5V18"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+        />
+        <path
+                d="M7 13L12 18L17 13"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+        />
+      </svg>
+
+    </a>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 5V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M7 13L12 18L17 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
   </section>
 
 
 
-  <!-- ========================================================= -->
-  <!-- BENEFITS -->
-  <!-- ========================================================= -->
+  <section class="ia-problem" id="ia-problem">
+    <div class="ia-problem__container">
+      <div class="ia-problem__card">
+        <div class="ia-problem__eyebrow text-sm" data-lang="ia.problemEyebrow">EL PROBLEMA</div>
+        <div class="ia-problem__grid">
+          <article class="ia-problem__item ia-problem__item--main">
+            <h2 class="ia-problem__main-title" data-lang="ia.problemMainTitle">Los procesos manuales te frenan.</h2>
+            <div class="ia-problem__underline"></div>
 
-  <section class="ai-benefits">
-
-    <div class="container">
-
-      <div class="ai-benefits__grid">
-
-
-        <!-- 01 -->
-
-        <article class="ai-benefit">
-
-          <div class="ai-benefit__icon">
-
-            <i class="icon-zap"></i>
-
-          </div>
-
-          <div>
-
-            <h3 data-lang="ai.benefit1.title">
-              Menos tareas repetitivas
-            </h3>
-
-            <p data-lang="ai.benefit1.description">
-              Automatizamos lo manual para que te enfoques en lo importante.
-            </p>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- 02 -->
-
-        <article class="ai-benefit">
-
-          <div class="ai-benefit__icon">
-
-            <i class="icon-brain"></i>
-
-          </div>
-
-          <div>
-
-            <h3 data-lang="ai.benefit2.title">
-              Inteligencia aplicada
-            </h3>
-
-            <p data-lang="ai.benefit2.description">
-              Usamos IA para analizar, predecir y tomar mejores decisiones.
-            </p>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- 03 -->
-
-        <article class="ai-benefit">
-
-          <div class="ai-benefit__icon">
-
-            <i class="icon-clock-3"></i>
-
-          </div>
-
-          <div>
-
-            <h3 data-lang="ai.benefit3.title">
-              Ahorro de tiempo
-            </h3>
-
-            <p data-lang="ai.benefit3.description">
-              Procesos más rápidos, eficientes y escalables.
-            </p>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- 04 -->
-
-        <article class="ai-benefit">
-
-          <div class="ai-benefit__icon">
-
-            <i class="icon-trending-up"></i>
-
-          </div>
-
-          <div>
-
-            <h3 data-lang="ai.benefit4.title">
-              Más resultados
-            </h3>
-
-            <p data-lang="ai.benefit4.description">
-              Mejor rendimiento, menos costes y mayor crecimiento.
-            </p>
-
-          </div>
-
-        </article>
-
-
+          </article>
+          <article class="ia-problem__item">
+            <div class="ia-problem__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8.5"></circle>
+                <path d="M12 7v5l3 2"></path>
+              </svg>
+            </div>
+            <h3 class="ia-problem__title text-sm" data-lang="ia.problem1Title">Pierdes tiempo</h3>
+            <p class="ia-problem__text text-sm" data-lang="ia.problem1Text">Tareas repetitivas que no aportan valor.</p>
+          </article>
+          <article class="ia-problem__item">
+            <div class="ia-problem__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8.5"></circle>
+                <path d="M12 8v5"></path>
+                <circle cx="12" cy="16.5" r=".7" fill="currentColor" stroke="none"></circle>
+              </svg>
+            </div>
+            <h3 class="ia-problem__title text-sm" data-lang="ia.problem2Title">Cometes errores</h3>
+            <p class="ia-problem__text text-sm" data-lang="ia.problem2Text">Procesos manuales propensos a fallos.</p>
+          </article>
+          <article class="ia-problem__item">
+            <div class="ia-problem__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 17l5-5 4 3 7-8"></path>
+                <path d="M15 7h5v5"></path>
+              </svg>
+            </div>
+            <h3 class="ia-problem__title text-sm" data-lang="ia.problem3Title">Te cuesta escalar</h3>
+            <p class="ia-problem__text text-sm" data-lang="ia.problem3Text">Sin automatización, tu negocio tiene límites.</p>
+          </article>
+        </div>
       </div>
-
     </div>
-
   </section>
 
-
+  <section class="ia-solution" id="ia-solution">
+    <div class="ia-solution__container">
+      <div class="ia-solution__card">
+        <div class="ia-solution__eyebrow text-sm" data-lang="ia.solutionEyebrow">NUESTRA SOLUCIÓN</div>
+        <h2 class="ia-solution__title title-lg" data-lang="ia.solutionTitle">IA al servicio de tu negocio.</h2>
+        <div class="ia-solution__underline"></div>
+        <div class="ia-solution__process">
+          <img class="ia-solution__glow" src="assets/images/ia-process-glow.png" alt="" aria-hidden="true">
+          <div class="ia-solution__steps">
+            <article class="ia-solution__step">
+              <div class="ia-solution__number">01</div>
+              <!-- 01 -->
+              <div class="ia-solution__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="8"></circle>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M12 2v4"></path>
+                  <path d="M12 18v4"></path>
+                  <path d="M2 12h4"></path>
+                  <path d="M18 12h4"></path>
+                </svg>
+              </div>
+              <h3 class="ia-solution__step-title title-md" data-lang="ia.step1Title">Entendemos</h3>
+              <p class="ia-solution__step-text text-sm" data-lang="ia.step1Text">Analizamos tu negocio y detectamos oportunidades.</p>
+            </article>
+            <span class="ia-solution__arrow" aria-hidden="true">›</span>
+            <article class="ia-solution__step">
+              <div class="ia-solution__number">02</div>
+              <!-- 02 -->
+              <div class="ia-solution__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="9" y="3" width="6" height="5" rx="1"></rect>
+                  <rect x="3" y="16" width="6" height="5" rx="1"></rect>
+                  <rect x="15" y="16" width="6" height="5" rx="1"></rect>
+                  <path d="M12 8v4"></path>
+                  <path d="M6 16v-2h12v2"></path>
+                  <path d="M18 14v-2"></path>
+                </svg>
+              </div>
+              <h3 class="ia-solution__step-title title-md" data-lang="ia.step2Title">Diseñamos</h3>
+              <p class="ia-solution__step-text text-sm" data-lang="ia.step2Text">Creamos soluciones inteligentes a medida.</p>
+            </article>
+            <span class="ia-solution__arrow" aria-hidden="true">›</span>
+            <article class="ia-solution__step">
+              <div class="ia-solution__number">03</div>
+              <!-- 03 -->
+              <div class="ia-solution__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M8 5.5v13l10-6.5z"></path>
+                </svg>
+              </div>
+              <h3 class="ia-solution__step-title title-md" data-lang="ia.step3Title">Implementamos</h3>
+              <p class="ia-solution__step-text text-sm" data-lang="ia.step3Text">Integramos la IA y automatizamos sin interrumpir tu operación.</p>
+            </article>
+            <span class="ia-solution__arrow" aria-hidden="true">›</span>
+            <article class="ia-solution__step">
+              <div class="ia-solution__number">04</div>
+              <!-- 04 -->
+              <div class="ia-solution__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 20V12"></path>
+                  <path d="M10 20V8"></path>
+                  <path d="M16 20V5"></path>
+                  <path d="M22 20V2"></path>
+                </svg>
+              </div>
+              <h3 class="ia-solution__step-title title-md" data-lang="ia.step4Title">Optimizamos</h3>
+              <p class="ia-solution__step-text text-sm" data-lang="ia.step4Text">Medimos, mejoramos y escalamos resultados.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-
-
-
-
-<!-- ========================================================= -->
-<!-- FOOTER -->
-<!-- ========================================================= -->
 <footer class="footer">
-
   <div class="container">
-
     <div class="footer__wrapper">
-
       <div class="footer__brand">
-
-        <a href="#hero" class="footer__logo">
-
-          <img
-                  src="assets/logos/logo.png"
-                  alt="VM Agency Logo">
-
+        <a href="index.html#hero" class="footer__logo">
+          <img src="assets/logos/logo.png" alt="VM Agency Logo">
         </a>
-
-        <p
-                class="footer__description text-sm"
-                data-lang="footer.description">
-        </p>
-
+        <p class="footer__description text-sm" data-lang="footer.description"></p>
         <div class="footer__social">
-
-          <!-- INSTAGRAM -->
           <a href="#" aria-label="Instagram">
-            <svg
-                    viewBox="0 0 24 24"
-                    aria-hidden="true">
-              <rect
-                      x="3"
-                      y="3"
-                      width="18"
-                      height="18"
-                      rx="5"
-                      ry="5">
-              </rect>
-
-              <circle
-                      cx="12"
-                      cy="12"
-                      r="4">
-              </circle>
-
-              <circle
-                      cx="17.5"
-                      cy="6.5"
-                      r="1">
-              </circle>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle>
             </svg>
           </a>
-
-          <!-- LINKEDIN -->
           <a href="#" aria-label="LinkedIn">
-            <svg
-                    viewBox="0 0 24 24"
-                    aria-hidden="true">
-              <path
-                      d="M6.5 8.5H3.5V20h3V8.5ZM5 3.5
-                A1.75 1.75 0 1 0 5 7
-                A1.75 1.75 0 0 0 5 3.5ZM10 8.5H7V20h3v-5.7
-                c0-1.5.3-3 2.2-3
-                1.9 0 1.9 1.8 1.9 3.1V20h3v-6.2
-                c0-3-0.6-5.3-4-5.3
-                -1.6 0-2.7.9-3.1 1.7V8.5Z">
-              </path>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.5 8.5H3.5V20h3V8.5ZM5 3.5A1.75 1.75 0 1 0 5 7A1.75 1.75 0 0 0 5 3.5ZM10 8.5H7V20h3v-5.7c0-1.5.3-3 2.2-3 1.9 0 1.9 1.8 1.9 3.1V20h3v-6.2c0-3-.6-5.3-4-5.3-1.6 0-2.7.9-3.1 1.7V8.5Z"></path>
             </svg>
           </a>
-
-          <!-- EMAIL -->
           <a href="mailto:hola@vmagency.com" aria-label="Email">
             <i class="icon-mail"></i>
           </a>
-
         </div>
-
       </div>
-
       <div class="footer__column">
-
-        <h3
-                class="footer__title text-sm"
-                data-lang="footer.navigation">
-        </h3>
-
+        <h3 class="footer__title text-sm" data-lang="footer.navigation"></h3>
         <ul>
-
-          <li><a href="#hero" data-lang="footer.home"></a></li>
-
-          <li><a href="#method" data-lang="footer.method"></a></li>
-
-          <li><a href="#solutions" data-lang="footer.success"></a></li>
-
-          <li><a href="#about" data-lang="footer.about"></a></li>
-
-          <li>
-            <a href="#contact" data-lang="footer.contactUs"></a>
-          </li>
-
+          <li><a href="index.html#hero" data-lang="footer.home"></a></li>
+          <li><a href="index.html#method" data-lang="footer.method"></a></li>
+          <li><a href="index.html#solutions" data-lang="footer.success"></a></li>
+          <li><a href="index.html#about" data-lang="footer.about"></a></li>
+          <li><a href="index.html#contact" data-lang="footer.contactUs"></a></li>
         </ul>
-
       </div>
-
       <div class="footer__column">
-
-        <h3
-                class="footer__title text-sm"
-                data-lang="footer.legal">
-        </h3>
-
+        <h3 class="footer__title text-sm" data-lang="footer.legal"></h3>
         <ul>
-
           <li><a href="#" data-lang="footer.legalNotice"></a></li>
-
           <li><a href="#" data-lang="footer.privacy"></a></li>
-
           <li><a href="#" data-lang="footer.cookies"></a></li>
-
         </ul>
-
       </div>
-
       <div class="footer__column">
-
-        <h3
-                class="footer__title text-sm"
-                data-lang="footer.contact">
-        </h3>
-
-        <p
-                class="footer__contact-text"
-                data-lang="footer.contactDescription">
-        </p>
-
+        <h3 class="footer__title text-sm" data-lang="footer.contact"></h3>
+        <p class="footer__contact-text text-sm" data-lang="footer.contactDescription"></p>
         <ul class="footer__contact">
-
-          <li>
-
-            <i class="icon-mail"></i>
-
-            <span data-lang="footer.email"></span>
-
-          </li>
-
-          <li>
-
-            <i class="icon-phone"></i>
-
-            <span data-lang="footer.phone"></span>
-
-          </li>
-
-          <li>
-
-            <i class="icon-map-pin"></i>
-
-            <span data-lang="footer.location"></span>
-
-          </li>
-
+          <li><i class="icon-mail"></i><span data-lang="footer.email"></span></li>
+          <li><i class="icon-phone"></i><span data-lang="footer.phone"></span></li>
+          <li><i class="icon-map-pin"></i><span data-lang="footer.location"></span></li>
         </ul>
-
       </div>
-
     </div>
-
     <div class="footer__bottom">
-
-      <p
-              class="footer__copyright text-sm"
-              data-lang="footer.copyright">
-      </p>
-
+      <p class="footer__copyright text-sm" data-lang="footer.copyright"></p>
     </div>
-
   </div>
-
 </footer>
-
-
-
-<!-- ========================================================= -->
-<!-- LANGUAGES -->
-<!-- ========================================================= -->
-
 <script src="lang/es.js"></script>
 <script src="lang/en.js"></script>
 <script src="lang/bg.js"></script>
-
-
-<!-- ========================================================= -->
-<!-- JAVASCRIPT -->
-<!-- ========================================================= -->
-
 <script src="js/language.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/main.js"></script>
-
-
 </body>
-
 </html>

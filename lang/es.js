@@ -494,80 +494,55 @@ const es = {
         }
 
     },
-    ai: {
-
-        eyebrow: "AUTOMATIZACIÓN · IA · EFICIENCIA",
-
-        titleLine1: "Automatizamos",
-
-        titleLine2: "procesos. Potenciamos",
-
-        titleLine3: "resultados con",
-
-        highlight: "IA.",
-
-        description:
-            "Diseñamos soluciones inteligentes que ahorran tiempo, reducen errores y te permiten escalar tu negocio.",
-
-        button:
-            "Hablemos de tu proyecto",
-
-        nodeData:
-            "Datos",
-
-        nodeAutomation:
-            "Automatización",
-
-        nodeAnalysis:
-            "Análisis",
-
-        nodeResults:
-            "Resultados",
-
-
-        benefit1: {
-
-            title:
-                "Menos tareas repetitivas",
-
-            description:
-                "Automatizamos lo manual para que te enfoques en lo importante."
-
+    ia:{
+        eyebrow:"AUTOMATIZACIÓN & IA",
+        titleLine1:"Menos tareas.",
+        titleLine2:"Más resultados con",
+        highlight:" IA.",
+        description:"Diseñamos soluciones inteligentes que ahorran tiempo, reducen errores y te permiten escalar tu negocio.",
+        cta:"Hablemos de tu proyecto",
+        imageAlt:"Automatización e inteligencia artificial para empresas",
+        problemEyebrow:"EL PROBLEMA",
+        problemMainTitle:"Los procesos manuales te frenan.",
+        problemMainText:"Tareas repetitivas que no aportan valor.",
+        problem1Title:"Pierdes tiempo",
+        problem1Text:"Tareas repetitivas que no aportan valor.",
+        problem2Title:"Cometes errores",
+        problem2Text:"Procesos manuales propensos a fallos.",
+        problem3Title:"Te cuesta escalar",
+        problem3Text:"Sin automatización, tu negocio tiene límites.",
+        solutionEyebrow:"NUESTRA SOLUCIÓN",
+        solutionTitle:"IA al servicio de tu negocio.",
+        step1Title:"Entendemos",
+        step1Text:"Analizamos tu negocio y detectamos oportunidades.",
+        step2Title:"Diseñamos",
+        step2Text:"Creamos soluciones inteligentes a medida.",
+        step3Title:"Implementamos",
+        step3Text:"Integramos la IA y automatizamos sin interrumpir tu operación.",
+        step4Title:"Optimizamos",
+        step4Text:"Medimos, mejoramos y escalamos resultados."
+    },
+    iaFeatures:{
+        eyebrow:"AUTOMATIZAMOS TU NEGOCIO",
+        titleLine1:"La IA al servicio",
+        titleLine2:"de tu negocio",
+        description:"Automatizamos procesos repetitivos para que puedas dedicar tu tiempo a lo que realmente importa.",
+        data:{
+            title:"Datos",
+            text:"Recopilamos y organizamos la información que necesitas para trabajar mejor."
         },
-
-
-        benefit2: {
-
-            title:
-                "Inteligencia aplicada",
-
-            description:
-                "Usamos IA para analizar, predecir y tomar mejores decisiones."
-
+        automation:{
+            title:"Automatización",
+            text:"Automatizamos tareas repetitivas para ahorrar tiempo y reducir errores."
         },
-
-
-        benefit3: {
-
-            title:
-                "Ahorro de tiempo",
-
-            description:
-                "Procesos más rápidos, eficientes y escalables."
-
+        analysis:{
+            title:"Análisis",
+            text:"Transformamos tus datos en información útil para tomar mejores decisiones."
         },
-
-
-        benefit4: {
-
-            title:
-                "Más resultados",
-
-            description:
-                "Mejor rendimiento, menos costes y mayor crecimiento."
-
+        results:{
+            title:"Resultados",
+            text:"Procesos más eficientes, menos errores y más tiempo para hacer crecer tu negocio."
         }
-
     },
     marketing:{
         eyebrow:"SERVICIOS",

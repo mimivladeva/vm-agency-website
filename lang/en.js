@@ -495,82 +495,35 @@ const en = {
         }
 
     },
-    ai: {
-
-
-        eyebrow: "AUTOMATION · AI · EFFICIENCY",
-
-        titleLine1: "We automate",
-
-        titleLine2: "processes. We boost",
-
-        titleLine3: "results with",
-
-        highlight: "AI.",
-
-        description:
-            "We design intelligent solutions that save time, reduce errors and help your business scale.",
-
-        button:
-            "Let's talk about your project",
-
-        nodeData:
-            "Data",
-
-        nodeAutomation:
-            "Automation",
-
-        nodeAnalysis:
-            "Analysis",
-
-        nodeResults:
-            "Results",
-
-
-        benefit1: {
-
-            title:
-                "Fewer repetitive tasks",
-
-            description:
-                "We automate manual work so you can focus on what matters."
-
-        },
-
-
-        benefit2: {
-
-            title:
-                "Applied intelligence",
-
-            description:
-                "We use AI to analyze, predict and make better decisions."
-
-        },
-
-
-        benefit3: {
-
-            title:
-                "Time savings",
-
-            description:
-                "Faster, more efficient and scalable processes."
-
-        },
-
-
-        benefit4: {
-
-            title:
-                "More results",
-
-            description:
-                "Better performance, lower costs and greater growth."
-
-        }
-
-    },marketing:{
+    ia:{
+        eyebrow:"AUTOMATION & AI",
+        titleLine1:"Fewer tasks.",
+        titleLine2:"More results with",
+        highlight:" AI.",
+        description:"We design intelligent solutions that save time, reduce errors and help you scale your business.",
+        cta:"Let's talk about your project",
+        imageAlt:"Automation and artificial intelligence for businesses",
+        problemEyebrow:"THE PROBLEM",
+        problemMainTitle:"Manual processes hold you back.",
+        problemMainText:"Repetitive tasks that add no value.",
+        problem1Title:"You lose time",
+        problem1Text:"Repetitive tasks that add no value.",
+        problem2Title:"You make mistakes",
+        problem2Text:"Manual processes are prone to errors.",
+        problem3Title:"Scaling is difficult",
+        problem3Text:"Without automation, your business has limits.",
+        solutionEyebrow:"OUR SOLUTION",
+        solutionTitle:"AI at the service of your business.",
+        step1Title:"We understand",
+        step1Text:"We analyze your business and identify opportunities.",
+        step2Title:"We design",
+        step2Text:"We create intelligent solutions tailored to your needs.",
+        step3Title:"We implement",
+        step3Text:"We integrate AI and automate processes without disrupting your operation.",
+        step4Title:"We optimize",
+        step4Text:"We measure, improve and scale results."
+    },
+    marketing:{
         eyebrow:"SERVICES",
 
         titleLine1:"Digital",
