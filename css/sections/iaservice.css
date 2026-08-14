@@ -1,0 +1,280 @@
+/* ==========================================================
+   IA SERVICE — HERO
+========================================================== */
+.iaservice-hero{
+    position:relative;
+    width:100%;
+    min-height:calc(100vh - 72px);
+    margin-top:72px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f7f2eb;
+}
+.iaservice-hero__visual{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+.iaservice-hero__visual img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center center;
+}
+.iaservice-hero__overlay{
+    position:absolute;
+    inset:0;
+    z-index:2;
+    pointer-events:none;
+    background:linear-gradient(90deg,rgba(255,255,255,.05) 0%,rgba(255,255,255,0) 45%,rgba(255,255,255,0) 100%);
+}
+.iaservice-hero__content{
+    position:relative;
+    z-index:3;
+    width:100%;
+    max-width:1400px;
+    padding:70px 50px;
+    pointer-events:none;
+}
+.iaservice-hero__eyebrow,
+.iaservice-hero__title,
+.iaservice-hero__description,
+.iaservice-hero__button{
+    display:none;
+}
+.iaservice-hero__scroll{
+    position:absolute;
+    left:50%;
+    bottom:28px;
+    z-index:5;
+    width:58px;
+    height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transform:translateX(-50%);
+    border:1.5px solid rgba(0,0,0,.75);
+    border-radius:50%;
+    background:rgba(255,255,255,.18);
+    color:#000;
+    text-decoration:none;
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    transition:transform .3s ease,background .3s ease;
+}
+.iaservice-hero__scroll svg{
+    width:25px;
+    height:25px;
+}
+.iaservice-hero__scroll:hover{
+    transform:translateX(-50%) translateY(4px);
+    background:rgba(255,255,255,.45);
+}
+/* ==========================================================
+   IA SERVICE — FEATURES
+========================================================== */
+.ia-features{
+    position:relative;
+    padding:110px 0 120px;
+    background:#fff;
+}
+.ia-features__container{
+    width:calc(100% - 120px);
+    max-width:1300px;
+    margin:0 auto;
+}
+.ia-features__header{
+    max-width:760px;
+    margin-bottom:70px;
+}
+.ia-features__eyebrow{
+    display:inline-block;
+    margin-bottom:18px;
+    color:var(--color-primary);
+}
+.ia-features__title{
+    margin:0 0 22px;
+}
+.ia-features__description{
+    max-width:650px;
+    margin:0;
+}
+.ia-features__grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:24px;
+}
+.ia-feature{
+    padding:32px 28px;
+    border:1px solid rgba(0,0,0,.08);
+    border-radius:22px;
+    background:#fff;
+    box-shadow:0 12px 35px rgba(0,0,0,.04);
+}
+.ia-feature__icon{
+    width:48px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:24px;
+    border-radius:14px;
+    background:#fff4ed;
+    color:var(--color-primary);
+}
+.ia-feature__icon i{
+    font-size:22px;
+}
+.ia-feature__title{
+    display:block;
+    margin-bottom:12px;
+}
+.ia-feature__text{
+    margin:0;
+}
+/* ==========================================================
+   LAPTOP
+========================================================== */
+@media(max-width:1200px){
+    .iaservice-hero{
+        min-height:calc(100vh - 72px);
+    }
+    .iaservice-hero__visual img{
+        object-position:center center;
+    }
+    .iaservice-hero__scroll{
+        width:54px;
+        height:54px;
+        bottom:24px;
+    }
+    .ia-features__container{
+        width:calc(100% - 80px);
+    }
+    .ia-features__grid{
+        gap:18px;
+    }
+}
+/* ==========================================================
+   TABLET
+========================================================== */
+@media(max-width:992px){
+    .iaservice-hero{
+        min-height:620px;
+        margin-top:72px;
+    }
+    .iaservice-hero__visual img{
+        object-position:center center;
+    }
+    .iaservice-hero__scroll{
+        width:52px;
+        height:52px;
+        bottom:22px;
+    }
+    .ia-features{
+        padding:90px 0 100px;
+    }
+    .ia-features__container{
+        width:calc(100% - 60px);
+    }
+    .ia-features__grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+}
+/* ==========================================================
+   SMALL TABLET
+========================================================== */
+@media(max-width:850px){
+    .iaservice-hero{
+        min-height:560px;
+    }
+    .iaservice-hero__visual img{
+        object-position:center center;
+    }
+    .iaservice-hero__scroll{
+        width:50px;
+        height:50px;
+        bottom:20px;
+    }
+    .iaservice-hero__scroll svg{
+        width:23px;
+        height:23px;
+    }
+    .ia-features{
+        padding:75px 0 85px;
+    }
+    .ia-features__container{
+        width:calc(100% - 40px);
+    }
+    .ia-features__header{
+        margin-bottom:50px;
+    }
+}
+/* ==========================================================
+   MOBILE
+========================================================== */
+@media(max-width:600px){
+    .iaservice-hero{
+        min-height:500px;
+        margin-top:72px;
+    }
+    .iaservice-hero__visual{
+        height:100%;
+    }
+    .iaservice-hero__visual img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position:center center;
+    }
+    .iaservice-hero__scroll{
+        width:40px;
+        height:40px;
+        bottom:18px;
+        border-width:1px;
+    }
+    .iaservice-hero__scroll svg{
+        width:19px;
+        height:19px;
+    }
+    .ia-features{
+        padding:65px 0 75px;
+    }
+    .ia-features__container{
+        width:calc(100% - 28px);
+    }
+    .ia-features__header{
+        margin-bottom:38px;
+    }
+    .ia-features__grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+    .ia-feature{
+        padding:25px 22px;
+    }
+}
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+@media(max-width:470px){
+    .iaservice-hero{
+        min-height:460px;
+    }
+    .iaservice-hero__visual img{
+        object-position:center center;
+    }
+    .iaservice-hero__scroll{
+        width:36px;
+        height:36px;
+        bottom:15px;
+    }
+    .iaservice-hero__scroll svg{
+        width:17px;
+        height:17px;
+    }
+}
