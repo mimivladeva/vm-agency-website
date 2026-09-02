@@ -469,85 +469,134 @@ FORM
 /*==========================================================
 576px
 ==========================================================*/
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
 @media (max-width:576px){
 
+    /* ======================================================
+       CONTACT
+    ====================================================== */
+
     .contact{
-        padding:70px 20px;
+        padding:50px 20px 70px;
+    }
+
+    .contact .container{
+        padding:0;
     }
 
     .contact__wrapper{
-        gap:40px;
+        display:flex;
+        flex-direction:column;
+        gap:18px;
+    }
+
+
+    /* ======================================================
+       INFO
+    ====================================================== */
+
+    .contact__info{
+        width:100%;
+        max-width:none;
+        margin:0;
+        text-align:left;
+    }
+
+    .contact__eyebrow{
+        display:block;
+        margin-bottom:12px;
+        text-align:left;
     }
 
     .contact__title{
-        max-width:320px;
+        width:100%;
+        max-width:100%;
+        margin:0 0 12px 0;
+        text-align:left;
+        line-height:1.08;
     }
 
     .contact__description{
-        max-width:320px;
-        margin-bottom:34px;
-    }
-
-    .contact__features{
-        gap:22px;
-    }
-
-    .contact__feature{
-        gap:14px;
-    }
-
-    .contact__icon{
-        width:48px;
-        height:48px;
-        font-size:20px;
-    }
-
-    .contact__feature-title{
-        font-size:18px;
-        margin-bottom:4px;
-    }
-
-    .contact__feature p{
-        font-size:14px;
-        line-height:1.6;
-    }
-
-    .contact__card{
-        padding:22px;
-        border-radius:22px;
-    }
-
-    .contact__card-header{
-        align-items:flex-start;
-        gap:14px;
-        margin-bottom:24px;
-    }
-
-    .contact__mail{
-        width:50px;
-        height:50px;
-        border-radius:14px;
-        font-size:24px;
-    }
-
-    .contact__title{
-        max-width:430px;
-        margin:0 auto 12px;
-    }
-
-    .contact__description{
-        max-width:430px;
-
+        width:100%;
+        max-width:100%;
+        margin:0 0 18px 0;
+        text-align:left;
         font-size:15px;
         line-height:1.55;
     }
 
+
+    /* ======================================================
+       FEATURES
+    ====================================================== */
+
+    .contact__features{
+        display:none;
+    }
+
+
+    /* ======================================================
+       FORM CARD
+    ====================================================== */
+
+    .contact__card{
+        width:100%;
+        max-width:none;
+        margin:0;
+        padding:20px;
+        border-radius:22px;
+    }
+
+
+    /* ======================================================
+       CARD HEADER
+    ====================================================== */
+
+    .contact__card-header{
+        display:flex;
+        align-items:flex-start;
+        gap:14px;
+        margin-bottom:18px;
+    }
+
+    .contact__mail{
+        width:48px;
+        height:48px;
+        border-radius:14px;
+        font-size:22px;
+        flex-shrink:0;
+    }
+
+    .contact__card-title{
+        font-size:17px;
+        line-height:1.2;
+        margin-bottom:2px;
+    }
+
+    .contact__card-description{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+
+    /* ======================================================
+       FORM
+    ====================================================== */
+
     .contact__form{
-        gap:18px;
+        display:flex;
+        flex-direction:column;
+        gap:14px;
     }
 
     .contact__field{
-        gap:8px;
+        gap:6px;
     }
 
     .contact__field label{
@@ -556,20 +605,34 @@ FORM
 
     .contact__field input,
     .contact__field textarea{
-        padding:6px 12px;
-        font-size:15px;
-        border-radius:12px;
+        width:100%;
+        padding:9px 12px;
+        font-size:14px;
+        border-radius:11px;
     }
 
     .contact__field textarea{
+        min-height:55px;
         resize:vertical;
-        min-height:32px;
     }
 
+
+    /* ======================================================
+       SUBMIT BUTTON
+    ====================================================== */
+
     .contact__submit{
-        padding:18px;
-        font-size:16px;
+        width:100%;
+        margin-top:0;
+        padding:12px;
+        font-size:14px;
+        border-radius:11px;
     }
+
+
+    /* ======================================================
+       CARD HOVER
+    ====================================================== */
 
     .contact__card:hover{
         transform:none;

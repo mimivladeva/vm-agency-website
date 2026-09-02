@@ -1263,369 +1263,232 @@
    La imagen NO baja debajo del texto.
    Sigue siendo el fondo del Hero.
 ========================================================== */
-
-@media (max-width: 576px) {
-
+@media(max-width:576px){
     /* ======================================================
        HERO
     ====================================================== */
-
-    .consultoria-hero {
-
-        min-height: 650px;
-
+    .consultoria-hero{
+        min-height:650px;
     }
-
-
-    .consultoria-hero__wrapper {
-
-        min-height: 650px;
-
-        display: block;
-
+    .consultoria-hero__wrapper{
+        min-height:650px;
+        display:block;
     }
-
-
-    /*
-       IMAGEN DE FONDO
-    */
-
-    .consultoria-hero__visual {
-
-        position: absolute;
-
-        inset: 0;
-
-        width: 100%;
-
-        height: 100%;
-
-        z-index: 1;
-
+    .consultoria-hero__visual{
+        position:absolute;
+        inset:0;
+        width:100%;
+        height:100%;
+        z-index:1;
     }
-
-
-    .consultoria-hero__visual img {
-
-        width: 100%;
-
-        height: 100%;
-
-        object-fit: cover;
-
-        /*
-           En móvil centramos la imagen para mantener
-           la taza + libreta + portátil visibles.
-        */
-
-        object-position: center center;
-
+    .consultoria-hero__visual img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position:center center;
     }
-
-
-    /*
-       Degradado vertical + lateral para mantener
-       legible el texto sin quitar la imagen.
-    */
-
-    .consultoria-hero__visual::after {
-
-        background:
-                linear-gradient(
-                        90deg,
-
-                        rgba(255,255,255,1) 0%,
-
-                        rgba(255,255,255,.98) 22%,
-
-                        rgba(255,255,255,.88) 38%,
-
-                        rgba(255,255,255,.55) 52%,
-
-                        rgba(255,255,255,.18) 66%,
-
-                        rgba(255,255,255,0) 78%
-                );
-
+    .consultoria-hero__visual::after{
+        content:"";
+        position:absolute;
+        inset:0;
+        z-index:2;
+        pointer-events:none;
+        background:linear-gradient(
+                90deg,
+                rgba(255,255,255,1) 0%,
+                rgba(255,255,255,1) 30%,
+                rgba(255,255,255,.99) 42%,
+                rgba(255,255,255,.94) 52%,
+                rgba(255,255,255,.82) 62%,
+                rgba(255,255,255,.58) 72%,
+                rgba(255,255,255,.30) 84%,
+                rgba(255,255,255,0) 100%
+        );
     }
-
-
-    /*
-       CONTENTO ENCIMA DE LA IMAGEN
-    */
-
-    .consultoria-hero__content {
-
-        position: absolute;
-
-        top: 0;
-
-        left: 0;
-
-        z-index: 3;
-
-        width: 72%;
-
-        max-width: 390px;
-
-        height: 100%;
-
-        padding:
-
-                38px
-
-                18px
-
-                35px
-
-                22px;
-
-        justify-content: center;
-
+    .consultoria-hero__content{
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:3;
+        width:72%;
+        max-width:390px;
+        height:100%;
+        padding:38px 18px 35px 22px;
+        justify-content:center;
     }
-
-
-    .consultoria-hero__eyebrow {
-
-        margin-bottom: 13px;
-
-        font-size: 10px;
-
-        letter-spacing: .14em;
-
+    .consultoria-hero__eyebrow{
+        margin-bottom:13px;
+        font-size:10px;
+        letter-spacing:.14em;
     }
-
-
-    .consultoria-hero__title {
-
-        font-size: 40px;
-
-        line-height: 1;
-
-        letter-spacing: -.045em;
-
+    .consultoria-hero__title{
+        font-size:40px;
+        line-height:1;
+        letter-spacing:-.045em;
     }
-
-
-    .consultoria-hero__underline {
-
-        width: 65px;
-
-        height: 5px;
-
-        margin-top: 11px;
-
+    .consultoria-hero__underline{
+        width:65px;
+        height:5px;
+        margin-top:11px;
     }
-
-
-    .consultoria-hero__description {
-
-        max-width: 350px;
-
-        margin:
-
-                19px
-
-                0
-
-                23px;
-
-        font-size: 20px;
-
-        line-height: 1.45;
-
+    .consultoria-hero__description{
+        max-width:350px;
+        margin:19px 0 23px;
+        font-size:20px;
+        line-height:1.45;
     }
-
-
-    .consultoria-hero__highlight {
-
-        padding: 0 3px;
-
+    .consultoria-hero__highlight{
+        padding:0 3px;
     }
-
-
-    .consultoria-hero__highlight::after {
-
-        left: -7px;
-
-        right: -7px;
-
-        top: -4px;
-
-        bottom: -5px;
-
-        border-width: 2px;
-
+    .consultoria-hero__highlight::after{
+        left:-7px;
+        right:-7px;
+        top:-4px;
+        bottom:-5px;
+        border-width:2px;
     }
-
-
-    .consultoria-hero__button {
-
-        width: fit-content;
-
-        min-height: 46px;
-
-        padding: 13px 18px;
-
-        gap: 14px;
-
-        font-size: 13px;
-
+    .consultoria-hero__button{
+        width:fit-content;
+        min-height:46px;
+        padding:13px 18px;
+        gap:14px;
+        font-size:13px;
     }
-
 
     /* ======================================================
        VALUES
     ====================================================== */
-
-    .consultoria-values {
-
-        padding: 38px 0 30px;
-
+    .consultoria-values{
+        padding:38px 0 30px;
     }
-
-
-    .consultoria-values__wrapper {
-
-        display: block;
-
+    .consultoria-values__wrapper{
+        display:block;
     }
-
-
-    .consultoria-values__intro {
-
-        margin-bottom: 28px;
-
-        padding:
-
-                0
-
-                22px;
-
+    .consultoria-values__intro{
+        margin-bottom:35px;
+        padding:0 10px;
+        text-align:center;
     }
-
-
-    .consultoria-values__handwritten {
-
-        font-size: 23px;
-
-        line-height: 1.35;
-
+    .consultoria-values__handwritten{
+        width:100%;
+        max-width:520px;
+        margin:0 auto;
+        text-align:center;
+        font-size:32px;
+        line-height:1.25;
     }
-
-
-    .consultoria-values__items {
-
-        grid-template-columns: 1fr;
-
-        row-gap: 0;
-
+    .consultoria-values__handwritten span{
+        display:inline;
     }
-
-
-    .consultoria-value {
-
-        min-height: auto;
-
-        padding:
-
-                14px
-
-                12px;
-
-        border-right: none;
-
-        border-bottom: 1px solid rgba(0,0,0,.10);
-
+    .consultoria-values__items{
+        display:flex;
+        flex-direction:column;
+        gap:0;
     }
-
-
-    .consultoria-value:nth-child(2),
-
-    .consultoria-value:nth-child(3),
-
-    .consultoria-value:nth-child(4) {
-
-        padding-top: 24px;
-
-        border-top: none;
-
+    .consultoria-value{
+        display:grid;
+        grid-template-columns:58px minmax(0,1fr);
+        column-gap:16px;
+        align-items:center;
+        min-height:auto;
+        padding:18px 12px;
+        border-right:none;
+        border-bottom:1px solid rgba(0,0,0,.10);
     }
-
-
-    .consultoria-value:last-child {
-
-        border-bottom: none;
-
+    .consultoria-value__icon{
+        grid-column:1;
+        grid-row:1 / span 2;
+        width:58px;
+        height:58px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin:0;
+        color:#FF914D;
+        font-size:30px;
+        line-height:1;
     }
-
-
-    .consultoria-value p {
-
-        max-width: 100%;
-
+    .consultoria-value h3{
+        grid-column:2;
+        margin:0 0 6px;
+        font-size:16px;
+        line-height:1.3;
     }
-
+    .consultoria-value p{
+        grid-column:2;
+        max-width:none;
+        margin:0;
+        font-size:13px;
+        line-height:1.5;
+    }
+    .consultoria-value:last-child{
+        border-bottom:none;
+    }
 
     /* ======================================================
        TESTIMONIAL
     ====================================================== */
-
-    .consultoria-testimonial {
-
-        padding: 15px 0 45px;
-
+    .consultoria-testimonial{
+        padding:15px 0 45px;
     }
-
-
-    .consultoria-testimonial__box {
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 18px;
-
-        padding:
-
-                25px
-
-                22px;
-
+    .consultoria-testimonial__box{
+        display:grid;
+        grid-template-columns:85px minmax(0,1fr);
+        grid-template-rows:auto auto;
+        align-items:start;
+        column-gap:18px;
+        row-gap:22px;
+        width:100%;
+        padding:25px 22px;
     }
-
-
-    .consultoria-testimonial__person img {
-
-        width: 85px;
-
-        height: 85px;
-
+    .consultoria-testimonial__person{
+        grid-column:1;
+        grid-row:1;
+        align-self:start;
     }
-
-
-    .consultoria-testimonial__content {
-
-        width: 100%;
-
+    .consultoria-testimonial__person img{
+        display:block;
+        width:85px;
+        height:85px;
+        object-fit:cover;
+        object-position:center;
+        border-radius:50%;
     }
-
-
-    .consultoria-testimonial__content p {
-
-        font-size: 15px;
-
+    .consultoria-testimonial__content{
+        grid-column:2;
+        grid-row:1;
+        width:100%;
+        align-self:center;
     }
-
-
-    .consultoria-testimonial__note {
-
-        width: 100%;
-
+    .consultoria-testimonial__quote{
+        font-size:42px;
+        line-height:.5;
     }
-
+    .consultoria-testimonial__content p{
+        max-width:none;
+        margin:5px 0 10px;
+        font-size:14px;
+        line-height:1.5;
+    }
+    .consultoria-testimonial__content small{
+        font-size:9px;
+        line-height:1.4;
+    }
+    .consultoria-testimonial__note{
+        grid-column:1 / -1;
+        grid-row:2;
+        width:100%;
+        padding:22px;
+        margin:0;
+    }
+    .consultoria-testimonial__note p{
+        font-size:16px;
+        line-height:1.5;
+    }
+    .consultoria-testimonial__note b{
+        margin-top:8px;
+        font-size:22px;
+    }
 }
 
 

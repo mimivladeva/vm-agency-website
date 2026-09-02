@@ -2226,6 +2226,23 @@
 
         font-size: 17px;
     }
+
+    .webservice-hero__visual::after{
+
+        background:
+                linear-gradient(
+                        90deg,
+                        rgba(255,255,255,1) 0%,
+                        rgba(255,255,255,.99) 20%,
+                        rgba(255,255,255,.95) 40%,
+                        rgba(255,255,255,.82) 50%,
+                        rgba(255,255,255,.55) 62%,
+                        rgba(255,255,255,.20) 75%,
+                        rgba(255,255,255,0) 100%
+                );
+
+    }
+
 }
 
 /* ==========================================================
@@ -2254,12 +2271,60 @@
         width:20px;
         height:20px;
     }
+
+    .webservice-hero__visual::after{
+
+        background:
+                linear-gradient(
+                        90deg,
+                        rgba(255,255,255,1) 0%,
+                        rgba(255,255,255,.99) 25%,
+                        rgba(255,255,255,.95) 45%,
+                        rgba(255,255,255,.82) 60%,
+                        rgba(255,255,255,.55) 72%,
+                        rgba(255,255,255,.20) 85%,
+                        rgba(255,255,255,0) 100%
+                );
+
+    }
+    .webservice-hero__scroll{
+        display:none !important;
+    }
+    .webservice-hero__button {
+        min-height: 46px;
+        padding: 12px 18px;
+        gap: 14px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+    .webservice-hero__button-arrow {
+        font-size: 18px;
+    }
+
+
 }
 /* ==========================================================
    SMALL MOBILE
 ========================================================== */
 
 @media (max-width: 470px) {
+
+    .webservice-hero__visual::after{
+
+        background:
+                linear-gradient(
+                        90deg,
+                        rgba(255,255,255,1) 0%,
+                        rgba(255,255,255,.99) 25%,
+                        rgba(255,255,255,.95) 45%,
+                        rgba(255,255,255,.82) 60%,
+                        rgba(255,255,255,.55) 72%,
+                        rgba(255,255,255,.20) 85%,
+                        rgba(255,255,255,0) 100%
+                );
+
+    }
 
     .webservice-hero {
 
