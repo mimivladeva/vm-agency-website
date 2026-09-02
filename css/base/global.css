@@ -26,3 +26,50 @@ a{
 ul{
     list-style:none;
 }
+/* ==========================================================
+   GLOBAL REVEAL ANIMATIONS
+========================================================== */
+
+.reveal{
+    opacity:0;
+    transform:translateY(45px);
+    transition:
+            opacity .9s ease,
+            transform .9s cubic-bezier(.22,1,.36,1);
+    will-change:opacity,transform;
+}
+
+.reveal-left{
+    opacity:0;
+    transform:translateX(-50px);
+    transition:
+            opacity .9s ease,
+            transform .9s cubic-bezier(.22,1,.36,1);
+    will-change:opacity,transform;
+}
+
+.reveal-right{
+    opacity:0;
+    transform:translateX(50px);
+    transition:
+            opacity .9s ease,
+            transform .9s cubic-bezier(.22,1,.36,1);
+    will-change:opacity,transform;
+}
+
+.reveal-scale{
+    opacity:0;
+    transform:scale(.92);
+    transition:
+            opacity .9s ease,
+            transform .9s cubic-bezier(.22,1,.36,1);
+    will-change:opacity,transform;
+}
+
+.reveal.show,
+.reveal-left.show,
+.reveal-right.show,
+.reveal-scale.show{
+    opacity:1;
+    transform:translate(0) scale(1);
+}

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAQ | VM Agency</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+    >
+
+    <!-- BASE -->
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/global.css">
+    <link rel="stylesheet" href="css/base/typography.css">
+    <link rel="stylesheet" href="css/base/components.css">
+
+    <!-- LAYOUT -->
+    <link rel="stylesheet" href="css/layout/container.css">
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+
+    <!-- SECTION -->
+    <link rel="stylesheet" href="css/sections/faq.css">
+
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================================
+     HEADER
+========================================================== -->
+<!-- ========================================================= -->
+<!-- HEADER -->
+<!-- ========================================================= -->
+
+<header class="header">
+
+    <div class="container">
+
+        <div class="header__wrapper">
+
+
+            <!-- LOGO -->
+
+            <a
+                    href="index.html#hero"
+                    class="header__logo">
+
+                <img
+                        src="assets/logos/logo.png"
+                        alt="VM Agency Logo">
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav
+                    class="header__nav"
+                    id="navbar">
+
+                <ul class="header__menu">
+
+
+                    <li class="header__item">
+
+                        <a
+                                href="index.html#hero"
+                                class="header__link text-sm"
+                                data-lang="nav.home">
+
+                            Inicio
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="header__item">
+
+                        <a
+                                href="index.html#method"
+                                class="header__link text-sm"
+                                data-lang="nav.method">
+
+                            Método VM
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="header__item">
+
+                        <a
+                                href="index.html#solutions"
+                                class="header__link text-sm active"
+                                data-lang="nav.success">
+
+                            Soluciones
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="header__item">
+
+                        <a
+                                href="index.html#about"
+                                class="header__link text-sm"
+                                data-lang="nav.about">
+
+                            Sobre nosotros
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="header__item">
+
+                        <a
+                                href="index.html#contact"
+                                class="header__link text-sm"
+                                data-lang="nav.contactUs">
+
+                            Contacto
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </nav>
+
+
+            <!-- LANGUAGES -->
+
+            <div class="header__right">
+
+                <div class="language-selector">
+
+
+                    <button
+                            class="language-selector__button text-sm active"
+                            data-language="es">
+
+                        ES
+
+                    </button>
+
+
+                    <button
+                            class="language-selector__button text-sm"
+                            data-language="en">
+
+                        EN
+
+                    </button>
+
+
+                    <button
+                            class="language-selector__button text-sm"
+                            data-language="bg">
+
+                        BG
+
+                    </button>
+
+
+                </div>
+
+
+                <!-- MOBILE -->
+
+                <button
+                        id="menu-toggle"
+                        class="header__toggle"
+                        aria-label="Abrir menú">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================================================
+     FAQ
+========================================================== -->
+
+<main>
+
+    <section class="faq" id="faq">
+
+        <div class="container">
+
+            <div class="faq__layout">
+
+
+                <!-- ==================================================
+                     COLUMNA IZQUIERDA
+                =================================================== -->
+
+                <div class="faq__intro">
+
+
+                    <!-- EYEBROW -->
+
+                    <div class="faq__eyebrow">
+
+                        <span data-lang="faq.eyebrow"></span>
+
+                        <span
+                                class="faq__eyebrow-line"
+                                aria-hidden="true"
+                        ></span>
+
+                    </div>
+
+
+                    <!-- TITULO -->
+
+                    <h1 class="faq__title reveal-left">
+
+                        <span data-lang="faq.titleLine1"></span>
+
+                        <br>
+
+                        <span data-lang="faq.titleLine2"></span>
+
+                    </h1>
+
+
+                    <!-- LINEA AMARILLA -->
+
+                    <div
+                            class="faq__yellow-line"
+                            aria-hidden="true"
+                    ></div>
+
+
+                    <!-- TEXTO MANUSCRITO -->
+
+                    <div class="faq__handwritten reveal-left">
+
+                        <span data-lang="faq.handwrittenLine1"></span>
+
+                        <br>
+
+                        <span data-lang="faq.handwrittenLine2"></span>
+
+                        <span
+                                class="faq__heart"
+                                aria-hidden="true"
+                        >
+                            ♡
+                        </span>
+
+                    </div>
+
+
+                    <!-- DESCRIPCION -->
+
+                    <p
+                            class="faq__description reveal-left"
+                            data-lang="faq.description"
+                    ></p>
+
+
+                    <!-- NOTA AMARILLA -->
+
+                    <div
+                            class="faq__note"
+                            aria-hidden="true"
+                    >
+
+                        <div class="faq__note-tape"></div>
+
+                        <div class="faq__note-content">
+
+                            <span class="faq__bulb">
+                                ♧
+                            </span>
+
+                            <p data-lang="faq.noteLine1"></p>
+
+                            <p data-lang="faq.noteLine2"></p>
+
+                            <strong data-lang="faq.noteCta"></strong>
+
+                            <span class="faq__note-arrow">
+                                →
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     COLUMNA DERECHA
+                =================================================== -->
+
+                <div class="faq__content">
+
+
+                    <!-- PREGUNTAS -->
+
+                    <div class="faq__questions">
+
+
+                        <!-- PREGUNTA 1 -->
+
+                        <article class="faq__item reveal-right">
+
+                            <button
+                                    class="faq__question"
+                                    type="button"
+                                    aria-expanded="false"
+                            >
+
+                                <span data-lang="faq.question1"></span>
+
+                                <span
+                                        class="faq__plus"
+                                        aria-hidden="true"
+                                ></span>
+
+                            </button>
+
+
+                            <div class="faq__answer">
+
+                                <p data-lang="faq.answer1"></p>
+                                <img
+                                        class="faq__answer-arrow"
+                                        src="assets/icons/web-arrow-01.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                >
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- PREGUNTA 2 -->
+
+                        <article class="faq__item reveal-right">
+
+                            <button
+                                    class="faq__question"
+                                    type="button"
+                                    aria-expanded="false"
+                            >
+
+                                <span data-lang="faq.question2"></span>
+
+                                <span
+                                        class="faq__plus"
+                                        aria-hidden="true"
+                                ></span>
+
+                            </button>
+
+
+                            <div class="faq__answer">
+
+                                <p data-lang="faq.answer2"></p>
+                                <img
+                                        class="faq__answer-arrow"
+                                        src="assets/icons/web-arrow-03.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                >
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- PREGUNTA 3 -->
+
+                        <article class="faq__item reveal-right">
+
+                            <button
+                                    class="faq__question"
+                                    type="button"
+                                    aria-expanded="false"
+                            >
+
+                                <span data-lang="faq.question3"></span>
+
+                                <span
+                                        class="faq__plus"
+                                        aria-hidden="true"
+                                ></span>
+
+                            </button>
+
+
+                            <div class="faq__answer">
+
+                                <p data-lang="faq.answer3"></p>
+                                <img
+                                        class="faq__answer-arrow"
+                                        src="assets/icons/web-arrow-01.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                >
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- PREGUNTA 4 -->
+
+                        <article class="faq__item reveal-right">
+
+                            <button
+                                    class="faq__question"
+                                    type="button"
+                                    aria-expanded="false"
+                            >
+
+                                <span data-lang="faq.question4"></span>
+
+                                <span
+                                        class="faq__plus"
+                                        aria-hidden="true"
+                                ></span>
+
+                            </button>
+
+
+                            <div class="faq__answer">
+
+                                <p data-lang="faq.answer4"></p>
+                                <img
+                                        class="faq__answer-arrow"
+                                        src="assets/icons/web-arrow-03.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                >
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- PREGUNTA 5 ABIERTA -->
+
+                        <article
+                                class="faq__item faq__item--open reveal-right"
+                        >
+
+                            <button
+                                    class="faq__question"
+                                    type="button"
+                                    aria-expanded="true"
+                            >
+
+                                <span data-lang="faq.question5"></span>
+
+                                <span
+                                        class="faq__plus"
+                                        aria-hidden="true"
+                                ></span>
+
+                            </button>
+
+                                <div class="faq__answer">
+                                    <p data-lang="faq.answer5"></p>
+                                    <img
+                                            class="faq__answer-arrow"
+                                            src="assets/icons/web-arrow-01.svg"
+                                            alt=""
+                                            aria-hidden="true"
+                                    >
+                                </div>
+
+                        </article>
+
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         CTA
+                    =================================================== -->
+
+                    <div class="faq__cta reveal-right">
+
+
+                        <!-- ICONO EMAIL -->
+
+                        <div
+                                class="faq__cta-icon"
+                                aria-hidden="true"
+                        >
+                            <img
+                                    src="assets/icons/web-gmail-icon.svg"
+                                    alt=""
+                            >
+                        </div>
+
+
+                        <!-- TEXTO -->
+
+                        <div class="faq__cta-text">
+
+                            <h2 data-lang="faq.ctaTitle"></h2>
+
+                            <p data-lang="faq.ctaText"></p>
+
+                        </div>
+
+
+                        <!-- BOTON -->
+
+                        <a
+                                href="index.html#contact"
+                                class="button faq__cta-button"
+                        >
+
+                            <span data-lang="faq.ctaButton"></span>
+
+                            <span aria-hidden="true">
+                                →
+                            </span>
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================================
+             DECORACIONES
+        =========================================================== -->
+
+        <div
+                class="faq__branches"
+                aria-hidden="true"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <div
+                class="faq__brush"
+                aria-hidden="true"
+        ></div>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- ==========================================================
+     FOOTER COMPARTIDO
+========================================================== -->
+
+<div id="footer-container"></div>
+
+
+
+<!-- ==========================================================
+     SCRIPTS
+========================================================== -->
+
+<script src="lang/es.js"></script>
+<script src="lang/en.js"></script>
+<script src="lang/bg.js"></script>
+
+<script src="js/language.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

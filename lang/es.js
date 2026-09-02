@@ -800,6 +800,72 @@ const es = {
 
     },
 
+    faq: {
+
+        eyebrow: "FAQ",
+
+        titleLine1: "Preguntas",
+        titleLine2: "frecuentes.",
+
+        handwrittenLine1: "Resolvemos tus dudas",
+        handwrittenLine2: "antes de empezar.",
+
+        description:
+            "Sabemos que cada proyecto es único. Aquí respondemos a las preguntas que más nos hacéis.",
+
+
+        noteLine1: "¿No encuentras",
+        noteLine2: "lo que buscas?",
+
+        noteCta: "HABLEMOS",
+
+
+        question1:
+            "¿Cuánto tiempo tarda un proyecto?",
+
+        answer1:
+            "Depende del alcance y la complejidad del proyecto. Después de conocernos y definir tus objetivos, te damos un plazo realista y adaptado a tus necesidades.",
+
+
+        question2:
+            "¿Con qué tipo de empresas trabajáis?",
+
+        answer2:
+            "Trabajamos con empresas y proyectos que buscan mejorar su presencia digital, optimizar procesos o desarrollar nuevas oportunidades de crecimiento.",
+
+
+        question3:
+            "¿Incluís mantenimiento y soporte?",
+
+        answer3:
+            "Sí. Podemos acompañarte después de la puesta en marcha con mantenimiento, soporte y optimización continua, según las necesidades del proyecto.",
+
+
+        question4:
+            "¿Cómo es vuestro proceso de trabajo?",
+
+        answer4:
+            "Empezamos con un diagnóstico, medimos la situación actual, diseñamos la estrategia y después implementamos, optimizamos y escalamos las soluciones.",
+
+
+        question5:
+            "¿Qué necesito para empezar?",
+
+        answer5:
+            "Solo necesitamos conocerte. Hablamos sobre tu negocio, tus objetivos y los retos que quieres superar. A partir de ahí, diseñamos la mejor estrategia para ti.",
+
+
+        ctaTitle:
+            "¿Tienes otra pregunta?",
+
+        ctaText:
+            "Estamos aquí para ayudarte.",
+
+        ctaButton:
+            "Hablemos"
+
+    },
+
 
 
 };

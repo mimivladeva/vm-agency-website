@@ -656,4 +656,69 @@ const en = {
         }
 
     },
+    faq: {
+
+        eyebrow: "FAQ",
+
+        titleLine1: "Frequently",
+        titleLine2: "asked questions.",
+
+        handwrittenLine1: "We answer your questions",
+        handwrittenLine2: "before we begin.",
+
+        description:
+            "We know every project is unique. Here we answer the questions we get asked most often.",
+
+
+        noteLine1: "Can't find",
+        noteLine2: "what you're looking for?",
+
+        noteCta: "LET'S TALK",
+
+
+        question1:
+            "How long does a project take?",
+
+        answer1:
+            "It depends on the scope and complexity of the project. After understanding your goals, we give you a realistic timeframe tailored to your needs.",
+
+
+        question2:
+            "What kind of companies do you work with?",
+
+        answer2:
+            "We work with companies and projects looking to improve their digital presence, optimize processes or create new growth opportunities.",
+
+
+        question3:
+            "Do you include maintenance and support?",
+
+        answer3:
+            "Yes. We can support you after launch with maintenance, support and continuous optimization, depending on your project's needs.",
+
+
+        question4:
+            "What is your working process?",
+
+        answer4:
+            "We start with a diagnosis, measure the current situation, design the strategy and then implement, optimize and scale the solutions.",
+
+
+        question5:
+            "What do I need to get started?",
+
+        answer5:
+            "We simply need to get to know you. We talk about your business, your goals and the challenges you want to overcome. From there, we design the best strategy for you.",
+
+
+        ctaTitle:
+            "Have another question?",
+
+        ctaText:
+            "We're here to help.",
+
+        ctaButton:
+            "Let's talk"
+
+    },
 };

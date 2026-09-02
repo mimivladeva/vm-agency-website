@@ -685,7 +685,7 @@
                 *CONTENT*
                 *==================================================-->
 
-                <div class="about__content">
+                <div class="about__content reveal-left">
 
                 <span
                         class="about__eyebrow text-sm"
@@ -728,7 +728,7 @@
                 *IMAGE*
                 *==================================================-->
 
-                <div class="about__image">
+                <div class="about__image reveal-right">
 
                     <img
                             src="assets/images/about-team.jpg"
@@ -744,8 +744,7 @@
             *==================================================-->
 
             <div class="about__bottom">
-
-                <div class="about__statement">
+                <div class="about__statement reveal">
 
                     <div class="about__statement-icon">
                         <i class="icon-sparkles"></i>
@@ -756,7 +755,7 @@
                 </div>
 
 
-                <div class="about__founders">
+                <div class="about__founders reveal">
 
                     <div
                             class="about__founders-name"
@@ -983,194 +982,18 @@
     </section>
 </main>
 
-<!-- ========================================================= -->
-<!-- FOOTER -->
-<!-- ========================================================= -->
-<footer class="footer">
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
-    <div class="container">
+<div id="footer-container"></div>
 
-        <div class="footer__wrapper">
-
-            <div class="footer__brand">
-
-                <a href="#hero" class="footer__logo">
-
-                    <img
-                            src="assets/logos/logo.png"
-                            alt="VM Agency Logo">
-
-                </a>
-
-                <p
-                        class="footer__description text-sm"
-                        data-lang="footer.description">
-                </p>
-
-                <div class="footer__social">
-
-                    <!-- INSTAGRAM -->
-                    <a href="#" aria-label="Instagram">
-                        <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true">
-                            <rect
-                                    x="3"
-                                    y="3"
-                                    width="18"
-                                    height="18"
-                                    rx="5"
-                                    ry="5">
-                            </rect>
-
-                            <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="4">
-                            </circle>
-
-                            <circle
-                                    cx="17.5"
-                                    cy="6.5"
-                                    r="1">
-                            </circle>
-                        </svg>
-                    </a>
-
-                    <!-- LINKEDIN -->
-                    <a href="#" aria-label="LinkedIn">
-                        <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true">
-                            <path
-                                    d="M6.5 8.5H3.5V20h3V8.5ZM5 3.5
-                A1.75 1.75 0 1 0 5 7
-                A1.75 1.75 0 0 0 5 3.5ZM10 8.5H7V20h3v-5.7
-                c0-1.5.3-3 2.2-3
-                1.9 0 1.9 1.8 1.9 3.1V20h3v-6.2
-                c0-3-0.6-5.3-4-5.3
-                -1.6 0-2.7.9-3.1 1.7V8.5Z">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <!-- EMAIL -->
-                    <a href="mailto:hola@vmagency.com" aria-label="Email">
-                        <i class="icon-mail"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="footer__column">
-
-                <h3
-                        class="footer__title text-sm"
-                        data-lang="footer.navigation">
-                </h3>
-
-                <ul>
-
-                    <li><a href="#hero" data-lang="footer.home"></a></li>
-
-                    <li><a href="#method" data-lang="footer.method"></a></li>
-
-                    <li><a href="#solutions" data-lang="footer.success"></a></li>
-
-                    <li><a href="#about" data-lang="footer.about"></a></li>
-
-                    <li>
-                        <a href="#contact" data-lang="footer.contactUs"></a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <div class="footer__column">
-
-                <h3
-                        class="footer__title text-sm"
-                        data-lang="footer.legal">
-                </h3>
-
-                <ul>
-
-                    <li><a href="#" data-lang="footer.legalNotice"></a></li>
-
-                    <li><a href="#" data-lang="footer.privacy"></a></li>
-
-                    <li><a href="#" data-lang="footer.cookies"></a></li>
-
-                </ul>
-
-            </div>
-
-            <div class="footer__column">
-
-                <h3
-                        class="footer__title text-sm"
-                        data-lang="footer.contact">
-                </h3>
-
-                <p
-                        class="footer__contact-text"
-                        data-lang="footer.contactDescription">
-                </p>
-
-                <ul class="footer__contact">
-
-                    <li>
-
-                        <i class="icon-mail"></i>
-
-                        <span data-lang="footer.email"></span>
-
-                    </li>
-
-                    <li>
-
-                        <i class="icon-phone"></i>
-
-                        <span data-lang="footer.phone"></span>
-
-                    </li>
-
-                    <li>
-
-                        <i class="icon-map-pin"></i>
-
-                        <span data-lang="footer.location"></span>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-        <div class="footer__bottom">
-
-            <p
-                    class="footer__copyright text-sm"
-                    data-lang="footer.copyright">
-            </p>
-
-        </div>
-
-    </div>
-
-</footer>
 <!-- ========================================================= -->
 <!-- LANGUAGES -->
 <!-- ========================================================= -->
 
 <script src="lang/es.js"></script>
-
 <script src="lang/en.js"></script>
-
 <script src="lang/bg.js"></script>
 
 <!-- ========================================================= -->
@@ -1178,11 +1001,9 @@
 <!-- ========================================================= -->
 
 <script src="js/language.js"></script>
-
 <script src="js/navbar.js"></script>
-
+<script src="js/footer.js"></script>
 <script src="js/animations.js"></script>
-
 <script src="js/main.js"></script>
 
 </body>
