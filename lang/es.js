@@ -493,49 +493,76 @@ const es = {
             text:"Procesos más eficientes, menos errores y más tiempo para hacer crecer tu negocio."
         }
     },
-    marketing:{
-        eyebrow:"SERVICIOS",
 
-        titleLine1:"Marketing",
-        titleLine2:"Digital",
+    marketing: {
+        eyebrow: "SERVICIOS",
 
-        description:"Estrategias que atraen, convierten y fidelizan clientes en los canales que realmente funcionan.",
+        titleLine1: "Marketing",
+        titleLine2: "Digital",
 
-        description2:"Combinamos estrategia, contenido y campañas basadas en datos para hacer crecer tu marca.",
+        description: "Estrategias que atraen, convierten y fidelizan clientes a través de los canales que realmente funcionan.",
 
-        button:"Hablemos",
+        description2: "Combinamos estrategia, contenido y campañas basadas en datos para hacer crecer tu marca.",
 
-        imageAlt:"Marketing digital VM Agency",
+        button: "Hablemos",
 
-        benefit1:{
-            title:"Estar en internet no significa estar llegando a tus clientes.",
-            description:"Construimos una estrategia para que tu marca llegue a las personas adecuadas."
-        },
+        imageAlt: "Marketing digital de VM Agency",
 
-        benefit2:{
-            title:"Publicas, pero no sabes qué funciona.",
-            description:"Analizamos los datos para entender qué contenido genera resultados."
-        },
+        benefitsEyebrow: "MÁS QUE PRESENCIA DIGITAL",
 
-        benefit3:{
-            title:"Inviertes en publicidad sin una estrategia clara.",
-            description:"Diseñamos campañas orientadas a objetivos concretos y medibles."
-        },
+        benefitsTitle1: "No se trata solo de estar online.",
+        benefitsTitle2: "Se trata de conseguir resultados.",
+// MARKETING — CONTENT STRATEGY
+        contentEyebrow: "CREACIÓN DE CONTENIDO",
 
-        benefit4:{
-            title:"Generas contenido, pero no conviertes.",
-            description:"Te ayudamos a convertir la atención en oportunidades reales de negocio."
-        },
+        contentTitle: "Contenido que llama la atención",
 
-        ctaEyebrow:"MARKETING DIGITAL",
+        contentHandwritten:
+            "Ideas que conectan, historias que se recuerdan.",
 
-        ctaTitle:"Convierte tu presencia digital en crecimiento.",
+        contentNote: "Contenido con intención",
 
-        ctaButton:"Hablemos"
+        contentBenefit1Title: "Contenido con intención",
+        contentBenefit1Text:
+            "Creamos contenido relevante que transmite el valor de tu marca.",
+
+        contentBenefit2Title: "Una marca coherente",
+        contentBenefit2Text:
+            "Mantenemos un estilo visual y un mensaje alineados en todos los canales.",
+
+        contentBenefit3Title: "Más conexión con tu público",
+        contentBenefit3Text:
+            "Generamos comunidad y diálogo real con tus clientes.",
+
+        ctaEyebrow: "MARKETING DIGITAL",
+
+        ctaTitle: "Convierte tu presencia digital en crecimiento.",
+
+        ctaButton: "Hablemos",
+
+
+        resultsEyebrow: "RESULTADOS REALES",
+
+        resultsTitle: "Cada acción tiene un propósito",
+
+        resultsHandwritten: "Medir. Aprender. Mejorar.",
+
+        resultsService1Title: "Redes y contenido",
+        resultsService1Text:
+            "Planificación, creación y gestión de contenido para Instagram, Facebook, TikTok, LinkedIn y más.",
+
+        resultsService2Title: "Campañas digitales",
+        resultsService2Text:
+            "Campañas en Meta Ads, Google Ads y otras plataformas para atraer clientes cualificados.",
+
+        resultsService3Title: "Análisis de resultados",
+        resultsService3Text:
+            "Medimos el rendimiento y optimizamos constantemente para obtener mejores resultados.",
+
     },
 
 
-        nav: {
+    nav: {
             home: "Inicio",
             method: "Método VM",
             success: "Soluciones",

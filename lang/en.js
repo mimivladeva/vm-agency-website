@@ -473,46 +473,70 @@ const en = {
         step4Title:"We optimize",
         step4Text:"We measure, improve and scale results."
     },
-    marketing:{
-        eyebrow:"SERVICES",
 
-        titleLine1:"Digital",
-        titleLine2:"Marketing",
+    marketing: {
+        eyebrow: "SERVICES",
 
-        description:"Strategies that attract, convert and retain customers through the channels that truly work.",
+        titleLine1: "Digital",
+        titleLine2: "Marketing",
 
-        description2:"We combine strategy, content and data-driven campaigns to help your brand grow.",
+        description: "Strategies that attract, convert and retain customers through the channels that actually work.",
 
-        button:"Let's talk",
+        description2: "We combine strategy, content and data-driven campaigns to grow your brand.",
 
-        imageAlt:"VM Agency digital marketing",
+        button: "Let's talk",
 
-        benefit1:{
-            title:"Being online doesn't mean reaching your customers.",
-            description:"We build a strategy that puts your brand in front of the right people."
-        },
+        imageAlt: "Digital marketing by VM Agency",
 
-        benefit2:{
-            title:"You publish, but you don't know what works.",
-            description:"We analyze the data to understand which content generates results."
-        },
+        benefitsEyebrow: "MORE THAN AN ONLINE PRESENCE",
 
-        benefit3:{
-            title:"You invest in advertising without a clear strategy.",
-            description:"We design campaigns focused on concrete and measurable objectives."
-        },
+        // MARKETING — CONTENT STRATEGY
+        contentEyebrow: "CONTENT CREATION",
 
-        benefit4:{
-            title:"You create content, but it doesn't convert.",
-            description:"We help turn attention into real business opportunities."
-        },
+        contentTitle: "Content that captures attention",
 
-        ctaEyebrow:"DIGITAL MARKETING",
+        contentHandwritten:
+            "Ideas that connect, stories that stay.",
 
-        ctaTitle:"Turn your digital presence into growth.",
+        contentNote: "Content with intention",
 
-        ctaButton:"Let's talk"
+        contentBenefit1Title: "Content with purpose",
+        contentBenefit1Text:
+            "We create relevant content that communicates your brand's value.",
+
+        contentBenefit2Title: "A consistent brand",
+        contentBenefit2Text:
+            "We maintain a consistent visual style and message across all channels.",
+
+        contentBenefit3Title: "Stronger audience connections",
+        contentBenefit3Text:
+            "We build communities and encourage genuine conversations with your customers.",
+        ctaEyebrow: "DIGITAL MARKETING",
+
+        ctaTitle: "Turn your digital presence into growth.",
+
+        ctaButton: "Let's talk",
+
+        resultsEyebrow: "REAL RESULTS",
+
+        resultsTitle: "Every action has a purpose",
+
+        resultsHandwritten: "Measure. Learn. Improve.",
+
+        resultsService1Title: "Social media & content",
+        resultsService1Text:
+            "Planning, creating and managing content for Instagram, Facebook, TikTok, LinkedIn and more.",
+
+        resultsService2Title: "Digital campaigns",
+        resultsService2Text:
+            "Campaigns on Meta Ads, Google Ads and other platforms to attract qualified customers.",
+
+        resultsService3Title: "Performance analysis",
+        resultsService3Text:
+            "We measure performance and continuously optimize to achieve better results.",
+
     },
+
     consulting: {
 
         eyebrow: "SERVICES",

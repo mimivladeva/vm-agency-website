@@ -1,1018 +1,531 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
+            name="description"
+            content="Marketing digital estratégico para atraer clientes, mejorar conversiones y hacer crecer tu negocio con VM Agency."
     >
 
     <title>Marketing Digital | VM Agency</title>
 
-    <meta
-            name="description"
-            content="Marketing digital estratégico para atraer, convertir y fidelizar clientes."
-    >
-
-
     <!-- =========================================================
-    GOOGLE FONTS
+         GOOGLE FONTS
     ========================================================== -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com">
 
     <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
-            crossorigin
-    >
+            crossorigin>
 
     <link
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
-            rel="stylesheet"
-    >
+            rel="stylesheet">
 
 
     <!-- =========================================================
-    LUCIDE ICONS
+         LUCIDE
     ========================================================== -->
 
     <link
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css"
-    >
+            href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css">
 
 
     <!-- =========================================================
-    BASE CSS
+         CSS BASE
     ========================================================== -->
 
     <link
             rel="stylesheet"
-            href="css/base/reset.css"
-    >
+            href="css/base/reset.css">
 
     <link
             rel="stylesheet"
-            href="css/base/variables.css"
-    >
+            href="css/base/variables.css">
 
     <link
             rel="stylesheet"
-            href="css/base/global.css"
-    >
+            href="css/base/global.css">
 
     <link
             rel="stylesheet"
-            href="css/base/typography.css"
-    >
+            href="css/base/typography.css">
 
     <link
             rel="stylesheet"
-            href="css/base/components.css"
-    >
+            href="css/base/components.css">
 
 
     <!-- =========================================================
-    LAYOUT
+         LAYOUT
     ========================================================== -->
 
     <link
             rel="stylesheet"
-            href="css/layout/container.css"
-    >
+            href="css/layout/container.css">
 
     <link
             rel="stylesheet"
-            href="css/layout/header.css"
-    >
+            href="css/layout/header.css">
 
     <link
             rel="stylesheet"
-            href="css/layout/footer.css"
-    >
+            href="css/layout/footer.css">
 
 
     <!-- =========================================================
-    MARKETING CSS
+         WEB SERVICE
     ========================================================== -->
 
     <link
             rel="stylesheet"
-            href="css/sections/marketing.css"
-    >
+            href="css/sections/marketing.css">
+
+
+    <!-- =========================================================
+         RESPONSIVE
+    ========================================================== -->
+
+    <link
+            rel="stylesheet"
+            href="css/responsive.css">
 
 </head>
 
-
-<body>
-
-<!-- ========================================================= -->
-<!-- HEADER -->
-<!-- ========================================================= -->
-<div id="navbar-container"></div>
-
+<body class="marketing-page">
 <!-- =========================================================
-MAIN
-========================================================== -->
+     HEADER
+========================================================= -->
+<div id="navbar-container"></div>
 
 <main>
 
-
     <!-- =====================================================
-    MARKETING HERO
+         HERO — MARKETING DIGITAL
     ====================================================== -->
+    <section class="marketing-hero" aria-labelledby="marketing-title">
 
-    <section class="marketing-hero">
+        <!-- Imagen de fondo -->
+        <div class="marketing-hero__visual" aria-hidden="true">
+            <img
+                    src="assets/images/marketing_dig.png"
+                    alt=""
+                    fetchpriority="high"
+            >
+        </div>
 
-        <div class="marketing-hero__wrapper">
+        <!-- Contenido superpuesto -->
+        <div class="marketing-hero__content">
 
-
-            <!-- =================================================
-            CONTENT
-            ================================================== -->
-
-            <div class="marketing-hero__content">
-
-
-                <span
-                        class="marketing-hero__eyebrow"
-                        data-lang="marketing.eyebrow"
-                >
+               <span
+                       class="marketing-hero__eyebrow text-sm"
+                       data-lang="marketing.eyebrow"
+               >
                     SERVICIOS
                 </span>
 
+            <h1 class="marketing-hero__title title-xl" id="marketing-title">
+    <span class="marketing-hero__word--marketing"
+          data-lang="marketing.titleLine1">Marketing</span>
+                <br>
+                <span class="marketing-hero__word--digital"
+                      data-lang="marketing.titleLine2">Digital</span>
+            </h1>
 
-                <!--
-                ÚNICO TÍTULO CON TAMAÑO ESPECÍFICO
-                Se controla desde marketing.css
-                -->
-
-                <h1 class="marketing-hero__title">
-
-                    <span
-                            data-lang="marketing.titleLine1"
-                    >
-                        Marketing
-                    </span>
-
-                    <br>
-
-                    <span
-                            data-lang="marketing.titleLine2"
-                    >
-                        Digital
-                    </span>
-
-                </h1>
-
-
-                <span class="marketing-hero__line"></span>
-
-
-                <p
-                        class="marketing-hero__description text"
-                        data-lang="marketing.description"
-                >
-                    Estrategias que atraen, convierten y fidelizan
-                    clientes en los canales que realmente funcionan.
-                </p>
-
-
-                <p
-                        class="marketing-hero__description marketing-hero__description--secondary text"
-                        data-lang="marketing.description2"
-                >
-                    Combinamos estrategia, contenido y campañas
-                    basadas en datos para hacer crecer tu marca.
-                </p>
-
-
-                <!-- BUTTON -->
-
-                <div class="marketing-hero__actions">
-
-                    <a
-                            href="index.html#contact"
-                            class="button marketing-button"
-                            data-lang="marketing.button"
-                    >
-                        Hablemos de tu proyecto
-                    </a>
-
-                </div>
-
-
+            <!-- Frase manuscrita rodeada por un óvalo -->
+            <div class="marketing-hero__slogan">
+                <span data-lang="marketing.heroSlogan">Que tu marca conecte.</span>
             </div>
 
-
-            <!-- =================================================
-            IMAGE
-            ================================================== -->
-
-            <div class="marketing-hero__visual">
-
-                <div class="marketing-hero__glow"></div>
-
-                <img
-                        src="assets/images/digital-marketing.png"
-                        alt="Marketing digital VM Agency"
-                        data-i18n-alt="marketing.imageAlt"
-                >
-
-            </div>
-
-
-        </div>
-
-
-        <!-- ======================================================
-        PROBLEM CARD
-        ======================================================= -->
-
-        <section class="marketing-problem">
-
-            <div class="marketing-problem__card">
-
-
-                <!-- INTRO -->
-
-                <div class="marketing-problem__intro">
-
-                    <span
-                            class="marketing-problem__eyebrow text-sm"
-                            data-lang="marketing.problem.eyebrow"
-                    >
-                        EL PROBLEMA
-                    </span>
-
-                    <h2
-                            class="title-md"
-                            data-lang="marketing.problem.title"
-                    >
-                        Estar en internet no significa
-                        estar llegando a tus clientes.
-                    </h2>
-
-                </div>
-
-
-                <!-- PROBLEM 01 -->
-
-                <article class="marketing-problem__item">
-
-                    <div class="marketing-problem__icon">
-                        <i class="icon-upload"></i>
-                    </div>
-
-                    <div class="marketing-problem__content">
-
-                        <h3
-                                class="text-sm"
-                                data-lang="marketing.problem.item1.title"
-                        >
-                            Publicas, pero no sabes qué funciona
-                        </h3>
-
-                        <p
-                                class="text-sm"
-                                data-lang="marketing.problem.item1.description"
-                        >
-                            Sin análisis ni estrategia,
-                            es imposible mejorar.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROBLEM 02 -->
-
-                <article class="marketing-problem__item">
-
-                    <div class="marketing-problem__icon">
-                        <i class="icon-wallet"></i>
-                    </div>
-
-                    <div class="marketing-problem__content">
-
-                        <h3
-                                class="text-sm"
-                                data-lang="marketing.problem.item2.title"
-                        >
-                            Inviertes en publicidad sin una estrategia clara
-                        </h3>
-
-                        <p
-                                class="text-sm"
-                                data-lang="marketing.problem.item2.description"
-                        >
-                            Gastas presupuesto,
-                            pero no obtienes resultados.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROBLEM 03 -->
-
-                <article class="marketing-problem__item">
-
-                    <div class="marketing-problem__icon">
-                        <i class="icon-message-circle"></i>
-                    </div>
-
-                    <div class="marketing-problem__content">
-
-                        <h3
-                                class="text-sm"
-                                data-lang="marketing.problem.item3.title"
-                        >
-                            Generas contenido pero no convierte
-                        </h3>
-
-                        <p
-                                class="text-sm"
-                                data-lang="marketing.problem.item3.description"
-                        >
-                            Te falta conexión y enfoque.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-    </section>
-
-    <!-- ==========================================================
-         MARKETING — ENFOQUE
-    ========================================================== -->
-
-    <section class="marketing-focus">
-
-        <div class="marketing-focus__header">
-
-        <span
-                class="marketing-focus__eyebrow"
-                data-i18n="marketing.focusEyebrow">
-            NUESTRO ENFOQUE
-        </span>
-
-            <h2 class="title-lg marketing-focus__title">
-            <span data-i18n="marketing.focusTitle">
-                De visibilidad a
-            </span>
-
-                <span
-                        class="marketing-focus__highlight"
-                        data-i18n="marketing.focusHighlight">
-                resultados reales.
-            </span>
-            </h2>
+            <span class="marketing-hero__line" aria-hidden="true"></span>
 
             <p
-                    class="text marketing-focus__description"
-                    data-i18n="marketing.focusDescription">
-                Unimos estrategia, creatividad y datos para atraer a las personas
-                correctas y convertirlas en clientes fieles.
+                    class="marketing-hero__description text"
+                    data-lang="marketing.description"
+            >
+                Estrategias que atraen, convierten y fidelizan clientes
+                a través de los canales que realmente funcionan.
             </p>
 
+            <p
+                    class="marketing-hero__description marketing-hero__description--secondary text"
+                    data-lang="marketing.description2"
+            >
+                Combinamos estrategia, contenido y campañas basadas
+                en datos para hacer crecer tu marca.
+            </p>
+
+            <div class="marketing-hero__actions">
+                <a
+                        href="index.html#contact"
+                        class="button marketing-button"
+                        data-lang="marketing.button"
+                >
+                    Hablemos
+                </a>
+            </div>
+
         </div>
+    </section>
 
+    <!-- =====================================================
+         MARKETING DIGITAL — CONTENT STRATEGY
+    ====================================================== -->
+    <section
+            class="marketing-content"
+            aria-labelledby="marketing-content-title"
+    >
+        <div class="marketing-content__container">
 
-        <div class="marketing-focus__layout">
+            <!-- CABECERA Y COMPOSICIÓN VISUAL -->
+            <div class="marketing-content__intro">
 
-            <!-- ==================================================
-                 PROCESS
-            ================================================== -->
+                <div class="marketing-content__copy">
 
-            <div class="marketing-focus__process">
+                <span
+                        class="marketing-content__eyebrow"
+                        data-lang="marketing.contentEyebrow"
+                >
+                    CREACIÓN DE CONTENIDO
+                </span>
 
-                <!-- STEP 1 -->
+                    <h2
+                            class="marketing-content__title"
+                            id="marketing-content-title"
+                    >
+                    <span data-lang="marketing.contentTitle">
+                        Contenido que
+                        llama la atención.
+                    </span>
+                        <span
+                                class="marketing-content__title-dot"
+                                aria-hidden="true"
+                        >.</span>
+                    </h2>
 
-                <article class="marketing-focus__step">
+                    <p
+                            class="marketing-content__handwritten"
+                            data-lang="marketing.contentHandwritten"
+                    >
+                        Ideas que conectan,
+                        historias que se recuerdan.
+                    </p>
 
-                    <div class="marketing-focus__icon marketing-focus__icon--yellow">
+                    <span
+                            class="marketing-content__handdraw"
+                            aria-hidden="true"
+                    ></span>
 
-                        <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true">
+                </div>
+
+                <!-- COLLAGE CREATIVO -->
+
+                <div class="marketing-content__visual">
+                    <img
+                            class="marketing-content__image"
+                            src="assets/images/marketing-section2.png"
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </div>
+
+                <!-- BENEFICIOS -->
+            <div class="marketing-content__benefits">
+
+                <article class="marketing-content__benefit">
+
+                    <div class="marketing-content__benefit-icon">
+                        <svg viewBox="0 0 32 32" fill="none">
                             <path
-                                    d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/>
-                            <circle cx="12" cy="12" r="3"/>
+                                    d="M12 21.5h8M13 25h6M12.5 18.5c-2.5-1.7-4-4-4-7a7.5 7.5 0 0 1 15 0c0 3-1.5 5.3-4 7v1h-7v-1Z"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                            />
+                            <path
+                                    d="M16 1.5V4M3.5 11.5H1M31 11.5h-2.5M5.5 3.5l2 2M26.5 3.5l-2 2"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                    stroke-linecap="round"
+                            />
                         </svg>
-
                     </div>
 
-                    <span class="marketing-focus__number">1</span>
+                    <div class="marketing-content__benefit-copy">
+                        <h3 data-lang="marketing.contentBenefit1Title">
+                            Contenido con intención
+                        </h3>
 
-                    <h3 data-i18n="marketing.focusStep1.title">
-                        Visibilidad
-                    </h3>
-
-                    <p data-i18n="marketing.focusStep1.description">
-                        Atraemos a tu audiencia en los canales adecuados.
-                    </p>
+                        <p data-lang="marketing.contentBenefit1Text">
+                            Creamos contenido relevante que transmite
+                            el valor de tu marca.
+                        </p>
+                    </div>
 
                 </article>
 
+                <article class="marketing-content__benefit">
 
-                <!-- CONNECTION -->
-
-                <div class="marketing-focus__connection">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-
-                <!-- STEP 2 -->
-
-                <article class="marketing-focus__step">
-
-                    <div class="marketing-focus__icon">
-
-                        <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true">
+                    <div class="marketing-content__benefit-icon">
+                        <svg viewBox="0 0 32 32" fill="none">
                             <path
-                                    d="M5 3l14 9-6 1 3 7-3 1-3-7-5 4V3Z"/>
+                                    d="M5 23.5 22.5 6a3.5 3.5 0 0 1 5 5L10 28H5v-4.5Z"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                    stroke-linejoin="round"
+                            />
+                            <path
+                                    d="m19.5 9 5 5M5 23.5l5 4.5M7 5.5l1.2 2.7L11 9.5l-2.8 1.3L7 13.5l-1.2-2.7L3 9.5l2.8-1.3L7 5.5Z"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linejoin="round"
+                            />
                         </svg>
-
                     </div>
 
-                    <span class="marketing-focus__number">2</span>
+                    <div class="marketing-content__benefit-copy">
+                        <h3 data-lang="marketing.contentBenefit2Title">
+                            Una marca coherente
+                        </h3>
 
-                    <h3 data-i18n="marketing.focusStep2.title">
-                        Tráfico
-                    </h3>
-
-                    <p data-i18n="marketing.focusStep2.description">
-                        Generamos visitas de calidad a tu web.
-                    </p>
+                        <p data-lang="marketing.contentBenefit2Text">
+                            Mantenemos un estilo visual y un mensaje
+                            alineados en todos los canales.
+                        </p>
+                    </div>
 
                 </article>
 
+                <article class="marketing-content__benefit">
 
-                <!-- CONNECTION -->
-
-                <div class="marketing-focus__connection">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-
-                <!-- STEP 3 -->
-
-                <article class="marketing-focus__step">
-
-                    <div class="marketing-focus__icon">
-
-                        <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true">
+                    <div class="marketing-content__benefit-icon">
+                        <svg viewBox="0 0 32 32" fill="none">
+                            <circle
+                                    cx="16"
+                                    cy="9"
+                                    r="4"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                            />
+                            <circle
+                                    cx="6.5"
+                                    cy="13"
+                                    r="3"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                            />
+                            <circle
+                                    cx="25.5"
+                                    cy="13"
+                                    r="3"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                            />
                             <path
-                                    d="M4 5h16l-6 7v6l-4 2v-8L4 5Z"/>
+                                    d="M8 27v-3.5a8 8 0 0 1 16 0V27M1.5 26v-2.5a5 5 0 0 1 5-5M30.5 26v-2.5a5 5 0 0 0-5-5"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                    stroke-linecap="round"
+                            />
                         </svg>
-
                     </div>
 
-                    <span class="marketing-focus__number">3</span>
+                    <div class="marketing-content__benefit-copy">
+                        <h3 data-lang="marketing.contentBenefit3Title">
+                            Más conexión con tu público
+                        </h3>
 
-                    <h3 data-i18n="marketing.focusStep3.title">
-                        Conversión
-                    </h3>
-
-                    <p data-i18n="marketing.focusStep3.description">
-                        Convertimos ese tráfico en leads y ventas.
-                    </p>
-
-                </article>
-
-
-                <!-- CONNECTION -->
-
-                <div class="marketing-focus__connection">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-
-                <!-- STEP 4 -->
-
-                <article class="marketing-focus__step">
-
-                    <div class="marketing-focus__icon marketing-focus__icon--yellow">
-
-                        <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true">
-                            <path
-                                    d="M12 20s-7-4.5-9-9c-1.5-3.5.5-7 4-7 2 0 4 1.5 5 3 1-1.5 3-3 5-3 3.5 0 5.5 3.5 4 7-2 4.5-9 9-9 9Z"/>
-                        </svg>
-
+                        <p data-lang="marketing.contentBenefit3Text">
+                            Generamos comunidad y diálogo real
+                            con tus clientes.
+                        </p>
                     </div>
-
-                    <span class="marketing-focus__number">4</span>
-
-                    <h3 data-i18n="marketing.focusStep4.title">
-                        Fidelización
-                    </h3>
-
-                    <p data-i18n="marketing.focusStep4.description">
-                        Creamos relaciones que hacen crecer tu marca.
-                    </p>
 
                 </article>
 
             </div>
 
+        </div>
+        </div>
+    </section>
 
-            <!-- ==================================================
-                 SIDE CARD
-            ================================================== -->
+    <!-- =====================================================
+         MARKETING — RESULTADOS REALES
+    ====================================================== -->
+    <section
+            class="marketing-results"
+            aria-labelledby="marketing-results-title"
+    >
+        <div class="marketing-results__container">
 
-            <aside class="marketing-focus__card">
+            <!-- TÍTULO -->
+            <div class="marketing-results__intro">
+            <span
+                    class="marketing-results__eyebrow"
+                    data-lang="marketing.resultsEyebrow"
+            >
+                RESULTADOS REALES
+            </span>
 
-                <div class="marketing-focus__card-header">
+                <h2
+                        class="marketing-results__title"
+                        id="marketing-results-title"
+                >
+                <span data-lang="marketing.resultsTitle">
+                    Cada acción tiene un propósito
+                </span><span
+                        class="marketing-results__title-dot"
+                        aria-hidden="true"
+                >.</span>
+                </h2>
 
-                    <div class="marketing-focus__card-icon">
+                <p
+                        class="marketing-results__handwritten"
+                        data-lang="marketing.resultsHandwritten"
+                >
+                    Medir. Aprender. Mejorar.
+                </p>
 
-                        <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true">
-                            <path d="M4 19V10"/>
-                            <path d="M10 19V5"/>
-                            <path d="M16 19v-8"/>
-                            <path d="M22 19V2"/>
+                <span
+                        class="marketing-results__underline"
+                        aria-hidden="true"
+                ></span>
+            </div>
+
+            <!-- SERVICIOS -->
+            <div class="marketing-results__services">
+
+                <!-- REDES Y CONTENIDO -->
+                <article class="marketing-results__service">
+                    <div
+                            class="marketing-results__icon"
+                            aria-hidden="true"
+                    >
+                        <svg viewBox="0 0 32 32" fill="none">
+                            <rect
+                                    x="9"
+                                    y="3"
+                                    width="14"
+                                    height="26"
+                                    rx="2"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                            />
+                            <path
+                                    d="M14 25h4"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                    stroke-linecap="round"
+                            />
                         </svg>
-
                     </div>
 
-                    <h3>
-                    <span data-i18n="marketing.focusCardTitle1">
-                        No medimos likes,
-                    </span>
-                        <br>
-                        <span
-                                class="marketing-focus__card-highlight"
-                                data-i18n="marketing.focusCardTitle2">
-                        medimos crecimiento.
-                    </span>
+                    <h3 data-lang="marketing.resultsService1Title">
+                        Redes y contenido
                     </h3>
 
-                </div>
+                    <p data-lang="marketing.resultsService1Text">
+                        Planificación, creación y gestión de contenido
+                        para Instagram, Facebook, TikTok, LinkedIn y más.
+                    </p>
+                </article>
 
-
-                <div class="marketing-focus__card-divider"></div>
-
-
-                <!-- CARD ITEM 1 -->
-
-                <div class="marketing-focus__card-item">
-
-                    <div class="marketing-focus__check">
-                        ✓
+                <!-- CAMPAÑAS DIGITALES -->
+                <article class="marketing-results__service">
+                    <div
+                            class="marketing-results__icon"
+                            aria-hidden="true"
+                    >
+                        <svg viewBox="0 0 32 32" fill="none">
+                            <path
+                                    d="M4 13h5l15-7v20L9 19H4v-6Z"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                    stroke-linejoin="round"
+                            />
+                            <path
+                                    d="m9 19 3 8h5l-4-10M28 11l2-2M28 23l2 2M29 16h2"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                    stroke-linecap="round"
+                            />
+                        </svg>
                     </div>
 
-                    <div>
+                    <h3 data-lang="marketing.resultsService2Title">
+                        Campañas digitales
+                    </h3>
 
-                        <h4 data-i18n="marketing.focusCardItem1.title">
-                            Decisiones basadas en datos
-                        </h4>
+                    <p data-lang="marketing.resultsService2Text">
+                        Campañas en Meta Ads, Google Ads y otras
+                        plataformas para atraer clientes cualificados.
+                    </p>
+                </article>
 
-                        <p data-i18n="marketing.focusCardItem1.description">
-                            Analizamos, medimos y optimizamos.
-                        </p>
-
+                <!-- ANÁLISIS DE RESULTADOS -->
+                <article class="marketing-results__service">
+                    <div
+                            class="marketing-results__icon"
+                            aria-hidden="true"
+                    >
+                        <svg viewBox="0 0 32 32" fill="none">
+                            <path
+                                    d="M4 28V18h5v10M13 28V11h5v17M22 28V4h5v24"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                    stroke-linejoin="round"
+                            />
+                        </svg>
                     </div>
 
-                </div>
+                    <h3 data-lang="marketing.resultsService3Title">
+                        Análisis de resultados
+                    </h3>
 
+                    <p data-lang="marketing.resultsService3Text">
+                        Medimos el rendimiento y optimizamos
+                        constantemente para obtener mejores resultados.
+                    </p>
+                </article>
 
-                <!-- CARD ITEM 2 -->
+            </div>
 
-                <div class="marketing-focus__card-item">
-
-                    <div class="marketing-focus__check">
-                        ✓
-                    </div>
-
-                    <div>
-
-                        <h4 data-i18n="marketing.focusCardItem2.title">
-                            Estrategias personalizadas
-                        </h4>
-
-                        <p data-i18n="marketing.focusCardItem2.description">
-                            Cada marca, cada audiencia, cada objetivo.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- CARD ITEM 3 -->
-
-                <div class="marketing-focus__card-item">
-
-                    <div class="marketing-focus__check">
-                        ✓
-                    </div>
-
-                    <div>
-
-                        <h4 data-i18n="marketing.focusCardItem3.title">
-                            Transparencia total
-                        </h4>
-
-                        <p data-i18n="marketing.focusCardItem3.description">
-                            Reportes claros y comunicación constante.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </aside>
+            <!-- IMAGEN VISUAL -->
+            <figure class="marketing-results__visual">
+                <img
+                        src="assets/images/marketing-section3.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                >
+            </figure>
 
         </div>
-
     </section>
+
 
 </main>
 
 
 <!-- =========================================================
-FOOTER
-========================================================== -->
+     FOOTER
+========================================================= -->
 
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="footer__wrapper">
-
-
-            <!-- =================================================
-            BRAND
-            ================================================== -->
-
-            <div class="footer__brand">
-
-                <a
-                        href="index.html#hero"
-                        class="footer__logo"
-                >
-
-                    <img
-                            src="assets/logos/logo.png"
-                            alt="VM Agency Logo"
-                    >
-
-                </a>
-
-
-                <p
-                        class="footer__description text-sm"
-                        data-lang="footer.description"
-                >
-                    Ayudamos a empresas a crecer con
-                    soluciones inteligentes, medibles y sostenibles.
-                </p>
-
-
-                <!-- SOCIAL -->
-
-                <div class="footer__social">
-
-
-                    <!-- INSTAGRAM -->
-
-                    <a
-                            href="#"
-                            aria-label="Instagram"
-                    >
-
-                        <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                        >
-
-                            <rect
-                                    x="3"
-                                    y="3"
-                                    width="18"
-                                    height="18"
-                                    rx="5"
-                                    ry="5"
-                            ></rect>
-
-                            <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="4"
-                            ></circle>
-
-                            <circle
-                                    cx="17.5"
-                                    cy="6.5"
-                                    r="1"
-                            ></circle>
-
-                        </svg>
-
-                    </a>
-
-
-                    <!-- LINKEDIN -->
-
-                    <a
-                            href="#"
-                            aria-label="LinkedIn"
-                    >
-
-                        <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                        >
-
-                            <path
-                                    d="M6.5 8.5H3.5V20h3V8.5ZM5 3.5
-                                A1.75 1.75 0 1 0 5 7
-                                A1.75 1.75 0 0 0 5 3.5ZM10 8.5H7V20h3v-5.7
-                                c0-1.5.3-3 2.2-3
-                                1.9 0 1.9 1.8 1.9 3.1V20h3v-6.2
-                                c0-3-.6-5.3-4-5.3
-                                -1.6 0-2.7.9-3.1 1.7V8.5Z"
-                            ></path>
-
-                        </svg>
-
-                    </a>
-
-
-                    <!-- EMAIL -->
-
-                    <a
-                            href="mailto:hola@vmagency.com"
-                            aria-label="Email"
-                    >
-
-                        <i class="icon-mail"></i>
-
-                    </a>
-
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-            NAVIGATION
-            ================================================== -->
-
-            <div class="footer__column">
-
-                <h3
-                        class="footer__title text-sm"
-                        data-lang="footer.navigation"
-                >
-                    Navegación
-                </h3>
-
-                <ul>
-
-                    <li>
-
-                        <a
-                                href="index.html#hero"
-                                data-lang="footer.home"
-                        >
-                            Inicio
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a
-                                href="index.html#method"
-                                data-lang="footer.method"
-                        >
-                            Método VM
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a
-                                href="index.html#solutions"
-                                data-lang="footer.success"
-                        >
-                            Soluciones
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a
-                                href="index.html#about"
-                                data-lang="footer.about"
-                        >
-                            Sobre nosotros
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a
-                                href="index.html#contact"
-                                data-lang="footer.contactUs"
-                        >
-                            Contacto
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- =================================================
-            LEGAL
-            ================================================== -->
-
-            <div class="footer__column">
-
-                <h3
-                        class="footer__title text-sm"
-                        data-lang="footer.legal"
-                >
-                    Legal
-                </h3>
-
-                <ul>
-
-                    <li>
-
-                        <a
-                                href="#"
-                                data-lang="footer.legalNotice"
-                        >
-                            Aviso Legal
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a
-                                href="#"
-                                data-lang="footer.privacy"
-                        >
-                            Política de privacidad
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a
-                                href="#"
-                                data-lang="footer.cookies"
-                        >
-                            Política de Cookies
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- =================================================
-            CONTACT
-            ================================================== -->
-
-            <div class="footer__column">
-
-                <h3
-                        class="footer__title text-sm"
-                        data-lang="footer.contact"
-                >
-                    Hablemos
-                </h3>
-
-                <p
-                        class="footer__contact-text text-sm"
-                        data-lang="footer.contactDescription"
-                >
-                    Cuéntanos tu proyecto y te ayudaremos
-                    a hacerlo crecer.
-                </p>
-
-
-                <ul class="footer__contact">
-
-
-                    <!-- EMAIL -->
-
-                    <li>
-
-                        <i class="icon-mail"></i>
-
-                        <span
-                                data-lang="footer.email"
-                        >
-                            hola@vmagency.com
-                        </span>
-
-                    </li>
-
-
-                    <!-- PHONE -->
-
-                    <li>
-
-                        <i class="icon-phone"></i>
-
-                        <span
-                                data-lang="footer.phone"
-                        >
-                            +34 600 123 456
-                        </span>
-
-                    </li>
-
-
-                    <!-- LOCATION -->
-
-                    <li>
-
-                        <i class="icon-map-pin"></i>
-
-                        <span
-                                data-lang="footer.location"
-                        >
-                            Madrid, España
-                        </span>
-
-                    </li>
-
-
-                </ul>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- =================================================
-        FOOTER BOTTOM
-        ================================================== -->
-
-        <div class="footer__bottom">
-
-            <p
-                    class="footer__copyright text-sm"
-                    data-lang="footer.copyright"
-            >
-                © 2026 VM Agency. Todos los derechos reservados.
-            </p>
-
-        </div>
-
-    </div>
-
-</footer>
-
+<div id="footer-container"></div>
 
 <!-- =========================================================
-LANGUAGES
-========================================================== -->
+     LANGUAGES
+========================================================= -->
 
 <script src="lang/es.js"></script>
 <script src="lang/en.js"></script>
@@ -1020,15 +533,14 @@ LANGUAGES
 
 
 <!-- =========================================================
-JAVASCRIPT
-========================================================== -->
+     JAVASCRIPT
+========================================================= -->
 
 <script src="js/language.js"></script>
 <script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/main.js"></script>
 
-
 </body>
-
 </html>

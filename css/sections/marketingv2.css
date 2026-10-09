@@ -1,0 +1,871 @@
+/* ==========================================================
+   VM AGENCY — MARKETING
+   CSS limpio y responsive
+   Stack: HTML5 + CSS3 + Vanilla JS
+========================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+/* ==========================================================
+   1. TOKENS LOCALES
+========================================================== */
+
+.marketing-page {
+    --marketing-orange: #FF914D;
+    --marketing-yellow: #FFDE59;
+    --marketing-ink: #171717;
+    --marketing-body: #48433F;
+    --marketing-muted: #6D6761;
+    --marketing-paper: #FBF7F0;
+    --marketing-line: rgba(36, 30, 23, 0.10);
+
+    --marketing-font: "Manrope", sans-serif;
+    --marketing-hand-font: "Caveat", cursive;
+
+    --marketing-body-size: 15px;
+    --marketing-body-line: 1.65;
+
+    color: var(--marketing-ink);
+    font-family: var(--marketing-font);
+}
+
+.marketing-page *,
+.marketing-page *::before,
+.marketing-page *::after {
+    box-sizing: border-box;
+}
+
+.marketing-page img {
+    max-width: 100%;
+}
+
+/* ==========================================================
+   2. HERO — MARKETING DIGITAL
+========================================================== */
+
+.marketing-hero {
+    position: relative;
+    isolation: isolate;
+    min-height: min(760px, calc(100svh - 94px));
+    overflow: hidden;
+    background: #FFFDF9;
+    color: var(--marketing-ink);
+}
+
+.marketing-hero__visual {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.marketing-hero__visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 55%;
+}
+
+.marketing-hero__visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 253, 249, 1) 0%,
+        rgba(255, 253, 249, .98) 25%,
+        rgba(255, 253, 249, .88) 39%,
+        rgba(255, 253, 249, .42) 54%,
+        rgba(255, 253, 249, .06) 72%,
+        rgba(255, 253, 249, 0) 100%
+    );
+}
+
+.marketing-hero__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: min(53%, 760px);
+    min-height: inherit;
+    padding: clamp(48px, 5.5vw, 84px) 24px clamp(48px, 5.5vw, 84px) max(6.5%, calc((100vw - 1600px) / 2));
+}
+
+.marketing-hero__eyebrow,
+.marketing-content__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 18px;
+    color: var(--marketing-orange);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.marketing-hero__eyebrow::after {
+    content: "";
+    width: 42px;
+    height: 1px;
+    flex: 0 0 42px;
+    background: currentColor;
+}
+
+.marketing-hero__title {
+    max-width: 700px;
+    margin: 0;
+    color: var(--marketing-ink);
+    font-family: var(--marketing-font);
+    font-size: clamp(44px, 5.1vw, 78px);
+    font-weight: 800;
+    line-height: .98;
+    letter-spacing: -.065em;
+    text-wrap: balance;
+}
+
+.marketing-hero__word--marketing {
+    color: var(--marketing-ink);
+}
+
+.marketing-hero__word--digital {
+    color: var(--marketing-orange);
+}
+
+.marketing-hero__slogan {
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    margin: 12px 0 13px -3px;
+    padding: 4px 25px 6px;
+    color: #111;
+    font-family: var(--marketing-hand-font);
+    font-size: clamp(23px, 2.1vw, 30px);
+    font-weight: 600;
+    line-height: 1.1;
+    transform: rotate(-4deg);
+}
+
+.marketing-hero__slogan::before,
+.marketing-hero__slogan::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    border: 1.5px solid #FFD84D;
+    border-radius: 52% 48% 46% 54% / 48% 55% 45% 52%;
+}
+
+.marketing-hero__slogan::before {
+    inset: 2px -7px 1px -7px;
+    transform: rotate(-2deg);
+}
+
+.marketing-hero__slogan::after {
+    inset: -1px -10px 2px -4px;
+    border-width: 1px;
+    opacity: .9;
+    transform: rotate(1.5deg);
+}
+
+.marketing-hero__line {
+    display: none;
+}
+
+.marketing-hero__description {
+    width: 100%;
+    max-width: 570px;
+    margin: 14px 0 0;
+    color: var(--marketing-body);
+    font-size: var(--marketing-body-size);
+    font-weight: 400;
+    line-height: var(--marketing-body-line);
+}
+
+.marketing-hero__description--secondary {
+    margin-top: 8px;
+}
+
+.marketing-hero__actions {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.marketing-hero__actions .marketing-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    max-width: 100%;
+    padding: 14px 25px;
+    border: 0;
+    border-radius: 11px;
+    background: var(--marketing-yellow);
+    color: #111;
+    font-family: var(--marketing-font);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.3;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+
+.marketing-hero__actions .marketing-button:hover {
+    background: var(--marketing-orange);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.marketing-hero__actions .marketing-button:focus-visible {
+    outline: 3px solid var(--marketing-ink);
+    outline-offset: 4px;
+}
+
+/* ==========================================================
+   3. CONTENT CREATION — ESTRUCTURA PRINCIPAL
+   Desktop/tablet: texto | imagen | beneficios en la MISMA FILA
+========================================================== */
+
+.marketing-content {
+    position: relative;
+    isolation: isolate;
+    padding: clamp(42px, 4.5vw, 72px) 0;
+    overflow: clip;
+    background: var(--marketing-paper);
+    color: var(--marketing-ink);
+}
+
+.marketing-content__container {
+    display: grid;
+    grid-template-columns:
+        minmax(0, .88fr)
+        minmax(0, 1.42fr)
+        minmax(0, .82fr);
+    align-items: center;
+    column-gap: clamp(22px, 3vw, 48px);
+    width: calc(100% - 120px);
+    max-width: 1600px;
+    margin-inline: auto;
+}
+
+/* El wrapper intro deja que copy y visual participen
+   directamente en la cuadrícula de tres columnas. */
+.marketing-content__intro {
+    display: contents;
+}
+
+.marketing-content__copy {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    min-width: 0;
+    padding: 0;
+}
+
+.marketing-content__eyebrow {
+    gap: 10px;
+    margin-bottom: 22px;
+    font-size: 10px;
+    letter-spacing: .14em;
+}
+
+.marketing-content__eyebrow::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 1px;
+    flex: 0 0 36px;
+    background: currentColor;
+}
+
+.marketing-content__title {
+    max-width: 560px;
+    margin: 0;
+    color: var(--marketing-ink);
+    font-family: var(--marketing-font);
+    font-size: clamp(34px, 3.4vw, 58px);
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -.06em;
+    text-wrap: balance;
+}
+
+.marketing-content__title-dot {
+    color: var(--marketing-orange);
+}
+
+.marketing-content__handwritten {
+    max-width: 390px;
+    margin: 18px 0 0;
+    color: #272522;
+    font-family: var(--marketing-hand-font);
+    font-size: clamp(23px, 2.05vw, 31px);
+    font-weight: 600;
+    line-height: 1.12;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+}
+
+.marketing-content__handdraw {
+    display: block;
+    width: min(290px, 82%);
+    height: 13px;
+    margin: 5px 0 0 12px;
+    border-top: 1.5px solid var(--marketing-orange);
+    border-radius: 50%;
+    transform: rotate(-3deg);
+}
+
+/* Imagen PNG completa, sin recortar ni generar objetos CSS */
+.marketing-content__visual {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    min-width: 0;
+    width: 100%;
+    margin: 0;
+    overflow: visible;
+}
+
+.marketing-content__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Beneficios en la tercera columna y en la misma fila
+   que el título y la imagen. */
+.marketing-content__benefits {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.marketing-content__benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--marketing-line);
+}
+
+.marketing-content__benefit:first-child {
+    padding-top: 0;
+}
+
+.marketing-content__benefit:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.marketing-content__benefit-icon {
+    display: flex;
+    flex: 0 0 30px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 1px;
+    color: var(--marketing-orange);
+}
+
+.marketing-content__benefit-icon svg {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+.marketing-content__benefit-copy {
+    min-width: 0;
+}
+
+.marketing-content__benefit-copy h3 {
+    margin: 0 0 5px;
+    color: var(--marketing-ink);
+    font-family: var(--marketing-font);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: -.02em;
+}
+
+.marketing-content__benefit-copy p {
+    max-width: 300px;
+    margin: 0;
+    color: var(--marketing-muted);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+/* ==========================================================
+   4. DESKTOP COMPACTO — 1200 A 1450 PX
+   Conserva las tres columnas y ajusta proporciones.
+========================================================== */
+
+@media (min-width: 768px) and (max-width: 1450px) {
+    .marketing-content__container {
+        width: calc(100% - 80px);
+        grid-template-columns:
+            minmax(0, .82fr)
+            minmax(0, 1.28fr)
+            minmax(0, .82fr);
+        column-gap: clamp(18px, 2.1vw, 30px);
+    }
+
+    .marketing-content__title {
+        font-size: clamp(32px, 3.3vw, 48px);
+    }
+
+    .marketing-content__handwritten {
+        font-size: clamp(22px, 2vw, 28px);
+    }
+
+    .marketing-content__benefit {
+        gap: 9px;
+        padding: 12px 0;
+    }
+
+    .marketing-content__benefit-icon {
+        flex-basis: 26px;
+    }
+
+    .marketing-content__benefit-icon svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .marketing-content__benefit-copy h3 {
+        font-size: 12px;
+    }
+
+    .marketing-content__benefit-copy p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+}
+
+/* ==========================================================
+   5. TABLET — 768 A 991 PX
+   Mantiene las tres columnas con tipografía más compacta.
+========================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .marketing-content {
+        padding: 42px 0;
+    }
+
+    .marketing-content__container {
+        width: calc(100% - 48px);
+        grid-template-columns:
+            minmax(0, .82fr)
+            minmax(0, 1.15fr)
+            minmax(0, .83fr);
+        column-gap: 16px;
+    }
+
+    .marketing-content__eyebrow {
+        gap: 7px;
+        margin-bottom: 16px;
+        font-size: 8px;
+        letter-spacing: .1em;
+    }
+
+    .marketing-content__eyebrow::after {
+        width: 22px;
+        flex-basis: 22px;
+    }
+
+    .marketing-content__title {
+        font-size: clamp(27px, 3.5vw, 35px);
+        line-height: 1.04;
+        letter-spacing: -.055em;
+    }
+
+    .marketing-content__handwritten {
+        margin-top: 13px;
+        font-size: clamp(20px, 2.5vw, 24px);
+    }
+
+    .marketing-content__handdraw {
+        width: 78%;
+    }
+
+    .marketing-content__benefit {
+        gap: 7px;
+        padding: 10px 0;
+    }
+
+    .marketing-content__benefit-icon {
+        flex-basis: 21px;
+    }
+
+    .marketing-content__benefit-icon svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .marketing-content__benefit-copy h3 {
+        font-size: 10px;
+        line-height: 1.35;
+    }
+
+    .marketing-content__benefit-copy p {
+        font-size: 9px;
+        line-height: 1.45;
+    }
+}
+
+/* ==========================================================
+   6. HERO — LAPTOP Y TABLET
+========================================================== */
+
+@media (max-width: 1200px) {
+    .marketing-hero {
+        min-height: 620px;
+    }
+
+    .marketing-hero__content {
+        width: 57%;
+        padding-left: 5%;
+    }
+
+    .marketing-hero__title {
+        font-size: clamp(43px, 5.4vw, 66px);
+    }
+
+    .marketing-hero__description {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .marketing-hero {
+        min-height: 590px;
+    }
+
+    .marketing-hero__content {
+        width: 62%;
+        padding: 48px 24px 48px 4%;
+    }
+
+    .marketing-hero__title {
+        font-size: clamp(40px, 5.6vw, 58px);
+    }
+
+    .marketing-hero__eyebrow {
+        margin-bottom: 14px;
+        font-size: 10px;
+    }
+
+    .marketing-hero__description {
+        max-width: 440px;
+        font-size: 14px;
+    }
+
+    .marketing-hero__actions {
+        margin-top: 19px;
+    }
+}
+
+/* ==========================================================
+   7. MÓVIL — COMPOSICIÓN VERTICAL
+========================================================== */
+
+@media (max-width: 767px) {
+    .marketing-hero {
+        min-height: 0;
+        overflow: hidden;
+        background: #FFFDF9;
+    }
+
+    .marketing-hero__visual {
+        position: relative;
+        inset: auto;
+        z-index: 0;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+    }
+
+    .marketing-hero__visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 62% center;
+    }
+
+    .marketing-hero__visual::after {
+        background: linear-gradient(
+            180deg,
+            rgba(255, 253, 249, 0) 35%,
+            rgba(255, 253, 249, .28) 67%,
+            #FFFDF9 100%
+        );
+    }
+
+    .marketing-hero__content {
+        width: 100%;
+        min-height: 0;
+        margin-top: -30px;
+        padding: 0 24px 42px;
+    }
+
+    .marketing-hero__eyebrow {
+        margin-bottom: 13px;
+        font-size: 9px;
+    }
+
+    .marketing-hero__eyebrow::after {
+        width: 28px;
+        flex-basis: 28px;
+    }
+
+    .marketing-hero__title {
+        max-width: 100%;
+        font-size: clamp(39px, 9vw, 58px);
+        line-height: .99;
+        letter-spacing: -.06em;
+    }
+
+    .marketing-hero__slogan {
+        min-height: 39px;
+        margin: 9px 0 10px -2px;
+        padding: 3px 17px 4px;
+        font-size: clamp(21px, 5.5vw, 26px);
+    }
+
+    .marketing-hero__slogan::before {
+        inset: 2px -3px 1px -3px;
+    }
+
+    .marketing-hero__slogan::after {
+        inset: 0 -5px 3px -1px;
+    }
+
+    .marketing-hero__description {
+        max-width: 560px;
+        margin-top: 11px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .marketing-hero__description--secondary {
+        margin-top: 7px;
+    }
+
+    .marketing-hero__actions {
+        margin-top: 19px;
+    }
+
+    .marketing-hero__actions .marketing-button {
+        min-height: 46px;
+        padding: 13px 21px;
+        font-size: 14px;
+    }
+
+    .marketing-content {
+        padding: 38px 0 44px;
+    }
+
+    .marketing-content__container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: calc(100% - 40px);
+        max-width: 560px;
+    }
+
+    .marketing-content__intro {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .marketing-content__copy {
+        order: 0;
+    }
+
+    .marketing-content__eyebrow {
+        gap: 9px;
+        margin-bottom: 16px;
+        font-size: 9px;
+    }
+
+    .marketing-content__eyebrow::after {
+        width: 29px;
+        flex-basis: 29px;
+    }
+
+    .marketing-content__title {
+        max-width: 500px;
+        font-size: clamp(34px, 8vw, 47px);
+        line-height: 1.02;
+        letter-spacing: -.06em;
+    }
+
+    .marketing-content__handwritten {
+        max-width: 360px;
+        margin-top: 13px;
+        font-size: clamp(23px, 5.6vw, 29px);
+        line-height: 1.1;
+    }
+
+    .marketing-content__handdraw {
+        width: min(260px, 82%);
+        margin-top: 3px;
+    }
+
+    .marketing-content__visual {
+        order: 1;
+        width: 100%;
+        margin: 10px auto 15px;
+    }
+
+    .marketing-content__image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .marketing-content__benefits {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .marketing-content__benefit {
+        gap: 13px;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--marketing-line);
+    }
+
+    .marketing-content__benefit:first-child {
+        padding-top: 8px;
+    }
+
+    .marketing-content__benefit:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .marketing-content__benefit-icon {
+        flex-basis: 31px;
+    }
+
+    .marketing-content__benefit-icon svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .marketing-content__benefit-copy h3 {
+        margin-bottom: 4px;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .marketing-content__benefit-copy p {
+        max-width: 420px;
+        font-size: 12px;
+        line-height: 1.55;
+    }
+}
+
+/* ==========================================================
+   8. MÓVIL PEQUEÑO
+========================================================== */
+
+@media (max-width: 420px) {
+    .marketing-hero__visual {
+        aspect-ratio: 1 / 1;
+    }
+
+    .marketing-hero__content {
+        margin-top: -22px;
+        padding: 0 19px 35px;
+    }
+
+    .marketing-hero__title {
+        font-size: clamp(36px, 10vw, 43px);
+    }
+
+    .marketing-hero__description {
+        font-size: 13px;
+    }
+
+    .marketing-hero__actions .marketing-button {
+        min-height: 44px;
+        padding: 12px 18px;
+    }
+
+    .marketing-content {
+        padding: 32px 0 38px;
+    }
+
+    .marketing-content__container {
+        width: calc(100% - 34px);
+    }
+
+    .marketing-content__title {
+        font-size: clamp(31px, 8.8vw, 37px);
+    }
+
+    .marketing-content__handwritten {
+        font-size: 23px;
+    }
+
+    .marketing-content__benefit {
+        gap: 10px;
+        padding: 13px 0;
+    }
+
+    .marketing-content__benefit-icon {
+        flex-basis: 28px;
+    }
+
+    .marketing-content__benefit-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* ==========================================================
+   9. ACCESIBILIDAD
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .marketing-page *,
+    .marketing-page *::before,
+    .marketing-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
