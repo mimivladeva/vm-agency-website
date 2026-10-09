@@ -186,57 +186,7 @@ const en = {
             founders:"Mimi & Viktor",
             foundersRole:"Founders of VM Agency"
         },
-    /*web:{
-        eyebrow:"WEB DEVELOPMENT",
-        titleLine1:"Websites that convert.",
-        titleLine2:"Designed to grow",
-        highlight:"with you.",
-        description:"We create fast, modern and optimized websites designed to attract visitors and turn them into customers.",
-        feature1:{
-            title:"Fast",
-            description:"Optimized for maximum performance."
-        },
-        feature2:{
-            title:"Responsive",
-            description:"Perfect on every device."
-        },
-        feature3:{
-            title:"Results-focused",
-            description:"Strategy and design built to convert."
-        },
-        buttonProjects:"View projects",
-        buttonContact:"Let's talk about your project",
-        imageAlt:"VM Agency web development",
-        includesEyebrow:"WHAT YOUR WEBSITE INCLUDES",
-        includesTitle1:"Everything you need for a",
-        includesTitle2:"professional website that delivers",
-        includesHighlight:"results.",
-        service1:{
-            title:"Custom design",
-            description:"100% tailored to your brand and goals."
-        },
-        service2:{
-            title:"Technical SEO",
-            description:"Optimized to help customers find you on Google."
-        },
-        service3:{
-            title:"Performance",
-            description:"Fast loading to improve experience and conversions."
-        },
-        service4:{
-            title:"Security",
-            description:"We protect your website and your customers' data."
-        },
-        service5:{
-            title:"Easy to manage",
-            description:"An intuitive interface that keeps you in control."
-        },
-        service6:{
-            title:"Scalable",
-            description:"Built to grow alongside your business."
-        }
-    },
-    */
+
     web: {
 
         eyebrow: "SERVICE 01",
@@ -533,7 +483,7 @@ const en = {
 
         description2:"We combine strategy, content and data-driven campaigns to help your brand grow.",
 
-        button:"Let's talk about your project",
+        button:"Let's talk",
 
         imageAlt:"VM Agency digital marketing",
 
@@ -584,7 +534,7 @@ const en = {
             "vision and data.",
 
         button:
-            "Let's talk about your project",
+            "Let's talk",
 
         imageAlt:
             "Workspace for strategic consulting",
@@ -721,4 +671,5 @@ const en = {
             "Let's talk"
 
     },
+
 };
