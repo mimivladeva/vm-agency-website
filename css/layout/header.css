@@ -94,33 +94,25 @@
     list-style:none;
 
 }
+.header__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 
-.header__link{
+    text-decoration: none;
+    color: var(--color-black);
 
-    position:relative;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: nowrap;
 
-    display:flex;
-
-    align-items:center;
-
-    gap:6px;
-
-    text-decoration:none;
-
-    color:var(--color-black);
-
-    font-size:17px;
-
-    font-weight:500;
-
-    line-height:1.2;
-
-    transition:var(--transition);
-
-    white-space:nowrap;
-
+    transition: var(--transition);
 }
 
+.header__link {
+    font-size: 1.1rem;
+}
 .header__link:hover{
 
     color:var(--color-primary);
@@ -321,21 +313,32 @@
         z-index:1002;
     }
 
-    .header__nav{
-        position:fixed;
-        top:0;
-        right:-50%;
-        width:50%;
-        height:100vh;
-        padding:120px 48px 48px;
-        background:rgba(255,255,255,.95);
-        backdrop-filter:blur(20px);
-        -webkit-backdrop-filter:blur(20px);
-        box-shadow:-20px 0 50px rgba(0,0,0,.08);
-        transition:right .35s ease;
-        justify-content:flex-start;
-        align-items:flex-start;
+
+    .header__nav {
+        position: fixed;
+        right: -50%;
+        width: 50%;
+        top: 88px;
+        height: calc(100dvh - 83px);
+
+        padding: 36px 48px;
+
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
+        box-shadow: -20px 0 50px rgba(0, 0, 0, 0.08);
+
+        transition: right 0.35s ease;
+
+        justify-content: flex-start;
+        align-items: flex-start;
     }
+
+    .header__nav.active {
+        right: 0;
+    }
+
 
     .header__nav.active{
         right:0;
@@ -348,9 +351,9 @@
         gap:36px;
     }
 
-    .header__link{
-        font-size:22px;
-    }
+        .header__link {
+            font-size: 1.1rem;
+        }
 
     .dropdown{
         position:static;
@@ -403,4 +406,7 @@
         height:36px;
     }
 
+    .header__menu {
+        gap: 40px;
+    }
 }
