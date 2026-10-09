@@ -64,6 +64,7 @@
     line-height:.98;
     letter-spacing:-.055em;
 }
+
 .iaservice-hero__accent{
     color:#FF914D;
 }
@@ -613,16 +614,12 @@
     stroke-linecap:round;
     stroke-linejoin:round;
 }
-.ia-solution__step-title{
-    position:relative;
-    z-index:10;
-    margin:0 0 5px;
-    color:#111;
-    font-family:"Manrope",sans-serif;
-    font-size:15px;
-    font-weight:700;
-    line-height:1.25;
-    letter-spacing:-.015em;
+
+.ia-solution__step-title {
+    position: relative;
+    z-index: 10;
+    margin: 0 0 5px;
+    color: #111;
 }
 .ia-solution__step-text{
     position:relative;

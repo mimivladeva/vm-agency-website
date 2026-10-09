@@ -22,22 +22,22 @@ ABOUT — CONTENT
     text-transform:uppercase;
 }
 
+
 .about__title{
-    margin:0;
+    width:100%;
     max-width:500px;
+    margin:0;
     line-height:1.08;
-    letter-spacing:-0.03em;
+    letter-spacing:-.035em;
 }
-
-.about__highlight{
-    color:#FF914D;
-}
-
 .about__description{
     max-width:440px;
     margin-top:30px;
     color:rgba(0,0,0,.62);
     line-height:1.7;
+}
+.about__highlight{
+    color:#FF914D;
 }
 
 .about__line{
@@ -325,23 +325,20 @@ MOBILE
         margin-bottom:14px;
     }
 
+
     .about__title{
         width:100%;
         max-width:330px;
-        margin:0;
         line-height:1.12;
-        letter-spacing:-0.035em;
+        letter-spacing:-.035em;
         text-align:left;
     }
-
     .about__description{
         width:100%;
         max-width:none;
         margin:20px 0 0;
-        text-align:left;
         line-height:1.65;
     }
-
     .about__line{
         width:20px;
         margin:25px 0 0;
