@@ -2720,4 +2720,269 @@
     }
 }
 
+/* ==========================================================
+   WEB SERVICE — LARGE DESKTOP 2000px+
+   VM AGENCY
+========================================================== */
+
+@media (min-width: 1800px) {
+
+    /* ======================================================
+       1. HERO
+    ====================================================== */
+
+    .webservice-hero {
+        min-height: 850px;
+        height: 100vh;
+    }
+
+    .webservice-hero__visual img {
+        object-position: center center;
+    }
+
+    .webservice-hero__content {
+        width: 51%;
+        max-width: 1000px;
+        padding: 140px 60px 90px 6.5%;
+        justify-content: center;
+    }
+
+    .webservice-hero__eyebrow {
+        gap: 18px;
+        margin-bottom: 28px;
+        font-size: 15px;
+    }
+
+    .webservice-hero__eyebrow-line {
+        flex-basis: 85px;
+    }
+
+    .webservice-hero__title {
+        font-size: clamp(68px, 4.1vw, 88px);
+        line-height: 1.06;
+        letter-spacing: -.055em;
+    }
+
+    .webservice-hero__title-accent::after {
+        border-width: 4px;
+    }
+
+    .webservice-hero__subtitle {
+        margin-top: 30px;
+        margin-bottom: 12px;
+        font-size: clamp(36px, 2.2vw, 44px);
+    }
+
+    .webservice-hero__description {
+        max-width: 600px;
+        margin: 16px 0 32px;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .webservice-hero__button {
+        min-height: 60px;
+        padding: 18px 30px;
+        gap: 24px;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+
+    .webservice-hero__button-arrow {
+        font-size: 23px;
+    }
+
+    .webservice-hero__philosophy {
+        max-width: 480px;
+        margin-top: 45px;
+    }
+
+    .webservice-hero__philosophy-title {
+        gap: 16px;
+        font-size: 32px;
+    }
+
+    .webservice-hero__philosophy-icon {
+        font-size: 32px;
+    }
+
+    .webservice-hero__philosophy-text {
+        margin-top: 20px;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .webservice-hero__scroll {
+        width: 62px;
+        height: 62px;
+        bottom: 30px;
+    }
+
+    .webservice-hero__scroll svg {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    /* ======================================================
+       2. FEATURES SECTION
+    ====================================================== */
+
+    .web-features {
+        padding: 90px 0 100px;
+    }
+
+    .web-features__container {
+        width: min(1850px, calc(100% - 140px));
+        margin-inline: auto;
+    }
+
+    .web-features__header {
+        max-width: 1100px;
+        margin: 0 auto 95px;
+    }
+
+    .web-features__eyebrow {
+        margin-bottom: 24px;
+        font-size: 15px;
+    }
+
+    .web-features__title {
+        font-size: clamp(46px, 3vw, 64px);
+        line-height: 1.15;
+        letter-spacing: -.045em;
+    }
+
+
+    /* ======================================================
+       3. SIX FEATURES
+    ====================================================== */
+
+    .web-features__flow {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    .web-feature {
+        padding: 0 28px 35px;
+    }
+
+    .web-feature__number {
+        margin-bottom: 24px;
+        font-size: 34px;
+    }
+
+    .web-feature__icon {
+        width: 82px;
+        height: 82px;
+        margin-bottom: 26px;
+    }
+
+    .web-feature__title {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+    .web-feature__underline {
+        width: 58px;
+        margin-bottom: 14px;
+    }
+
+    .web-feature__text {
+        max-width: 250px;
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .web-feature__arrow {
+        width: clamp(75px, 4.5vw, 100px);
+        top: 82px;
+    }
+
+    .web-feature-step:nth-child(1) .web-feature__arrow,
+    .web-feature-step:nth-child(2) .web-feature__arrow,
+    .web-feature-step:nth-child(3) .web-feature__arrow,
+    .web-feature-step:nth-child(4) .web-feature__arrow,
+    .web-feature-step:nth-child(5) .web-feature__arrow {
+        top: 82px;
+    }
+
+
+    /* ======================================================
+       4. CEO CARD
+    ====================================================== */
+
+    .web-features__ceo {
+        width: min(1050px, 85%);
+        min-height: 205px;
+        margin: 100px auto 0;
+        padding: 38px 48px;
+        gap: 34px;
+    }
+
+    .web-features__ceo-tape {
+        width: 115px;
+        height: 30px;
+    }
+
+    .web-features__ceo-portrait {
+        flex: 0 0 110px;
+        width: 110px;
+        height: 110px;
+    }
+
+    .web-features__ceo-title {
+        margin-bottom: 18px;
+        font-size: 30px;
+    }
+
+    .web-features__ceo-text {
+        max-width: 750px;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .web-features__ceo-heart {
+        font-size: 46px;
+    }
+}
+
+
+/* ==========================================================
+   EXTRA LARGE SCREENS — 2400px+
+========================================================== */
+
+@media (min-width: 2400px) {
+
+    .webservice-hero__content {
+        max-width: 1100px;
+    }
+
+    .webservice-hero__title {
+        font-size: 92px;
+    }
+
+    .web-features__container {
+        width: min(2050px, calc(100% - 180px));
+    }
+
+    .web-feature {
+        padding-inline: 35px;
+    }
+
+    .web-feature__icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .web-feature__title {
+        font-size: 20px;
+    }
+
+    .web-feature__text {
+        font-size: 17px;
+    }
+}
+
+
 

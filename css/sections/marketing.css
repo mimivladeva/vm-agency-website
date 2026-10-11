@@ -1278,3 +1278,328 @@
         max-width: 100%;
     }
 }
+
+/* ==========================================================
+   VM AGENCY — MARKETING DESKTOP XL
+   Pantallas de 2000 px en adelante
+   Objetivo: textos legibles, composición amplia y equilibrada
+========================================================== */
+
+@media screen and (min-width: 2000px) {
+
+    /* ------------------------------------------------------
+       1. HERO — MARKETING DIGITAL
+    ------------------------------------------------------ */
+
+    .marketing-page .marketing-hero {
+        min-height: min(1000px, 85svh);
+    }
+
+    .marketing-page .marketing-hero__content {
+        width: 55%;
+        max-width: 1120px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: max(7%, calc((100vw - 1900px) / 2));
+        padding-right: 60px;
+    }
+
+    .marketing-page .marketing-hero__eyebrow {
+        gap: 18px;
+        margin-bottom: 28px;
+        font-size: 15px;
+        letter-spacing: 0.16em;
+    }
+
+    .marketing-page .marketing-hero__eyebrow::after {
+        width: 60px;
+        flex-basis: 60px;
+    }
+
+    .marketing-page .marketing-hero__title {
+        max-width: 1050px;
+        font-size: clamp(88px, 5vw, 116px);
+        line-height: 1;
+        letter-spacing: -0.065em;
+    }
+
+    .marketing-page .marketing-hero__slogan {
+        min-height: 65px;
+        margin-top: 24px;
+        margin-bottom: 22px;
+        padding: 8px 36px;
+        font-size: 42px;
+    }
+
+    .marketing-page .marketing-hero__description {
+        max-width: 760px;
+        margin-top: 22px;
+        font-size: 21px;
+        line-height: 1.8;
+        font-weight: 400;
+    }
+
+    .marketing-page .marketing-hero__description--secondary {
+        margin-top: 12px;
+    }
+
+    .marketing-page .marketing-hero__actions {
+        margin-top: 36px;
+    }
+
+    .marketing-page .marketing-hero__actions .marketing-button {
+        min-height: 64px;
+        padding: 20px 36px;
+        border-radius: 13px;
+        font-size: 19px;
+    }
+
+
+    /* ------------------------------------------------------
+       2. CONTENT STRATEGY
+       Texto | imagen | beneficios
+    ------------------------------------------------------ */
+
+    .marketing-page .marketing-content {
+        padding: 110px 0 120px;
+    }
+
+    .marketing-page .marketing-content__container {
+        width: calc(100% - 240px);
+        max-width: 1900px;
+        grid-template-columns:
+            minmax(0, 0.95fr)
+            minmax(0, 1.45fr)
+            minmax(0, 0.95fr);
+        column-gap: clamp(48px, 3vw, 80px);
+    }
+
+    .marketing-page .marketing-content__eyebrow {
+        gap: 16px;
+        margin-bottom: 28px;
+        font-size: 14px;
+        letter-spacing: 0.13em;
+        line-height: 1.6;
+    }
+
+    .marketing-page .marketing-content__eyebrow::after {
+        width: 50px;
+        flex-basis: 50px;
+    }
+
+    .marketing-page .marketing-content__title {
+        max-width: 650px;
+        font-size: clamp(56px, 3.2vw, 76px);
+        line-height: 1.08;
+        letter-spacing: -0.055em;
+    }
+
+    .marketing-page .marketing-content__handwritten {
+        max-width: 540px;
+        margin-top: 28px;
+        font-size: clamp(34px, 1.8vw, 42px);
+        line-height: 1.25;
+    }
+
+    .marketing-page .marketing-content__handdraw {
+        width: min(390px, 85%);
+        height: 18px;
+        margin-top: 12px;
+        border-top-width: 2px;
+    }
+
+    .marketing-page .marketing-content__visual {
+        width: 100%;
+    }
+
+    .marketing-page .marketing-content__image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .marketing-page .marketing-content__benefit {
+        gap: 18px;
+        padding: 28px 0;
+    }
+
+    .marketing-page .marketing-content__benefit-icon {
+        flex: 0 0 42px;
+    }
+
+    .marketing-page .marketing-content__benefit-icon svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    .marketing-page .marketing-content__benefit-copy h3 {
+        margin-bottom: 10px;
+        font-size: 19px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+    }
+
+    .marketing-page .marketing-content__benefit-copy p {
+        max-width: 420px;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+
+    /* ------------------------------------------------------
+       3. RESULTADOS REALES
+    ------------------------------------------------------ */
+
+    .marketing-page .marketing-results {
+        padding: 65px 0 75px;
+    }
+
+    .marketing-page .marketing-results__container {
+        width: calc(100% - 240px);
+        max-width: 1900px;
+        grid-template-columns:
+            minmax(0, 0.95fr)
+            minmax(0, 2.1fr)
+            minmax(0, 1.2fr);
+        gap: clamp(40px, 3vw, 75px);
+    }
+
+    .marketing-page .marketing-results__eyebrow {
+        gap: 16px;
+        margin-bottom: 22px;
+        font-size: 14px;
+        letter-spacing: 0.13em;
+        line-height: 1.5;
+    }
+
+    .marketing-page .marketing-results__eyebrow::after {
+        width: 48px;
+        flex-basis: 48px;
+    }
+
+    .marketing-page .marketing-results__title {
+        max-width: 570px;
+        font-size: clamp(48px, 2.8vw, 66px);
+        line-height: 1.1;
+        letter-spacing: -0.055em;
+    }
+
+    .marketing-page .marketing-results__handwritten {
+        margin-top: 24px;
+        font-size: clamp(32px, 1.7vw, 40px);
+        line-height: 1.25;
+    }
+
+    .marketing-page .marketing-results__underline {
+        width: min(260px, 80%);
+        height: 14px;
+        margin-top: 10px;
+        border-top-width: 2px;
+    }
+
+    .marketing-page .marketing-results__service {
+        padding: 0 28px;
+    }
+
+    .marketing-page .marketing-results__icon {
+        width: 44px;
+        height: 46px;
+        margin-bottom: 16px;
+    }
+
+    .marketing-page .marketing-results__icon svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    .marketing-page .marketing-results__service h3 {
+        margin-bottom: 12px;
+        font-size: 19px;
+        line-height: 1.5;
+        letter-spacing: -0.025em;
+    }
+
+    .marketing-page .marketing-results__service p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .marketing-page .marketing-results__visual {
+        width: 100%;
+    }
+
+    .marketing-page .marketing-results__visual img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+
+/* ==========================================================
+   DESKTOP XL — MONITORES EXTRA GRANDES
+   A partir de 2400 px
+========================================================== */
+
+@media screen and (min-width: 2400px) {
+
+    .marketing-page .marketing-hero {
+        min-height: 1050px;
+    }
+
+    .marketing-page .marketing-hero__content {
+        max-width: 1250px;
+    }
+
+    .marketing-page .marketing-hero__title {
+        font-size: clamp(116px, 4.8vw, 138px);
+    }
+
+    .marketing-page .marketing-hero__description {
+        max-width: 850px;
+        font-size: 23px;
+    }
+
+    .marketing-page .marketing-content__container,
+    .marketing-page .marketing-results__container {
+        width: calc(100% - 320px);
+        max-width: 2100px;
+    }
+
+    .marketing-page .marketing-content__title {
+        font-size: clamp(76px, 3.1vw, 88px);
+    }
+
+    .marketing-page .marketing-content__benefit-copy h3,
+    .marketing-page .marketing-results__service h3 {
+        font-size: 21px;
+    }
+
+    .marketing-page .marketing-content__benefit-copy p,
+    .marketing-page .marketing-results__service p {
+        font-size: 18px;
+        line-height: 1.85;
+    }
+
+    .marketing-page .marketing-results__title {
+        font-size: clamp(66px, 2.7vw, 78px);
+    }
+
+}
+
+
+/* ==========================================================
+   ACCESIBILIDAD — CONTRASTE Y LECTURA
+========================================================== */
+
+@media screen and (min-width: 2000px) {
+
+    .marketing-page .marketing-hero__description,
+    .marketing-page .marketing-content__benefit-copy p,
+    .marketing-page .marketing-results__service p {
+        color: #48433F;
+        font-weight: 400;
+    }
+
+}

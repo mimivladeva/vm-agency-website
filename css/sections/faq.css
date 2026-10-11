@@ -1599,3 +1599,228 @@
         transition:none;
     }
 }
+
+/* ==========================================================
+   FAQ — DESKTOP XL / 2000px+
+   Más espacio, texto legible y composición equilibrada
+========================================================== */
+
+@media screen and (min-width: 2000px) {
+
+    /* SECCIÓN PRINCIPAL */
+    .faq {
+        min-height: calc(100vh - 100px);
+        padding: 170px 100px 130px;
+    }
+
+    .faq > .container {
+        width: 100%;
+        max-width: 2200px;
+        margin-inline: auto;
+    }
+
+    /* DISTRIBUCIÓN PRINCIPAL */
+    .faq__layout {
+        grid-template-columns:
+            minmax(480px, 0.78fr)
+            minmax(0, 1.5fr);
+
+        column-gap: 100px;
+        align-items: start;
+    }
+
+    /* COLUMNA IZQUIERDA */
+    .faq__intro {
+        max-width: 700px;
+    }
+
+    .faq__eyebrow {
+        gap: 22px;
+        margin-bottom: 38px;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+    }
+
+    .faq__eyebrow-line {
+        width: 65px;
+    }
+
+    /* TÍTULO */
+    .faq__title {
+        max-width: 100%;
+        font-size: clamp(76px, 4.2vw, 104px);
+        line-height: 1.08;
+        letter-spacing: -0.055em;
+    }
+
+    .faq__yellow-line {
+        width: 470px;
+        max-width: 95%;
+        height: 15px;
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+
+    /* TEXTO MANUSCRITO */
+    .faq__handwritten {
+        max-width: 600px;
+        margin-bottom: 30px;
+        font-size: 42px;
+        line-height: 1.3;
+    }
+
+    .faq__heart {
+        font-size: 50px;
+    }
+
+    /* DESCRIPCIÓN */
+    .faq__description {
+        max-width: 560px;
+        font-size: 21px;
+        line-height: 1.85;
+    }
+
+    /* NOTA AMARILLA */
+    .faq__note {
+        width: 310px;
+        min-height: 310px;
+        margin-top: 65px;
+        margin-left: 30px;
+        padding: 60px 38px 40px;
+    }
+
+    .faq__note-tape {
+        top: -22px;
+        left: 90px;
+        width: 125px;
+        height: 52px;
+    }
+
+    .faq__bulb {
+        margin-bottom: 20px;
+        font-size: 42px;
+    }
+
+    .faq__note-content p {
+        font-size: 27px;
+        line-height: 1.4;
+    }
+
+    .faq__note-content strong {
+        margin-top: 22px;
+        font-size: 30px;
+    }
+
+    .faq__note-arrow {
+        margin-top: 8px;
+        font-size: 38px;
+    }
+
+    /* COLUMNA DE PREGUNTAS */
+    .faq__content {
+        min-width: 0;
+    }
+
+    .faq__questions {
+        gap: 16px;
+    }
+
+    .faq__item {
+        border-radius: 15px;
+    }
+
+    /* PREGUNTAS */
+    .faq__question {
+        min-height: 100px;
+        gap: 35px;
+        padding: 25px 36px;
+        font-size: 25px;
+        line-height: 1.55;
+    }
+
+    /* ICONO + / - */
+    .faq__plus {
+        flex: 0 0 28px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .faq__plus::before {
+        width: 25px;
+        height: 3px;
+    }
+
+    .faq__plus::after {
+        width: 3px;
+        height: 25px;
+    }
+
+    /* RESPUESTAS */
+    .faq__answer > p {
+        padding: 0 180px 0 36px;
+        font-size: 21px;
+        line-height: 1.85;
+    }
+
+    .faq__item--open .faq__answer > p {
+        padding: 8px 180px 38px 36px;
+        opacity: 1;
+    }
+
+    .faq__answer-arrow {
+        top: 20px;
+        right: 35px;
+        width: 125px;
+    }
+
+    /* CTA INFERIOR */
+    .faq__cta {
+        grid-template-columns: 125px minmax(0, 1fr) auto;
+        gap: 38px;
+
+        min-height: 200px;
+        margin-top: 55px;
+        padding: 35px 55px;
+    }
+
+    .faq__cta-icon,
+    .faq__cta-icon img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .faq__cta-text h2 {
+        margin-bottom: 10px;
+        font-size: 28px;
+        line-height: 1.45;
+    }
+
+    .faq__cta-text p {
+        max-width: 900px;
+        font-size: 22px;
+        line-height: 1.7;
+    }
+
+    .faq__cta-button {
+        min-width: 270px;
+        min-height: 68px;
+        padding: 20px 32px;
+        gap: 22px;
+        font-size: 19px;
+        border-radius: 13px;
+    }
+
+    /* DECORACIONES */
+    .faq__branches {
+        right: 25px;
+        bottom: 90px;
+        width: 150px;
+        height: 550px;
+        opacity: 0.8;
+    }
+
+    .faq__brush {
+        width: 300px;
+        height: 180px;
+    }
+}

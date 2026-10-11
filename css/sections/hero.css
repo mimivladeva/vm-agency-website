@@ -515,3 +515,91 @@ html{
         stroke-width:2.5;
     }
 }
+
+/* ==========================================================
+   VM AGENCY — LARGE DESKTOP RESPONSIVE
+   Mejora progresiva sin alterar el diseño del portátil
+========================================================== */
+
+/* Escritorios amplios: desde 1600px */
+@media (min-width: 1600px) {
+
+    .hero {
+        min-height: 100svh;
+        padding-top: clamp(110px, 6vw, 140px);
+    }
+
+    .hero__wrapper {
+        min-height: calc(100svh - clamp(110px, 6vw, 140px));
+        grid-template-columns: 55% 45%;
+    }
+
+    .hero__content {
+        padding-left: clamp(32px, 2.1vw, 56px);
+        padding-right: clamp(32px, 3vw, 64px);
+    }
+
+    .hero__eyebrow {
+        font-size: clamp(0.875rem, 0.85vw, 1.125rem);
+        margin-bottom: clamp(20px, 1.5vw, 30px);
+    }
+
+    .hero__title {
+        width: 100%;
+        max-width: 900px;
+        font-size: clamp(3.4rem, 3.8vw, 4.5rem);
+        line-height: 1.06;
+        letter-spacing: -0.045em;
+        margin-bottom: clamp(20px, 1.3vw, 28px);
+    }
+
+    .hero__description {
+        max-width: 600px;
+        font-size: clamp(1.125rem, 1.05vw, 1.375rem);
+        line-height: 1.7;
+        margin-bottom: clamp(32px, 2.5vw, 48px);
+    }
+
+    .hero__image {
+        top: 0;
+        right: 0;
+        width: 58%;
+        height: 100%;
+    }
+
+    .hero__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero__scroll {
+        width: clamp(54px, 3.5vw, 68px);
+        height: clamp(54px, 3.5vw, 68px);
+        bottom: clamp(30px, 2vw, 42px);
+    }
+}
+
+/* Monitores ultrapanorámicos y pantallas de más de 2000px */
+@media (min-width: 2000px) {
+
+    .hero__content {
+        padding-left: clamp(56px, 3vw, 88px);
+        padding-right: clamp(48px, 3vw, 80px);
+    }
+
+    .hero__title {
+        max-width: 1050px;
+        font-size: clamp(4.5rem, 3.6vw, 5.5rem);
+    }
+
+    .hero__description {
+        max-width: 680px;
+        font-size: clamp(1.375rem, 1.05vw, 1.625rem);
+    }
+
+    .hero__image {
+        width: 59%;
+    }
+}

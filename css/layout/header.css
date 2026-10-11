@@ -410,3 +410,241 @@
         gap: 40px;
     }
 }
+
+/* ==========================================================
+   HEADER — DESKTOP XL / 2000px+
+   VM AGENCY
+========================================================== */
+
+@media screen and (min-width: 2000px) {
+
+    /* BARRA PRINCIPAL */
+    .header {
+        padding: 22px 0;
+    }
+
+    /* DISTRIBUCIÓN */
+    .header__wrapper {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: 75px;
+
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+
+    /* LOGO */
+    .header__logo img {
+        width: 82px;
+        height: auto;
+    }
+
+    /* NAVEGACIÓN */
+    .header__nav {
+        justify-content: center;
+    }
+
+    .header__menu {
+        gap: clamp(48px, 3vw, 76px);
+    }
+
+    .header__link {
+        gap: 9px;
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    /* SUBRAYADO ACTIVO */
+    .header__link::after {
+        bottom: -11px;
+        height: 3px;
+    }
+
+    /* ZONA DERECHA */
+    .header__right {
+        gap: 35px;
+    }
+
+    /* SELECTOR DE IDIOMAS */
+    .language-selector {
+        gap: 12px;
+    }
+
+    .language-selector__button {
+        width: 54px;
+        height: 54px;
+        border-radius: 15px;
+        font-size: 17px;
+    }
+
+    /* MENÚ DESPLEGABLE */
+    .dropdown {
+        min-width: 260px;
+        padding: 16px 0;
+        border-radius: 18px;
+    }
+
+    .dropdown a {
+        padding: 16px 25px;
+        font-size: 19px;
+    }
+
+    /* FLECHA DEL DESPLEGABLE */
+    .header__arrow {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ==========================================================
+   DESKTOP GRANDE — 2000px A 2399px
+   Ajuste para evitar exceso de separación
+========================================================== */
+
+@media screen and (min-width: 2000px) and (max-width: 2399px) {
+
+    .header__wrapper {
+        margin-left: 45px;
+        margin-right: 45px;
+        gap: 55px;
+    }
+
+    .header__menu {
+        gap: 48px;
+    }
+
+    .header__link {
+        font-size: 20px;
+    }
+
+    .header__logo img {
+        width: 74px;
+    }
+
+    .language-selector__button {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* ==========================================================
+   FAQ — OCULTAR NOTA EN MÓVIL
+========================================================== */
+
+@media (max-width: 576px) {
+    .faq__note {
+        display: none !important;
+    }
+}
+
+/* ==========================================================
+   FAQ — MOBILE HEADER REFINEMENT
+========================================================== */
+
+@media (max-width: 576px) {
+
+    /* INTRODUCCIÓN */
+    .faq__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
+    /* ETIQUETA FAQ */
+    .faq__eyebrow {
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    /* TÍTULO */
+    .faq__title {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        font-size: clamp(34px, 9vw, 42px);
+        line-height: 1.12;
+        letter-spacing: -0.04em;
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    /* SUBRAYADO AMARILLO */
+    .faq__yellow-line {
+        width: 160px;
+        max-width: 60%;
+        margin: 8px auto 22px;
+    }
+
+    /* TEXTO MANUSCRITO */
+    .faq__handwritten {
+        max-width: 320px;
+        margin: 0 auto 18px;
+        font-size: 21px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .faq__heart {
+        display: inline-block;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+
+    /* DESCRIPCIÓN */
+    .faq__description {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1.75;
+        text-align: center;
+    }
+
+    /* LISTA DE PREGUNTAS */
+    .faq__content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .faq__questions {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .faq__question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        min-height: 76px;
+        padding: 18px 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .faq__question > span:first-child {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .faq__plus {
+        flex-shrink: 0;
+    }
+
+    /* RESPUESTAS */
+    .faq__answer > p {
+        padding: 0 20px;
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .faq__item--open .faq__answer > p {
+        padding: 0 20px 22px;
+    }
+}

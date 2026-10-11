@@ -430,3 +430,124 @@ MOBILE
     }
 
 }
+/* ==========================================================
+   ABOUT — LARGE DESKTOP
+   Pantallas de 2000px en adelante
+========================================================== */
+
+@media (min-width: 2000px) {
+
+    /* SECCIÓN */
+
+    .about {
+        padding: clamp(40px, 3vw, 70px) 0
+        clamp(60px, 4vw, 90px);
+    }
+
+    /* CONTENIDO PRINCIPAL */
+
+    .about__hero {
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        min-height: 0;
+    }
+
+    .about__content {
+        padding: 40px clamp(40px, 2.5vw, 65px);
+    }
+
+    /* ETIQUETA */
+
+    .about__eyebrow {
+        font-size: clamp(15px, 0.8vw, 18px);
+        margin-bottom: clamp(22px, 1.4vw, 32px);
+        letter-spacing: 0.02em;
+    }
+
+    /* TÍTULO */
+
+    .about__title {
+        max-width: 760px;
+        font-size: clamp(60px, 3.2vw, 80px);
+        line-height: 1.08;
+        letter-spacing: -0.045em;
+    }
+
+    /* DESCRIPCIÓN */
+
+    .about__description {
+        max-width: 660px;
+        margin-top: clamp(28px, 1.6vw, 38px);
+        font-size: clamp(20px, 1.05vw, 25px);
+        line-height: 1.75;
+    }
+
+    /* DETALLE DECORATIVO */
+
+    .about__line {
+        width: 46px;
+        margin-top: clamp(32px, 1.8vw, 42px);
+    }
+
+    .about__values {
+        margin-top: clamp(24px, 1.4vw, 34px);
+        font-size: clamp(21px, 1.1vw, 27px);
+    }
+
+    /* FOTOGRAFÍA */
+
+    .about__image {
+        width: 96%;
+        height: clamp(540px, 29vw, 700px);
+        margin-left: auto;
+        border-radius: 30px 30px 30px 0;
+    }
+
+    .about__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* TARJETA INFERIOR */
+
+    .about__bottom {
+        width: 82%;
+        max-width: 1350px;
+        gap: clamp(40px, 3vw, 70px);
+        margin-top: clamp(42px, 3vw, 65px);
+        padding: clamp(28px, 1.8vw, 40px)
+        clamp(40px, 3vw, 65px);
+        border-radius: 22px;
+    }
+
+    .about__statement {
+        max-width: 820px;
+        gap: 22px;
+        margin-left: 0;
+    }
+
+    .about__statement-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .about__statement p {
+        font-size: clamp(18px, 0.95vw, 22px);
+        line-height: 1.7;
+    }
+
+    .about__founders {
+        min-width: 260px;
+        gap: 8px;
+    }
+
+    .about__founders-name {
+        font-size: clamp(27px, 1.4vw, 34px);
+    }
+
+    .about__founders span {
+        font-size: clamp(16px, 0.85vw, 20px);
+    }
+}

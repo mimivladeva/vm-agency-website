@@ -1584,3 +1584,300 @@
     }
 
 }
+
+/* ==========================================================
+   DESKTOP XL — PANTALLAS DE 1600px A 2000px+
+   Texto más grande y mejor legibilidad
+========================================================== */
+
+@media (min-width: 1600px) {
+
+    /* HERO */
+
+    .consultoria-hero,
+    .consultoria-hero__wrapper {
+        min-height: min(850px, 82vh);
+    }
+
+    .consultoria-hero__content {
+        width: 54%;
+        max-width: 900px;
+        padding: 70px 50px 70px 8%;
+    }
+
+    .consultoria-hero__eyebrow {
+        margin-bottom: 26px;
+        font-size: 16px;
+        letter-spacing: .17em;
+    }
+
+    .consultoria-hero__title {
+        max-width: 850px;
+        font-size: clamp(76px, 4.5vw, 96px);
+        line-height: 1.04;
+        letter-spacing: -.045em;
+    }
+
+    .consultoria-hero__underline {
+        width: 95px;
+        height: 8px;
+        margin-top: 22px;
+    }
+
+    .consultoria-hero__description {
+        max-width: 680px;
+        margin: 30px 0 36px;
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.75;
+        letter-spacing: 0;
+    }
+
+    .consultoria-hero__highlight {
+        font-family: inherit;
+        font-size: 1em;
+    }
+
+    .consultoria-hero__button {
+        min-height: 62px;
+        padding: 19px 32px;
+        gap: 22px;
+        font-size: 19px;
+        border-radius: 13px;
+    }
+
+    .consultoria-hero__button span:last-child {
+        font-size: 25px;
+    }
+
+
+    /* SECCIÓN DE VALORES */
+
+    .consultoria-values {
+        padding: 90px 0 75px;
+    }
+
+    .consultoria-values__wrapper {
+        grid-template-columns: 26% 74%;
+    }
+
+    .consultoria-values__intro {
+        padding: 0 45px 0 65px;
+    }
+
+    .consultoria-values__handwritten {
+        font-size: 34px;
+        line-height: 1.45;
+    }
+
+    .consultoria-values__items {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .consultoria-value {
+        min-height: 220px;
+        padding: 0 34px;
+    }
+
+    .consultoria-value__icon {
+        margin-bottom: 22px;
+        font-size: 40px;
+    }
+
+    .consultoria-value h3 {
+        margin-bottom: 14px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .consultoria-value p {
+        max-width: 280px;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+
+    /* TESTIMONIO */
+
+    .consultoria-testimonial {
+        padding: 45px 0 100px;
+    }
+
+    .consultoria-testimonial__box {
+        grid-template-columns: 160px minmax(0, 1fr) 400px;
+        gap: 50px;
+        padding: 40px 60px;
+        border-radius: 22px;
+    }
+
+    .consultoria-testimonial__person img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .consultoria-testimonial__quote {
+        font-size: 72px;
+    }
+
+    .consultoria-testimonial__content p {
+        max-width: 700px;
+        margin: 12px 0 18px;
+        font-size: 21px;
+        line-height: 1.8;
+    }
+
+    .consultoria-testimonial__content small {
+        font-size: 13px;
+        letter-spacing: .1em;
+    }
+
+    .consultoria-testimonial__note {
+        padding: 36px;
+    }
+
+    .consultoria-testimonial__note p {
+        font-size: 22px;
+        line-height: 1.8;
+    }
+
+    .consultoria-testimonial__note b {
+        font-size: 30px;
+    }
+}
+
+
+/* ==========================================================
+   DESKTOP EXTRA GRANDE — 2000px+
+========================================================== */
+
+@media (min-width: 2000px) {
+
+    .consultoria-hero,
+    .consultoria-hero__wrapper {
+        min-height: 900px;
+    }
+
+    .consultoria-hero__content {
+        padding-left: max(160px, calc((100vw - 1800px) / 2));
+        max-width: 1050px;
+    }
+
+    .consultoria-hero__title {
+        font-size: 100px;
+    }
+
+    .consultoria-hero__description {
+        font-size: 26px;
+    }
+
+    .consultoria-values__handwritten {
+        font-size: 38px;
+    }
+
+    .consultoria-value h3 {
+        font-size: 23px;
+    }
+
+    .consultoria-value p {
+        font-size: 18px;
+    }
+
+    .consultoria-testimonial__content p {
+        font-size: 23px;
+    }
+}
+
+/* ==========================================================
+   CONSULTORÍA — TESTIMONIAL BOX XL
+   Pantallas de 2000px en adelante
+========================================================== */
+
+@media screen and (min-width: 2000px) {
+
+    .consultoria-testimonial {
+        padding: 60px 0 110px;
+    }
+
+    .consultoria-testimonial__box {
+        grid-template-columns:
+            180px
+            minmax(0, 1fr)
+            minmax(420px, 500px);
+
+        align-items: center;
+        gap: 65px;
+
+        width: calc(100% - 320px);
+        max-width: 2100px;
+        margin-inline: auto;
+
+        padding: 55px 75px;
+        min-height: 340px;
+
+        border-radius: 24px;
+    }
+
+    /* Foto de Viktor */
+    .consultoria-testimonial__person img {
+        width: 155px;
+        height: 155px;
+    }
+
+    /* Comillas */
+    .consultoria-testimonial__quote {
+        font-size: 88px;
+        line-height: 0.6;
+    }
+
+    /* Texto del testimonio */
+    .consultoria-testimonial__content p {
+        max-width: 950px;
+        margin: 20px 0 22px;
+
+        font-size: 25px;
+        line-height: 1.8;
+    }
+
+    /* Nombre y cargo */
+    .consultoria-testimonial__content small {
+        font-size: 15px;
+        line-height: 1.7;
+        letter-spacing: 0.1em;
+    }
+
+    /* Tarjeta decorativa de la derecha */
+    .consultoria-testimonial__note {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        min-height: 260px;
+        padding: 45px 40px;
+
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        border-radius: 4px;
+
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.07);
+
+        transform: rotate(-1deg);
+    }
+
+    .consultoria-testimonial__note p {
+        max-width: 390px;
+        margin: 0;
+
+        font-size: 25px;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    .consultoria-testimonial__note b {
+        margin-top: 22px;
+        font-size: 34px;
+        line-height: 1;
+    }
+}
