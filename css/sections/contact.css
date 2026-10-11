@@ -27,7 +27,7 @@ BACKGROUND
     transform:translateX(-50%);
     width:950px;
     height:950px;
-    background:url("../../assets/logos/logo.png") center center/contain no-repeat;
+    background:url("../../assets/logos/logo.webp") center center/contain no-repeat;
     opacity:0.15;
     pointer-events:none;
     z-index:0;
