@@ -135,3 +135,21 @@ Website design and development by the VM Agency team.
 ## 📄 License
 
 This project is licensed under the MIT License.
+
+
+
+Para empezar a trabajar  // arrancar el servidor python -m http.server 8000  
+git checkout main
+git pull origin main
+
+para subir cambios
+git add .
+
+
+3. Crea un commit
+Guarda los cambios con un mensaje descriptivo:
+git commit -m "Add SEO sitemap robots and favicons"
+
+
+4. Sube los cambios a GitHub
+git push

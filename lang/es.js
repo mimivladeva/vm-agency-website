@@ -635,53 +635,6 @@ const es = {
         },
 
 
-        footer: {
-
-            description:
-                "Ayudamos a empresas a crecer con soluciones inteligentes, medibles y sostenibles.",
-
-            navigation:
-                "Navegación",
-
-            home:
-                "Inicio",
-
-            solutions:
-                "Soluciones",
-
-            method:
-                "Método VM",
-
-            about:
-                "Sobre nosotros",
-
-            contactUs:
-                "Contacto",
-
-            legal:
-                "Legal",
-
-            legalNotice:
-                "Aviso Legal",
-
-            privacy:
-                "Política de privacidad",
-
-            cookies:
-                "Política de Cookies",
-
-            contact:
-                "Hablemos",
-
-            contactDescription:
-                "Cuéntanos tu proyecto y te ayudaremos a hacerlo crecer.",
-
-            email:
-                "hola@vmagency.com",
-
-            copyright:
-                "© 2026 VM Agency. Todos los derechos reservados."
-        },
     consulting: {
 
         eyebrow: "SERVICIOS",
