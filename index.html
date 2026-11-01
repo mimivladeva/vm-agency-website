@@ -871,6 +871,890 @@
 <script src="js/animations.js"></script>
 <script src="js/main.js"></script>
 
+
+
+
+<!-- ==========================================
+     VM AGENCY - COOKIE CONSENT SYSTEM
+=========================================== -->
+
+<style>
+    #vm-cookie-banner,
+    #vm-cookie-settings {
+        font-family: 'Manrope', sans-serif;
+        box-sizing: border-box;
+    }
+
+    #vm-cookie-banner *,
+    #vm-cookie-settings * {
+        box-sizing: border-box;
+    }
+
+    #vm-cookie-banner {
+        position: fixed;
+        bottom: 24px;
+        left: 24px;
+        width: min(440px, calc(100% - 48px));
+        z-index: 99999;
+        background: #101010;
+        color: #f5f5f5;
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 14px;
+        padding: 25px;
+        box-shadow: 0 15px 60px rgba(0,0,0,0.55);
+        display: none;
+        animation: vmCookieAppear .35s ease;
+    }
+
+    @keyframes vmCookieAppear {
+        from {
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .vm-cookie-top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .vm-cookie-icon {
+        width: 38px;
+        height: 38px;
+        background: rgba(255,107,0,0.12);
+        border: 1px solid rgba(255,107,0,0.3);
+        color: #ff6b00;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 19px;
+        flex-shrink: 0;
+    }
+
+    .vm-cookie-title {
+        font-size: 17px;
+        font-weight: 800;
+        color: #fff;
+    }
+
+    .vm-cookie-description {
+        font-size: 12px;
+        color: #aaa;
+        line-height: 1.8;
+        margin-bottom: 18px;
+    }
+
+    .vm-cookie-description a {
+        color: #ff6b00;
+        text-decoration: none;
+    }
+
+    .vm-cookie-description a:hover {
+        text-decoration: underline;
+    }
+
+    .vm-cookie-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .vm-cookie-btn {
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 7px;
+        border: 1px solid transparent;
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: 800;
+        cursor: pointer;
+        transition: .2s ease;
+    }
+
+    .vm-cookie-accept {
+        background: #ff6b00;
+        color: #fff;
+    }
+
+    .vm-cookie-accept:hover {
+        background: #e65f00;
+    }
+
+    .vm-cookie-reject {
+        background: #1b1b1b;
+        color: #fff;
+        border-color: rgba(255,255,255,0.12);
+    }
+
+    .vm-cookie-reject:hover {
+        background: #252525;
+    }
+
+    .vm-cookie-customize {
+        background: transparent;
+        color: #aaa;
+        border-color: rgba(255,255,255,0.12);
+    }
+
+    .vm-cookie-customize:hover {
+        color: #ff6b00;
+        border-color: #ff6b00;
+    }
+
+    #vm-cookie-settings {
+        position: fixed;
+        inset: 0;
+        z-index: 100000;
+        background: rgba(0,0,0,0.78);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .vm-settings-panel {
+        width: min(470px, 100%);
+        background: #111;
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 14px;
+        padding: 28px;
+        color: #fff;
+        box-shadow: 0 20px 70px rgba(0,0,0,0.6);
+    }
+
+    .vm-settings-panel h2 {
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+
+    .vm-settings-intro {
+        color: #aaa;
+        font-size: 12px;
+        line-height: 1.7;
+        margin-bottom: 22px;
+    }
+
+    .vm-cookie-category {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        padding: 16px 0;
+        border-top: 1px solid rgba(255,255,255,0.09);
+    }
+
+    .vm-category-name {
+        font-size: 13px;
+        font-weight: 800;
+        margin-bottom: 4px;
+    }
+
+    .vm-category-description {
+        color: #999;
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .vm-category-status {
+        font-size: 10px;
+        font-weight: 800;
+        color: #ff6b00;
+        white-space: nowrap;
+    }
+
+    .vm-cookie-toggle {
+        appearance: none;
+        width: 42px;
+        height: 23px;
+        background: #383838;
+        border-radius: 30px;
+        position: relative;
+        cursor: pointer;
+        flex-shrink: 0;
+        transition: .2s;
+    }
+
+    .vm-cookie-toggle::before {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        top: 3px;
+        left: 3px;
+        background: #fff;
+        border-radius: 50%;
+        transition: .2s;
+    }
+
+    .vm-cookie-toggle:checked {
+        background: #ff6b00;
+    }
+
+    .vm-cookie-toggle:checked::before {
+        transform: translateX(19px);
+    }
+
+    .vm-cookie-toggle:disabled {
+        opacity: .55;
+        cursor: not-allowed;
+    }
+
+    .vm-settings-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        margin-top: 22px;
+    }
+
+    #vm-cookie-preferences-link {
+        position: fixed;
+        bottom: 14px;
+        left: 14px;
+        z-index: 9998;
+        border: 1px solid rgba(255,255,255,.14);
+        background: #111;
+        color: #bbb;
+        border-radius: 30px;
+        padding: 9px 13px;
+        font-family: inherit;
+        font-size: 10px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #vm-cookie-preferences-link:hover {
+        color: #ff6b00;
+        border-color: #ff6b00;
+    }
+
+    @media(max-width: 500px) {
+        #vm-cookie-banner {
+            left: 12px;
+            bottom: 12px;
+            width: calc(100% - 24px);
+            padding: 20px;
+        }
+
+        .vm-settings-panel {
+            padding: 22px;
+        }
+    }
+</style>
+
+
+<!-- VM AGENCY | PREMIUM COOKIE CONSENT -->
+
+<style>
+  :root {
+    --vm-orange: #ff6b2c;
+    --vm-bg: #101010;
+    --vm-panel: #171717;
+    --vm-border: rgba(255,255,255,.10);
+    --vm-muted: #a4a4a4;
+  }
+
+  body.vm-cookie-locked {
+    overflow: hidden !important;
+  }
+
+  /* OVERLAY */
+  #vm-cookie-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 99998 !important;
+    display: none;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 22px !important;
+    box-sizing: border-box !important;
+    background: rgba(0,0,0,.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  #vm-cookie-overlay.vm-visible {
+    display: flex !important;
+    animation: vmFadeIn .35s ease;
+  }
+
+  /* MAIN MODAL */
+  #vm-cookie-modal {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 490px !important;
+    height: auto !important;
+    max-height: calc(100vh - 44px) !important;
+    margin: auto !important;
+    padding: 38px !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+    color: #fff;
+    background:
+      radial-gradient(ellipse at 100% 0%, rgba(255,107,44,.10), transparent 45%),
+      #151515;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 20px;
+    box-shadow: 0 30px 100px rgba(0,0,0,.65);
+    font-family: 'Manrope', sans-serif;
+    animation: vmModalIn .4s cubic-bezier(.2,.8,.2,1);
+  }
+
+  #vm-cookie-modal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 38px;
+    width: 55px;
+    height: 2px;
+    background: var(--vm-orange);
+    box-shadow: 0 0 18px rgba(255,107,44,.7);
+  }
+
+  /* ICON */
+  .vm-cookie-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 25px;
+    color: var(--vm-orange);
+    background: rgba(255,107,44,.10);
+    border: 1px solid rgba(255,107,44,.22);
+    border-radius: 14px;
+    font-size: 22px;
+  }
+
+  /* TEXT */
+  .vm-cookie-eyebrow {
+    margin: 0 0 10px;
+    color: var(--vm-orange);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+  }
+
+  .vm-cookie-title {
+    margin: 0 0 14px;
+    color: #fff;
+    font-size: clamp(25px, 5vw, 31px);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.2px;
+  }
+
+  .vm-cookie-description {
+    margin: 0 0 25px;
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .vm-cookie-description a {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: var(--vm-orange);
+    text-underline-offset: 3px;
+  }
+
+  /* MAIN BUTTONS */
+  .vm-cookie-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  .vm-cookie-btn {
+    display: block;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 47px;
+    padding: 13px 18px;
+    box-sizing: border-box !important;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .3px;
+    cursor: pointer;
+    transition: all .25s ease;
+  }
+
+  .vm-cookie-btn-primary {
+    color: #fff;
+    background: var(--vm-orange);
+  }
+
+  .vm-cookie-btn-primary:hover {
+    background: #ff8150;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255,107,44,.2);
+  }
+
+  .vm-cookie-btn-secondary {
+    color: #eee;
+    background: rgba(255,255,255,.045);
+    border-color: var(--vm-border);
+  }
+
+  .vm-cookie-btn-secondary:hover {
+    background: rgba(255,255,255,.09);
+    border-color: rgba(255,255,255,.2);
+  }
+
+  /* FOOTER */
+  .vm-cookie-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+
+  .vm-cookie-footer a,
+  .vm-cookie-footer span {
+    color: #777;
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  .vm-cookie-footer a:hover {
+    color: var(--vm-orange);
+  }
+
+  /* SETTINGS PANEL */
+  #vm-cookie-settings {
+    display: none !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin-top: 22px !important;
+    padding-top: 18px !important;
+    box-sizing: border-box !important;
+    border-top: 1px solid var(--vm-border);
+  }
+
+  #vm-cookie-settings.vm-settings-visible {
+    display: block !important;
+  }
+
+  .vm-cookie-setting {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    gap: 15px !important;
+    padding: 13px 0 !important;
+    box-sizing: border-box !important;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+  }
+
+  .vm-cookie-setting > div {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .vm-cookie-setting strong {
+    display: block;
+    color: #eee;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .vm-cookie-setting small {
+    display: block;
+    color: #888;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .vm-cookie-setting input {
+    width: 38px !important;
+    height: 20px !important;
+    flex-shrink: 0 !important;
+    accent-color: var(--vm-orange);
+    cursor: pointer;
+  }
+
+  .vm-cookie-setting input:disabled {
+    cursor: not-allowed;
+    opacity: .65;
+  }
+
+  .vm-cookie-required {
+    color: var(--vm-orange);
+    font-size: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* SETTINGS BUTTONS */
+  .vm-cookie-settings-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    gap: 10px !important;
+    margin-top: 18px !important;
+    box-sizing: border-box !important;
+  }
+
+  .vm-cookie-settings-actions .vm-cookie-btn {
+    flex: 1 1 0 !important;
+    width: 50% !important;
+    min-width: 0 !important;
+  }
+
+  /* REOPEN PREFERENCES */
+  #vm-cookie-reopen {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 99997;
+    display: none;
+    width: 43px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+    color: var(--vm-orange);
+    background: #171717;
+    border: 1px solid rgba(255,107,44,.35);
+    border-radius: 50%;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 5px 25px rgba(0,0,0,.3);
+    transition: .25s ease;
+  }
+
+  #vm-cookie-reopen:hover {
+    background: var(--vm-orange);
+    color: white;
+    transform: rotate(15deg);
+  }
+
+  /* ANIMATIONS */
+  @keyframes vmFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes vmModalIn {
+    from {
+      opacity: 0;
+      transform: translateY(18px) scale(.97);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  /* MOBILE */
+  @media (max-width: 520px) {
+    #vm-cookie-overlay {
+      padding: 15px !important;
+    }
+
+    #vm-cookie-modal {
+      max-width: 100% !important;
+      max-height: calc(100vh - 30px) !important;
+      padding: 28px 23px !important;
+      border-radius: 16px;
+    }
+
+    #vm-cookie-modal::before {
+      left: 23px;
+    }
+
+    .vm-cookie-footer {
+      gap: 12px;
+    }
+
+    .vm-cookie-settings-actions {
+      gap: 8px !important;
+    }
+
+    .vm-cookie-settings-actions .vm-cookie-btn {
+      padding: 12px 8px;
+      font-size: 10px;
+    }
+  }
+</style>
+
+
+
+<div id="vm-cookie-overlay" role="dialog" aria-modal="true"
+     aria-labelledby="vm-cookie-title">
+  <div id="vm-cookie-modal">
+
+    <div class="vm-cookie-icon" aria-hidden="true">✳</div>
+
+    <p class="vm-cookie-eyebrow">VM AGENCY · ВАШАТА ПОВЕРИТЕЛНОСТ</p>
+
+    <h2 class="vm-cookie-title" id="vm-cookie-title">
+      Вашето преживяване.<br>
+      Вашият избор.
+    </h2>
+
+    <p class="vm-cookie-description">
+      Използваме бисквитки, за да подобрим работата на уебсайта,
+      да разберем как се използва и да предоставяме по-релевантно
+      съдържание. Можете да приемете всички бисквитки,
+      да откажете незадължителните или да персонализирате
+      предпочитанията си.
+      <a href="/legal/cookie-policy.html">Научете повече</a>.
+    </p>
+
+    <div class="vm-cookie-actions" id="vm-cookie-main-actions">
+      <button class="vm-cookie-btn vm-cookie-btn-primary"
+              id="vm-cookie-accept">
+        ПРИЕМАМ ВСИЧКИ
+      </button>
+
+      <button class="vm-cookie-btn vm-cookie-btn-secondary"
+              id="vm-cookie-reject">
+        ОТКАЗВАМ НЕЗАДЪЛЖИТЕЛНИТЕ
+      </button>
+
+      <button class="vm-cookie-btn vm-cookie-btn-secondary"
+              id="vm-cookie-customise">
+        НАСТРОЙКИ НА БИСКВИТКИТЕ
+      </button>
+    </div>
+
+    <div id="vm-cookie-settings">
+      <div class="vm-cookie-setting">
+        <div>
+          <strong>Необходими бисквитки</strong>
+          <small>Необходими за правилното функциониране на уебсайта.</small>
+        </div>
+        <span class="vm-cookie-required">ВИНАГИ АКТИВНИ</span>
+      </div>
+
+      <label class="vm-cookie-setting">
+        <div>
+          <strong>Аналитични бисквитки</strong>
+          <small>Помагат ни да разберем как се използва уебсайтът.</small>
+        </div>
+        <input type="checkbox" id="vm-cookie-analytics">
+      </label>
+
+      <label class="vm-cookie-setting">
+        <div>
+          <strong>Маркетингови бисквитки</strong>
+          <small>Помагат ни да измерваме ефективността на рекламите.</small>
+        </div>
+        <input type="checkbox" id="vm-cookie-marketing">
+      </label>
+
+      <div class="vm-cookie-settings-actions">
+        <button class="vm-cookie-btn vm-cookie-btn-secondary"
+                id="vm-cookie-back">
+          НАЗАД
+        </button>
+
+        <button class="vm-cookie-btn vm-cookie-btn-primary"
+                id="vm-cookie-save">
+          ЗАПАЗИ ИЗБОРА
+        </button>
+      </div>
+    </div>
+
+    <div class="vm-cookie-footer">
+      <a href="/legal/privacy-policy.html">Политика за поверителност</a>
+      <a href="/legal/cookie-policy.html">Политика за бисквитките</a>
+      <span>© VM Agency</span>
+    </div>
+
+  </div>
+</div>
+
+
+<button id="vm-cookie-reopen" type="button"
+        aria-label="Cookie preferences" title="Cookie preferences">
+  ⚙
+</button>
+
+<script>
+(function () {
+  const CONSENT_KEY = 'vmAgencyCookieConsent';
+  const CONSENT_VERSION = '2';
+
+  // Replace these with your real tracking IDs.
+  const GOOGLE_ANALYTICS_ID = 'G-XXXXXXXXXX';
+  const META_PIXEL_ID = 'XXXXXXXXXXXXXXXX';
+
+  const overlay = document.getElementById('vm-cookie-overlay');
+  const reopen = document.getElementById('vm-cookie-reopen');
+  const settings = document.getElementById('vm-cookie-settings');
+  const mainActions = document.getElementById('vm-cookie-main-actions');
+  const analyticsToggle = document.getElementById('vm-cookie-analytics');
+  const marketingToggle = document.getElementById('vm-cookie-marketing');
+
+  function readConsent() {
+    try {
+      return JSON.parse(localStorage.getItem(CONSENT_KEY));
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function showModal() {
+    overlay.classList.add('vm-visible');
+    document.body.classList.add('vm-cookie-locked');
+    reopen.style.display = 'none';
+  }
+
+  function hideModal() {
+    overlay.classList.remove('vm-visible');
+    document.body.classList.remove('vm-cookie-locked');
+    reopen.style.display = 'flex';
+  }
+
+  function openPreferences() {
+    const consent = readConsent();
+
+    analyticsToggle.checked = !!(consent && consent.analytics);
+    marketingToggle.checked = !!(consent && consent.marketing);
+
+    mainActions.style.display = 'none';
+    settings.classList.add('vm-settings-visible');
+    showModal();
+  }
+
+  function showMainOptions() {
+    settings.classList.remove('vm-settings-visible');
+    mainActions.style.display = 'flex';
+  }
+
+  function loadGoogleAnalytics() {
+    if (
+      window.vmGoogleAnalyticsLoaded ||
+      !GOOGLE_ANALYTICS_ID ||
+      GOOGLE_ANALYTICS_ID.includes('XXXX')
+    ) return;
+
+    window.vmGoogleAnalyticsLoaded = true;
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' +
+      encodeURIComponent(GOOGLE_ANALYTICS_ID);
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    window.gtag = gtag;
+
+    gtag('js', new Date());
+    gtag('config', GOOGLE_ANALYTICS_ID);
+  }
+
+  function loadMetaPixel() {
+    if (
+      window.vmMetaPixelLoaded ||
+      !META_PIXEL_ID ||
+      META_PIXEL_ID.includes('XXXX')
+    ) return;
+
+    window.vmMetaPixelLoaded = true;
+
+    !function(f,b,e,v,n,t,s) {
+      if(f.fbq)return;
+      n=f.fbq=function(){
+        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments);
+      };
+      if(!f._fbq)f._fbq=n;
+      n.push=n;
+      n.loaded=true;
+      n.version='2.0';
+      n.queue=[];
+      t=b.createElement(e);
+      t.async=true;
+      t.src=v;
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s);
+    }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    window.fbq('init', META_PIXEL_ID);
+    window.fbq('track', 'PageView');
+  }
+
+  function applyConsent(consent) {
+    if (consent.analytics) loadGoogleAnalytics();
+    if (consent.marketing) loadMetaPixel();
+  }
+
+  function saveConsent(analytics, marketing) {
+    const consent = {
+      necessary: true,
+      analytics: !!analytics,
+      marketing: !!marketing,
+      version: CONSENT_VERSION,
+      updatedAt: new Date().toISOString()
+    };
+
+    localStorage.setItem(CONSENT_KEY, JSON.stringify(consent));
+    applyConsent(consent);
+    hideModal();
+  }
+
+  document.getElementById('vm-cookie-accept').addEventListener('click', function () {
+    saveConsent(true, true);
+  });
+
+  document.getElementById('vm-cookie-reject').addEventListener('click', function () {
+    saveConsent(false, false);
+  });
+
+  document.getElementById('vm-cookie-customise').addEventListener('click', function () {
+    openPreferences();
+  });
+
+  document.getElementById('vm-cookie-back').addEventListener('click', function () {
+    showMainOptions();
+  });
+
+  document.getElementById('vm-cookie-save').addEventListener('click', function () {
+    saveConsent(analyticsToggle.checked, marketingToggle.checked);
+  });
+
+  reopen.addEventListener('click', openPreferences);
+
+  const existingConsent = readConsent();
+
+  if (
+    !existingConsent ||
+    existingConsent.version !== CONSENT_VERSION
+  ) {
+    showModal();
+  } else {
+    applyConsent(existingConsent);
+    reopen.style.display = 'flex';
+  }
+})();
+</script>
+<!-- END VM AGENCY COOKIE CONSENT -->
+
+
 </body>
 
 </html>

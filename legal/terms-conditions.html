@@ -1,0 +1,875 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Общи условия | VM Agency</title>
+    <meta name="description" content="Общи условия за използване на уебсайта и услугите на VM Agency.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="../assets/favicon/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #080808;
+            --surface: #111111;
+            --surface-light: #171717;
+            --text: #f5f5f5;
+            --muted: #a0a0a0;
+            --orange: #ff6b00;
+            --border: rgba(255,255,255,0.09);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        a {
+            color: var(--orange);
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.75;
+        }
+
+        .legal-header {
+            border-bottom: 1px solid var(--border);
+            background: rgba(8,8,8,0.95);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 22px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo img {
+            width: 155px;
+            height: auto;
+            display: block;
+        }
+
+        .back-link {
+            color: var(--text);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .back-link span {
+            color: var(--orange);
+            margin-right: 6px;
+        }
+
+        .legal-hero {
+            padding: 85px 24px 55px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            background:
+                radial-gradient(ellipse at 50% 0%, rgba(255,107,0,0.12), transparent 60%),
+                var(--bg);
+        }
+
+        .eyebrow {
+            color: var(--orange);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .legal-hero h1 {
+            font-size: clamp(34px, 5vw, 55px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .legal-hero h1 span {
+            color: var(--orange);
+        }
+
+        .hero-description {
+            max-width: 650px;
+            margin: auto;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 7px 15px;
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        .legal-layout {
+            max-width: 1200px;
+            margin: auto;
+            padding: 65px 24px 100px;
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 65px;
+            align-items: start;
+        }
+
+        .legal-sidebar {
+            position: sticky;
+            top: 30px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px 20px;
+        }
+
+        .sidebar-title {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: var(--orange);
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .legal-sidebar ul {
+            list-style: none;
+        }
+
+        .legal-sidebar li {
+            margin-bottom: 12px;
+        }
+
+        .legal-sidebar a {
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.5;
+            display: block;
+        }
+
+        .legal-sidebar a:hover {
+            color: var(--orange);
+        }
+
+        .legal-content {
+            min-width: 0;
+        }
+
+        .legal-block {
+            padding-bottom: 38px;
+            margin-bottom: 38px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .legal-block:last-child {
+            border-bottom: none;
+        }
+
+        .legal-block h2 {
+            font-size: 21px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .legal-block h2 span {
+            color: var(--orange);
+            font-size: 13px;
+            margin-right: 10px;
+        }
+
+        .legal-block h3 {
+            font-size: 15px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .legal-block p {
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .legal-block ul {
+            padding-left: 22px;
+            margin: 15px 0 20px;
+        }
+
+        .legal-block li {
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 10px;
+            padding-left: 5px;
+        }
+
+        .legal-block li::marker {
+            color: var(--orange);
+        }
+
+        .legal-block strong {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .info-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--orange);
+            padding: 22px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .info-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .legal-contact {
+            background: var(--surface-light);
+            border: 1px solid var(--border);
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .legal-footer {
+            border-top: 1px solid var(--border);
+            padding: 30px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-copy {
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        .footer-links a:hover {
+            color: var(--orange);
+        }
+
+        @media (max-width: 850px) {
+            .legal-layout {
+                grid-template-columns: 1fr;
+                gap: 35px;
+                padding-top: 40px;
+            }
+
+            .legal-sidebar {
+                position: static;
+            }
+
+            .legal-sidebar ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px 15px;
+            }
+
+            .legal-sidebar li {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .header-inner {
+                padding: 18px;
+            }
+
+            .logo img {
+                width: 125px;
+            }
+
+            .legal-hero {
+                padding: 60px 20px 40px;
+            }
+
+            .legal-layout {
+                padding: 35px 18px 65px;
+            }
+
+            .legal-block h2 {
+                font-size: 19px;
+            }
+
+            .legal-sidebar ul {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="legal-header">
+    <div class="header-inner">
+
+        <a href="../index.html" class="logo">
+            <img src="../assets/logos/logo.webp" alt="VM Agency">
+        </a>
+
+        <a href="../index.html" class="back-link">
+            <span>←</span> Обратно към началото
+        </a>
+
+    </div>
+</header>
+
+<section class="legal-hero">
+
+    <div class="eyebrow">VM AGENCY · LEGAL</div>
+
+    <h1>Общи <span>условия</span></h1>
+
+    <p class="hero-description">
+        Условия за използване на уебсайта и информация за услугите,
+        предоставяни от VM Agency.
+    </p>
+
+    <div class="last-updated">
+        Последна актуализация: 01.11.2026
+    </div>
+
+</section>
+
+<main class="legal-layout">
+
+    <aside class="legal-sidebar">
+
+        <div class="sidebar-title">Съдържание</div>
+
+        <ul>
+            <li><a href="#general">01. Общи разпоредби</a></li>
+            <li><a href="#services">02. Услуги</a></li>
+            <li><a href="#website-use">03. Използване на сайта</a></li>
+            <li><a href="#inquiries">04. Запитвания</a></li>
+            <li><a href="#offers">05. Оферти и цени</a></li>
+            <li><a href="#contracts">06. Договорни отношения</a></li>
+            <li><a href="#intellectual-property">07. Интелектуална собственост</a></li>
+            <li><a href="#user-content">08. Съдържание от потребители</a></li>
+            <li><a href="#liability">09. Отговорност</a></li>
+            <li><a href="#third-parties">10. Външни услуги</a></li>
+            <li><a href="#privacy">11. Поверителност</a></li>
+            <li><a href="#changes">12. Промени</a></li>
+            <li><a href="#law">13. Приложимо право</a></li>
+            <li><a href="#contact">14. Контакт</a></li>
+        </ul>
+
+    </aside>
+
+    <div class="legal-content">
+
+        <section class="legal-block" id="general">
+
+            <h2><span>01</span> Общи разпоредби</h2>
+
+            <p>
+                Настоящите Общи условия уреждат използването на уебсайта
+                на VM Agency, както и основните правила за взаимодействие
+                с информацията и функционалностите, публикувани в него.
+            </p>
+
+            <p>
+                С достъпа и използването на уебсайта посетителите
+                се съгласяват да спазват настоящите условия и приложимото
+                законодателство.
+            </p>
+
+            <p>
+                Ако не сте съгласни с тези условия, моля, преустановете
+                използването на уебсайта.
+            </p>
+
+            <div class="info-card">
+                <p>
+                    Настоящите Общи условия се отнасят до използването
+                    на уебсайта. Конкретните услуги, проекти и търговски
+                    отношения могат да бъдат предмет на отделни договори,
+                    оферти или писмени споразумения.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="legal-block" id="services">
+
+            <h2><span>02</span> Описание на услугите</h2>
+
+            <p>
+                VM Agency предлага дигитални решения и услуги,
+                насочени към подпомагане на бизнеса чрез технологии,
+                автоматизация и изкуствен интелект.
+            </p>
+
+            <p>Услугите могат да включват, но не се ограничават до:</p>
+
+            <ul>
+                <li>Автоматизация на бизнес процеси и работни потоци.</li>
+                <li>Разработване и интегриране на AI решения.</li>
+                <li>AI асистенти, чатботове и автоматизирана комуникация.</li>
+                <li>Разработка и поддръжка на уебсайтове.</li>
+                <li>Интеграции между софтуерни платформи и приложения.</li>
+                <li>Дигитален маркетинг и оптимизация на онлайн присъствие.</li>
+                <li>Консултации и анализ на бизнес процеси.</li>
+            </ul>
+
+            <p>
+                Конкретният обхват, функционалности, срокове и условия
+                за всяка услуга се определят индивидуално в съответната
+                оферта или договор.
+            </p>
+
+            <p>
+                VM Agency си запазва правото да променя, актуализира
+                или прекратява представянето на услуги на уебсайта.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="website-use">
+
+            <h2><span>03</span> Използване на уебсайта</h2>
+
+            <p>
+                Посетителите се задължават да използват уебсайта
+                добросъвестно и в съответствие с приложимото
+                законодателство.
+            </p>
+
+            <p>Не се разрешава:</p>
+
+            <ul>
+                <li>
+                    Използване на уебсайта за незаконни цели.
+                </li>
+
+                <li>
+                    Опити за неоторизиран достъп до системи,
+                    сървъри или информация.
+                </li>
+
+                <li>
+                    Разпространение на злонамерен софтуер,
+                    вируси или друг вреден код.
+                </li>
+
+                <li>
+                    Действия, които могат да нарушат сигурността,
+                    достъпността или нормалното функциониране на сайта.
+                </li>
+
+                <li>
+                    Копиране или използване на съдържание в нарушение
+                    на правата на интелектуална собственост.
+                </li>
+            </ul>
+
+            <p>
+                VM Agency може да предприеме разумни мерки за защита
+                на уебсайта при установяване на злоупотреба или
+                неправомерно използване.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="inquiries">
+
+            <h2><span>04</span> Запитвания и комуникация</h2>
+
+            <p>
+                Посетителите могат да изпращат запитвания чрез
+                контактните форми или посочените канали за комуникация.
+            </p>
+
+            <p>
+                Изпращането на запитване не представлява автоматично
+                сключване на договор, приемане на оферта или поемане
+                на задължение от страна на VM Agency.
+            </p>
+
+            <p>
+                Предоставената информация трябва да бъде вярна,
+                актуална и да не нарушава правата на трети лица.
+            </p>
+
+            <p>
+                VM Agency си запазва правото да не отговаря на съобщения,
+                които съдържат незаконно, обидно, измамно или злонамерено
+                съдържание.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="offers">
+
+            <h2><span>05</span> Оферти, цени и плащания</h2>
+
+            <p>
+                Информацията за услуги, цени и предложения, публикувана
+                на уебсайта, има информативен характер, освен ако изрично
+                не е посочено друго.
+            </p>
+
+            <p>
+                Индивидуалните оферти могат да бъдат изготвяни въз основа
+                на конкретните изисквания, сложността и обхвата на проекта.
+            </p>
+
+            <p>
+                Преди започване на платена услуга страните следва
+                да уточнят писмено приложимите условия, включително:
+            </p>
+
+            <ul>
+                <li>Обхват и описание на услугата.</li>
+                <li>Цена и начин на плащане.</li>
+                <li>Срокове за изпълнение.</li>
+                <li>Отговорности на страните.</li>
+                <li>Условия за промени и допълнителна работа.</li>
+                <li>Условия за приемане и предаване на резултата.</li>
+            </ul>
+
+            <p>
+                Оферта се счита за приета само при изрично потвърждение
+                съгласно условията, посочени в нея.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="contracts">
+
+            <h2><span>06</span> Договорни отношения</h2>
+
+            <p>
+                Когато клиент възложи конкретна услуга на VM Agency,
+                договорните отношения се уреждат чрез отделна оферта,
+                договор или друго писмено споразумение.
+            </p>
+
+            <p>
+                Тези документи могат да съдържат допълнителни условия
+                относно изпълнението, сроковете, плащанията,
+                интелектуалната собственост, поверителността
+                и отговорностите на страните.
+            </p>
+
+            <p>
+                При противоречие между настоящите Общи условия
+                и конкретен подписан договор или приета оферта,
+                за съответната услуга се прилагат договорените
+                индивидуални условия, доколкото това е допустимо
+                от приложимото законодателство.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="intellectual-property">
+
+            <h2><span>07</span> Интелектуална собственост</h2>
+
+            <p>
+                Освен ако изрично не е посочено друго, съдържанието
+                на уебсайта, включително текстове, графики, лога,
+                визуални елементи, дизайн и други материали,
+                е защитено от приложимото законодателство
+                за интелектуална собственост.
+            </p>
+
+            <p>
+                Забранява се копиране, разпространение, публикуване,
+                изменение или използване на съдържанието за търговски
+                цели без предварително разрешение от носителя
+                на съответните права.
+            </p>
+
+            <p>
+                Правата върху резултатите от конкретни клиентски проекти,
+                включително код, дизайн, автоматизации и документация,
+                се определят в съответния договор или писмено споразумение.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="user-content">
+
+            <h2><span>08</span> Съдържание, предоставено от потребители</h2>
+
+            <p>
+                При изпращане на текстове, файлове, изображения,
+                документи или друга информация чрез уебсайта,
+                потребителят носи отговорност за правомерността
+                на предоставеното съдържание.
+            </p>
+
+            <p>
+                Потребителят декларира, че има необходимите права
+                или разрешения за предоставянето на съответните материали.
+            </p>
+
+            <p>
+                Не трябва да се изпраща съдържание, което нарушава
+                законодателството, правата на трети лица или
+                поверителността на други лица.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="liability">
+
+            <h2><span>09</span> Отговорност и ограничения</h2>
+
+            <p>
+                VM Agency полага разумни усилия информацията на уебсайта
+                да бъде точна и актуална. Въпреки това не гарантираме,
+                че всяка информация е винаги пълна, актуална
+                или без технически грешки.
+            </p>
+
+            <p>
+                Информацията на уебсайта има общ и информативен характер
+                и не представлява автоматично професионален, правен,
+                финансов или друг специализиран съвет.
+            </p>
+
+            <p>
+                Описанията на технологии, автоматизации и решения
+                с изкуствен интелект представят възможности,
+                а не гаранция за конкретен бизнес резултат.
+            </p>
+
+            <p>
+                Резултатите от внедряването на дадено решение могат
+                да зависят от множество фактори, включително
+                използваните платформи, качеството на данните,
+                външни услуги и начина на работа на клиента.
+            </p>
+
+            <p>
+                Нищо в настоящите условия не изключва или ограничава
+                отговорност, която не може да бъде изключена
+                или ограничена съгласно приложимото законодателство.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="third-parties">
+
+            <h2><span>10</span> Външни услуги и връзки</h2>
+
+            <p>
+                Уебсайтът може да съдържа връзки към външни уебсайтове,
+                платформи и услуги на трети страни.
+            </p>
+
+            <p>
+                Тези външни услуги имат собствени условия за използване
+                и политики за поверителност.
+            </p>
+
+            <p>
+                VM Agency не контролира съдържанието, наличността
+                или практиките на външните уебсайтове и не носи
+                отговорност за тях, доколкото това е допустимо
+                от приложимото законодателство.
+            </p>
+
+            <p>
+                Използването на услуги на трети страни може да бъде
+                предмет на допълнителни условия между потребителя
+                и съответния доставчик.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="privacy">
+
+            <h2><span>11</span> Поверителност и лични данни</h2>
+
+            <p>
+                Обработването на лични данни при използването
+                на уебсайта се извършва съгласно нашата
+                Политика за поверителност.
+            </p>
+
+            <p>
+                Можете да се запознаете с нея тук:
+                <a href="privacy-policy.html">
+                    Политика за поверителност
+                </a>.
+            </p>
+
+            <p>
+                Информация за използването на бисквитки и подобни
+                технологии можете да намерите в:
+                <a href="cookie-policy.html">
+                    Политика за бисквитките
+                </a>.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="changes">
+
+            <h2><span>12</span> Промени в Общите условия</h2>
+
+            <p>
+                VM Agency може периодично да актуализира настоящите
+                Общи условия във връзка с промени в услугите,
+                технологиите или приложимото законодателство.
+            </p>
+
+            <p>
+                Актуализираната версия ще бъде публикувана
+                на тази страница с посочена дата на последна актуализация.
+            </p>
+
+            <p>
+                Продължаването на използването на уебсайта след
+                публикуването на актуализираните условия представлява
+                използване на сайта при действащата им версия,
+                доколкото това е допустимо от закона.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="law">
+
+            <h2><span>13</span> Приложимо право и разрешаване на спорове</h2>
+
+            <p>
+                Настоящите Общи условия се тълкуват в съответствие
+                с приложимото законодателство на Европейския съюз
+                и законодателството на Република България,
+                доколкото то е приложимо.
+            </p>
+
+            <p>
+                Възникнали спорове следва да бъдат разрешавани
+                чрез добросъвестен диалог и взаимно съгласие,
+                когато това е възможно.
+            </p>
+
+            <p>
+                При липса на споразумение спорът се отнася
+                до компетентния съд съгласно приложимите правни норми.
+            </p>
+
+            <p>
+                Нищо в настоящите условия не ограничава задължителните
+                права на потребителите, предоставени от приложимото
+                законодателство.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="contact">
+
+            <h2><span>14</span> Контакт</h2>
+
+            <div class="legal-contact">
+
+                <p>
+                    Ако имате въпроси относно настоящите Общи условия
+                    или услугите на VM Agency, можете да се свържете с нас:
+                </p>
+
+                <p>
+                    <strong>VM Agency</strong>
+                </p>
+
+                <p>
+                    Имейл:
+                    <a href="mailto:vmmarketing.ia@gmail.com">
+                        vmmarketing.ia@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    Уебсайт:
+                    <a href="https://vmagency.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        vmagency.com
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+<footer class="legal-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-copy">
+            © 2026 VM Agency. Всички права запазени.
+        </div>
+
+        <div class="footer-links">
+            <a href="legal-notice.html">Правна информация</a>
+            <a href="privacy-policy.html">Поверителност</a>
+            <a href="cookie-policy.html">Бисквитки</a>
+            <a href="terms-conditions.html">Общи условия</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

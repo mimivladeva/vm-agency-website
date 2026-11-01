@@ -1,0 +1,1053 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Политика за поверителност | VM Agency</title>
+    <meta name="description" content="Политика за поверителност на VM Agency. Научете как събираме, използваме и защитаваме личните данни на посетителите на нашия уебсайт.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="../assets/favicon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #080808;
+            --surface: #111111;
+            --surface-light: #171717;
+            --text: #f5f5f5;
+            --muted: #a0a0a0;
+            --orange: #ff6b00;
+            --border: rgba(255,255,255,0.09);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        a {
+            color: var(--orange);
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.75;
+        }
+
+        .legal-header {
+            border-bottom: 1px solid var(--border);
+            background: rgba(8,8,8,0.95);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 22px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo img {
+            width: 155px;
+            height: auto;
+            display: block;
+        }
+
+        .back-link {
+            color: var(--text);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .back-link span {
+            color: var(--orange);
+            margin-right: 6px;
+        }
+
+        .legal-hero {
+            padding: 85px 24px 55px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            background:
+                radial-gradient(ellipse at 50% 0%, rgba(255,107,0,0.12), transparent 60%),
+                var(--bg);
+        }
+
+        .eyebrow {
+            color: var(--orange);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .legal-hero h1 {
+            font-size: clamp(34px, 5vw, 55px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .legal-hero h1 span {
+            color: var(--orange);
+        }
+
+        .hero-description {
+            max-width: 650px;
+            margin: auto;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 7px 15px;
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        .legal-layout {
+            max-width: 1200px;
+            margin: auto;
+            padding: 65px 24px 100px;
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 65px;
+            align-items: start;
+        }
+
+        .legal-sidebar {
+            position: sticky;
+            top: 30px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px 20px;
+        }
+
+        .sidebar-title {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: var(--orange);
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .legal-sidebar ul {
+            list-style: none;
+        }
+
+        .legal-sidebar li {
+            margin-bottom: 12px;
+        }
+
+        .legal-sidebar a {
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.5;
+            display: block;
+        }
+
+        .legal-sidebar a:hover {
+            color: var(--orange);
+        }
+
+        .legal-content {
+            min-width: 0;
+        }
+
+        .legal-block {
+            padding-bottom: 38px;
+            margin-bottom: 38px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .legal-block:last-child {
+            border-bottom: none;
+        }
+
+        .legal-block h2 {
+            font-size: 21px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .legal-block h2 span {
+            color: var(--orange);
+            font-size: 13px;
+            margin-right: 10px;
+        }
+
+        .legal-block h3 {
+            font-size: 15px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .legal-block p {
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .legal-block ul {
+            padding-left: 22px;
+            margin: 15px 0 20px;
+        }
+
+        .legal-block li {
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 10px;
+            padding-left: 5px;
+        }
+
+        .legal-block li::marker {
+            color: var(--orange);
+        }
+
+        .legal-block strong {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .info-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--orange);
+            padding: 22px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .info-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .provider-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 24px;
+            border-radius: 10px;
+            margin: 18px 0;
+        }
+
+        .provider-card h3 {
+            color: var(--orange);
+        }
+
+        .legal-contact {
+            background: var(--surface-light);
+            border: 1px solid var(--border);
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .legal-footer {
+            border-top: 1px solid var(--border);
+            padding: 30px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-copy {
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        .footer-links a:hover {
+            color: var(--orange);
+        }
+
+        @media (max-width: 850px) {
+            .legal-layout {
+                grid-template-columns: 1fr;
+                gap: 35px;
+                padding-top: 40px;
+            }
+
+            .legal-sidebar {
+                position: static;
+            }
+
+            .legal-sidebar ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px 15px;
+            }
+
+            .legal-sidebar li {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .header-inner {
+                padding: 18px;
+            }
+
+            .logo img {
+                width: 125px;
+            }
+
+            .legal-hero {
+                padding: 60px 20px 40px;
+            }
+
+            .legal-layout {
+                padding: 35px 18px 65px;
+            }
+
+            .legal-block h2 {
+                font-size: 19px;
+            }
+
+            .legal-sidebar ul {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="legal-header">
+    <div class="header-inner">
+
+        <a href="../index.html" class="logo">
+            <img src="../assets/logos/logo.webp" alt="VM Agency">
+        </a>
+
+        <a href="../index.html" class="back-link">
+            <span>←</span> Обратно към началото
+        </a>
+
+    </div>
+</header>
+
+<section class="legal-hero">
+
+    <div class="eyebrow">VM AGENCY · LEGAL</div>
+
+    <h1>Политика за <span>поверителност</span></h1>
+
+    <p class="hero-description">
+        Вашата поверителност е важна за нас. Тази политика обяснява
+        как VM Agency събира, използва, съхранява и защитава личните
+        данни при използване на нашия уебсайт и услуги.
+    </p>
+
+    <div class="last-updated">
+        Последна актуализация: 01.11.2026
+    </div>
+
+</section>
+
+<main class="legal-layout">
+
+    <aside class="legal-sidebar">
+
+        <div class="sidebar-title">Съдържание</div>
+
+        <ul>
+            <li><a href="#introduction">01. Въведение</a></li>
+            <li><a href="#data">02. Събирани данни</a></li>
+            <li><a href="#purposes">03. Цели и основания</a></li>
+            <li><a href="#contact-form">04. Контактна форма</a></li>
+            <li><a href="#newsletter">05. Бюлетин</a></li>
+            <li><a href="#analytics">06. Анализ и реклама</a></li>
+            <li><a href="#external-tools">07. Външни услуги</a></li>
+            <li><a href="#cookies">08. Бисквитки</a></li>
+            <li><a href="#sharing">09. Споделяне на данни</a></li>
+            <li><a href="#transfers">10. Международни трансфери</a></li>
+            <li><a href="#retention">11. Съхранение</a></li>
+            <li><a href="#rights">12. Вашите права</a></li>
+            <li><a href="#security">13. Сигурност</a></li>
+            <li><a href="#changes">14. Промени</a></li>
+            <li><a href="#contact">15. Контакт</a></li>
+        </ul>
+
+    </aside>
+
+    <div class="legal-content">
+
+        <section class="legal-block" id="introduction">
+
+            <h2><span>01</span> Въведение</h2>
+
+            <p>
+                Настоящата Политика за поверителност описва начина,
+                по който VM Agency обработва лични данни на посетителите
+                на уебсайта и лицата, които се свързват с нас.
+            </p>
+
+            <p>
+                Обработването на лични данни се извършва в съответствие
+                с приложимото законодателство за защита на личните данни,
+                включително Общия регламент относно защитата на данните
+                (GDPR – Регламент (ЕС) 2016/679).
+            </p>
+
+            <p>
+                С използването на нашия уебсайт можете да взаимодействате
+                с различни функционалности, включително контактна форма,
+                абонамент за бюлетин и инструменти за анализ и реклама.
+            </p>
+
+            <div class="info-card">
+                <p>
+                    Настоящата политика се отнася до личните данни,
+                    обработвани във връзка с уебсайта на VM Agency.
+                    Конкретните условия за отделни услуги могат да бъдат
+                    допълнени с допълнителна информация.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="legal-block" id="data">
+
+            <h2><span>02</span> Какви лични данни събираме?</h2>
+
+            <p>
+                В зависимост от начина, по който използвате нашия
+                уебсайт и услуги, можем да обработваме следните категории:
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Данни за контакт:</strong>
+                    име, имейл адрес и друга информация, която доброволно
+                    предоставяте чрез контактната форма.
+                </li>
+
+                <li>
+                    <strong>Данни за запитвания:</strong>
+                    съдържание на съобщенията и информацията,
+                    която ни изпращате.
+                </li>
+
+                <li>
+                    <strong>Данни за абонамент:</strong>
+                    имейл адрес и информация, свързана с абонамента
+                    за нашия бюлетин.
+                </li>
+
+                <li>
+                    <strong>Технически данни:</strong>
+                    IP адрес, тип браузър, операционна система,
+                    устройство и информация за посещаваните страници,
+                    когато това е приложимо.
+                </li>
+
+                <li>
+                    <strong>Аналитични данни:</strong>
+                    информация за взаимодействието с уебсайта
+                    чрез инструменти като Google Analytics.
+                </li>
+
+                <li>
+                    <strong>Маркетингови данни:</strong>
+                    информация за взаимодействията с рекламно съдържание
+                    и кампании чрез Meta Pixel, когато е получено
+                    необходимото съгласие.
+                </li>
+            </ul>
+
+            <p>
+                Не изискваме от посетителите да предоставят повече
+                лични данни, отколкото са необходими за съответната цел.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="purposes">
+
+            <h2><span>03</span> Цели и правни основания за обработване</h2>
+
+            <p>
+                Обработваме лични данни за конкретни цели и въз основа
+                на приложимо правно основание съгласно GDPR.
+            </p>
+
+            <ul>
+
+                <li>
+                    <strong>Обработка на запитвания:</strong>
+                    за отговор на съобщения, получени чрез контактната форма.
+                    Правно основание: предприемане на стъпки по искане
+                    на лицето преди сключване на договор или легитимен
+                    интерес, когато е приложимо.
+                </li>
+
+                <li>
+                    <strong>Бюлетин:</strong>
+                    за изпращане на новини, информация за услуги
+                    и маркетингови съобщения.
+                    Правно основание: съгласие на абоната.
+                </li>
+
+                <li>
+                    <strong>Уеб анализи:</strong>
+                    за разбиране на посещаемостта и подобряване
+                    на уебсайта чрез Google Analytics.
+                    Правно основание: съгласие, когато такова се изисква.
+                </li>
+
+                <li>
+                    <strong>Рекламна ефективност:</strong>
+                    за измерване и оптимизиране на рекламни кампании
+                    чрез Meta Pixel.
+                    Правно основание: съгласие, когато такова се изисква.
+                </li>
+
+                <li>
+                    <strong>Сигурност:</strong>
+                    за защита на уебсайта и предотвратяване на злоупотреби.
+                    Правно основание: легитимен интерес или друго
+                    приложимо правно основание.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section class="legal-block" id="contact-form">
+
+            <h2><span>04</span> Контактна форма и комуникация</h2>
+
+            <p>
+                Нашият уебсайт предоставя контактна форма, чрез която
+                посетителите могат да се свържат с VM Agency.
+            </p>
+
+            <p>При изпращане на запитване можем да обработваме:</p>
+
+            <ul>
+                <li>Име.</li>
+                <li>Имейл адрес.</li>
+                <li>Име на компанията, ако бъде предоставено.</li>
+                <li>Съдържание на съобщението.</li>
+                <li>Друга информация, която доброволно предоставите.</li>
+            </ul>
+
+            <p>
+                Използваме тази информация за разглеждане на запитването,
+                комуникация с подателя и предприемане на последващи
+                действия, когато са поискани.
+            </p>
+
+            <p>
+                Данните от контактната форма не се използват автоматично
+                за включване в маркетинговия бюлетин.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="newsletter">
+
+            <h2><span>05</span> Бюлетин и маркетингови съобщения</h2>
+
+            <p>
+                VM Agency може да предлага абонамент за електронен
+                бюлетин, чрез който изпраща информация за услуги,
+                новини, полезно съдържание и маркетингови предложения.
+            </p>
+
+            <p>
+                За тази цел обработваме имейл адреса, предоставен
+                доброволно от абоната.
+            </p>
+
+            <p>
+                Абонирането се извършва въз основа на доброволно,
+                конкретно и информирано съгласие.
+                Съгласието за получаване на бюлетин не е задължително
+                условие за използване на останалите услуги на уебсайта.
+            </p>
+
+            <p>
+                Всеки абонат може да оттегли съгласието си по всяко време
+                чрез линка за отписване в получените имейли или чрез
+                контакт с нас на
+                <a href="mailto:hola@vmagency.com">hola@vmagency.com</a>.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="analytics">
+
+            <h2><span>06</span> Аналитични и рекламни инструменти</h2>
+
+            <p>
+                VM Agency използва или планира да използва следните
+                инструменти за анализ и измерване на ефективността
+                на своя уебсайт и маркетингови кампании:
+            </p>
+
+            <div class="provider-card">
+
+                <h3>Google Analytics</h3>
+
+                <p>
+                    Инструмент за анализ на посещаемостта,
+                    взаимодействията и използването на уебсайта.
+                    Данните могат да включват информация за устройството,
+                    браузъра, посетените страници и поведението
+                    на посетителите.
+                </p>
+
+                <p>
+                    Повече информация:
+                    <a href="https://policies.google.com/privacy"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Политика за поверителност на Google
+                    </a>.
+                </p>
+
+            </div>
+
+            <div class="provider-card">
+
+                <h3>Meta Pixel</h3>
+
+                <p>
+                    Инструмент на Meta, който позволява измерване
+                    на ефективността на рекламни кампании, проследяване
+                    на определени действия на посетителите и
+                    оптимизиране на рекламното съдържание.
+                </p>
+
+                <p>
+                    Повече информация:
+                    <a href="https://www.facebook.com/privacy/policy/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Политика за поверителност на Meta
+                    </a>.
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <p>
+                    Аналитичните и рекламните технологии, които изискват
+                    предварително съгласие, няма да бъдат активирани
+                    преди получаването му. Можете да промените
+                    предпочитанията си чрез настройките за бисквитки,
+                    когато такава функционалност е налична.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="legal-block" id="external-tools">
+
+            <h2><span>07</span> Външни услуги и технологии</h2>
+
+            <p>
+                Уебсайтът и услугите на VM Agency могат да използват
+                външни доставчици на технологични решения, хостинг,
+                комуникационни и маркетингови услуги.
+            </p>
+
+            <p>
+                Към момента конкретните външни доставчици на инструменти
+                с изкуствен интелект, които евентуално биха обработвали
+                лични данни чрез уебсайта, не са окончателно установени.
+            </p>
+
+            <p>
+                Ако бъдат интегрирани такива инструменти и чрез тях
+                се обработват лични данни, настоящата политика ще бъде
+                актуализирана, когато това е необходимо, с информация
+                за целите, категориите данни и съответните доставчици.
+            </p>
+
+            <p>
+                Не предоставяйте чувствителна или поверителна информация
+                чрез контактната форма, освен ако това не е изрично
+                необходимо и не сте получили подходяща информация
+                за обработването ѝ.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="cookies">
+
+            <h2><span>08</span> Бисквитки и подобни технологии</h2>
+
+            <p>
+                Уебсайтът може да използва бисквитки и подобни технологии
+                за правилното си функциониране, анализ на посещаемостта
+                и измерване на рекламната ефективност.
+            </p>
+
+            <p>Възможните категории включват:</p>
+
+            <ul>
+                <li>
+                    <strong>Необходими бисквитки:</strong>
+                    необходими за основното функциониране и сигурността
+                    на уебсайта.
+                </li>
+
+                <li>
+                    <strong>Аналитични бисквитки:</strong>
+                    използвани за анализ на посещенията и подобряване
+                    на потребителското изживяване.
+                </li>
+
+                <li>
+                    <strong>Маркетингови бисквитки:</strong>
+                    използвани за измерване и оптимизиране на рекламни
+                    кампании и съдържание.
+                </li>
+            </ul>
+
+            <p>
+                Незадължителните бисквитки и подобни технологии се
+                използват само след получаване на необходимото съгласие,
+                когато това се изисква от приложимото законодателство.
+            </p>
+
+            <p>
+                Можете да научите повече в нашата
+                <a href="cookie-policy.html">Политика за бисквитките</a>.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="sharing">
+
+            <h2><span>09</span> Споделяне на лични данни</h2>
+
+            <p>
+                VM Agency не продава лични данни на посетителите.
+                Можем да споделяме данни само когато това е необходимо
+                за законни и конкретни цели.
+            </p>
+
+            <p>Възможни получатели са:</p>
+
+            <ul>
+                <li>Доставчици на хостинг и техническа поддръжка.</li>
+                <li>Доставчици на електронна поща и бюлетин.</li>
+                <li>Доставчици на аналитични услуги, включително Google.</li>
+                <li>Доставчици на рекламни услуги, включително Meta.</li>
+                <li>Компетентни държавни органи, когато законът изисква това.</li>
+            </ul>
+
+            <p>
+                Когато е приложимо, тези доставчици обработват данните
+                от наше име и при подходящи договорни и технически
+                гаранции.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="transfers">
+
+            <h2><span>10</span> Международно предаване на данни</h2>
+
+            <p>
+                Някои от използваните доставчици на услуги могат
+                да обработват или съхраняват информация извън
+                Европейското икономическо пространство.
+            </p>
+
+            <p>
+                Когато лични данни се предават към държави извън
+                Европейското икономическо пространство, се прилагат
+                подходящи механизми за защита съгласно GDPR,
+                когато такива са необходими.
+            </p>
+
+            <p>
+                Това може да включва решение за адекватно ниво на защита,
+                стандартни договорни клаузи или друг приложим механизъм.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="retention">
+
+            <h2><span>11</span> Срокове за съхранение на данните</h2>
+
+            <p>
+                Съхраняваме личните данни само за периода,
+                необходим за целите, за които са събрани,
+                освен ако законът не изисква по-дълъг срок.
+            </p>
+
+            <ul>
+
+                <li>
+                    <strong>Контактни запитвания:</strong>
+                    за времето, необходимо за обработване на запитването
+                    и последващата комуникация, както и за приложимите
+                    законови срокове.
+                </li>
+
+                <li>
+                    <strong>Абонамент за бюлетин:</strong>
+                    до оттегляне на съгласието или отписване,
+                    като може да запазим минимална информация,
+                    необходима за доказване на оттегленото съгласие.
+                </li>
+
+                <li>
+                    <strong>Аналитични данни:</strong>
+                    съгласно настройките и сроковете за съхранение
+                    на съответните аналитични платформи.
+                </li>
+
+                <li>
+                    <strong>Технически данни:</strong>
+                    за периода, необходим за сигурността,
+                    поддръжката и правилното функциониране на уебсайта.
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section class="legal-block" id="rights">
+
+            <h2><span>12</span> Вашите права</h2>
+
+            <p>
+                Съгласно GDPR имате следните права във връзка
+                с обработването на личните ви данни, при условията
+                и ограниченията, предвидени в приложимото законодателство:
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Право на достъп:</strong>
+                    да получите информация дали обработваме ваши лични данни
+                    и копие от тях.
+                </li>
+
+                <li>
+                    <strong>Право на коригиране:</strong>
+                    да поискате корекция на неточни или непълни данни.
+                </li>
+
+                <li>
+                    <strong>Право на изтриване:</strong>
+                    да поискате изтриване на личните си данни,
+                    когато са налице законовите условия.
+                </li>
+
+                <li>
+                    <strong>Право на ограничаване:</strong>
+                    да поискате ограничаване на обработването
+                    в предвидените от закона случаи.
+                </li>
+
+                <li>
+                    <strong>Право на преносимост:</strong>
+                    да получите определени лични данни в структуриран,
+                    широко използван и машинно четим формат.
+                </li>
+
+                <li>
+                    <strong>Право на възражение:</strong>
+                    да възразите срещу обработване, основано на легитимен
+                    интерес, при условията на GDPR.
+                </li>
+
+                <li>
+                    <strong>Право на оттегляне на съгласието:</strong>
+                    когато обработването се основава на съгласие,
+                    можете да го оттеглите по всяко време.
+                    Това не засяга законосъобразността на обработването
+                    преди оттеглянето.
+                </li>
+
+                <li>
+                    <strong>Право на жалба:</strong>
+                    да подадете жалба до компетентния надзорен орган.
+                </li>
+            </ul>
+
+            <p>
+                Можете да упражните правата си, като се свържете
+                с нас на
+                <a href="mailto:hola@vmagency.com">hola@vmagency.com</a>.
+            </p>
+
+            <p>
+                Компетентният надзорен орган в България е Комисията
+                за защита на личните данни (КЗЛД).
+            </p>
+
+            <p>
+                <a href="https://cpdp.bg/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Официален уебсайт на КЗЛД
+                </a>
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="security">
+
+            <h2><span>13</span> Сигурност на личните данни</h2>
+
+            <p>
+                VM Agency предприема подходящи технически и организационни
+                мерки за защита на личните данни срещу неразрешен достъп,
+                загуба, промяна, разкриване или унищожаване.
+            </p>
+
+            <p>
+                Достъпът до лични данни се ограничава до лицата
+                и доставчиците, за които той е необходим за изпълнение
+                на съответните задачи.
+            </p>
+
+            <p>
+                Въпреки предприетите мерки, нито един метод за предаване
+                или съхранение на информация в интернет не може да
+                гарантира абсолютна сигурност.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="changes">
+
+            <h2><span>14</span> Промени в политиката</h2>
+
+            <p>
+                VM Agency може периодично да актуализира настоящата
+                Политика за поверителност, за да отрази промени
+                в законодателството, технологиите или начина,
+                по който обработваме лични данни.
+            </p>
+
+            <p>
+                Актуалната версия винаги ще бъде публикувана
+                на тази страница с посочена дата на последна актуализация.
+            </p>
+
+        </section>
+
+        <section class="legal-block" id="contact">
+
+            <h2><span>15</span> Контакт</h2>
+
+            <div class="legal-contact">
+
+                <p>
+                    Ако имате въпроси относно настоящата Политика
+                    за поверителност или желаете да упражните правата си,
+                    можете да се свържете с нас:
+                </p>
+
+                <p>
+                    <strong>VM Agency</strong>
+                </p>
+
+                <p>
+                    Имейл:
+                    <a href="mailto:vmmarketing.ia@gmail.com">
+                        vmmarketing.ia@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    Уебсайт:
+                    <a href="https://vmagency.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        vmagency.com
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+<footer class="legal-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-copy">
+            © 2026 VM Agency. Всички права запазени.
+        </div>
+
+        <div class="footer-links">
+            <a href="legal-notice.html">Правна информация</a>
+            <a href="privacy-policy.html">Поверителност</a>
+            <a href="cookie-policy.html">Бисквитки</a>
+            <a href="terms-conditions.html">Общи условия</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
