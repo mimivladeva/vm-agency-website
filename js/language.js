@@ -8,24 +8,34 @@ const languages = {
 let currentLanguage = localStorage.getItem("vm-language") || "es";
 
 function getValue(object, path) {
-    return path.split(".").reduce((o, p) => o && o[p], object);
+    return path.split(".").reduce((value, key) => {
+        return value && value[key];
+    }, object);
 }
 
+// ==========================================
+// UPDATE LANGUAGE
+// ==========================================
+
 function updateLanguage(language) {
+
     if (!languages[language]) {
         language = "es";
     }
 
     currentLanguage = language;
 
-    // Guardar idioma seleccionado.
+    // Save selected language
     localStorage.setItem("vm-language", language);
 
-    // Actualizar idioma del documento.
-    document.documentElement.lang = language;
+    // Update document language only if it changed
+    if (document.documentElement.lang !== language) {
+        document.documentElement.lang = language;
+    }
 
-    // Traducir todos los elementos disponibles.
+    // Translate text elements
     document.querySelectorAll("[data-lang]").forEach(element => {
+
         const key = element.dataset.lang;
         const value = getValue(languages[language], key);
 
@@ -34,8 +44,20 @@ function updateLanguage(language) {
         }
     });
 
-    // Actualizar botón de idioma activo.
+    // Translate input placeholders
+    document.querySelectorAll("[data-placeholder]").forEach(element => {
+
+        const key = element.dataset.placeholder;
+        const value = getValue(languages[language], key);
+
+        if (value !== undefined && value !== null) {
+            element.placeholder = value;
+        }
+    });
+
+    // Update active language button
     document.querySelectorAll(".language-selector__button").forEach(button => {
+
         const isActive = button.dataset.language === language;
 
         button.classList.toggle("active", isActive);
@@ -43,15 +65,22 @@ function updateLanguage(language) {
     });
 }
 
-// Volver a aplicar el idioma guardado a los elementos existentes.
+// ==========================================
+// APPLY CURRENT LANGUAGE
+// ==========================================
+
 function applyLanguage() {
     updateLanguage(currentLanguage);
 }
 
-// Registrar los eventos de los botones de idioma.
-// Se puede ejecutar varias veces sin duplicar los eventos.
+// ==========================================
+// INITIALIZE LANGUAGE BUTTONS
+// ==========================================
+
 function initializeLanguageButtons() {
+
     document.querySelectorAll(".language-selector__button").forEach(button => {
+
         if (button.dataset.languageInitialized === "true") {
             return;
         }
@@ -64,18 +93,28 @@ function initializeLanguageButtons() {
     });
 }
 
-// Inicialización general.
+// ==========================================
+// INITIALIZATION
+// ==========================================
+
 document.addEventListener("DOMContentLoaded", () => {
+
     initializeLanguageButtons();
     applyLanguage();
+
 });
 
-// El navbar dinámico ya se ha insertado.
+// Navbar is dynamically inserted
 document.addEventListener("navbar:loaded", () => {
+
     initializeLanguageButtons();
     applyLanguage();
+
 });
 
-// Permite reutilizar estas funciones desde otros scripts.
+// ==========================================
+// GLOBAL FUNCTIONS
+// ==========================================
+
 window.updateLanguage = updateLanguage;
 window.applyLanguage = applyLanguage;

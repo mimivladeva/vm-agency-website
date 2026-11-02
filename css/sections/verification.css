@@ -1,0 +1,255 @@
+/* =====================================================
+   VM AGENCY - EMAIL VERIFICATION MODAL
+   Independent styles - Does not modify contact.css
+===================================================== */
+
+body.verification-modal-open {
+    overflow: hidden !important;
+}
+
+/* OVERLAY */
+
+.verification-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.58);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    box-sizing: border-box;
+}
+
+.verification-modal.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* MODAL CARD */
+
+.verification-modal__card {
+    position: relative;
+    width: 100%;
+    max-width: 470px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    padding: 38px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 22px;
+    box-shadow: 0 25px 90px rgba(0, 0, 0, 0.22);
+    font-family: "Manrope", sans-serif;
+    transform: translateY(18px) scale(0.98);
+    transition: transform 0.35s cubic-bezier(.2, .8, .2, 1);
+}
+
+.verification-modal.is-visible .verification-modal__card {
+    transform: translateY(0) scale(1);
+}
+
+/* TOP ACCENT */
+
+.verification-modal__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 38px;
+    width: 55px;
+    height: 3px;
+    background: #ff914d;
+    border-radius: 0 0 4px 4px;
+}
+
+/* ICON */
+
+.verification-modal__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 24px;
+    color: #ff914d;
+    background: rgba(255, 145, 77, 0.10);
+    border-radius: 18px;
+    font-size: 26px;
+}
+
+/* TEXT */
+
+.verification-modal__eyebrow {
+    margin: 0 0 9px;
+    color: #ff914d;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.verification-modal__title {
+    margin: 0 0 12px;
+    color: #111;
+    font-size: clamp(23px, 5vw, 29px);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+}
+
+.verification-modal__description {
+    margin: 0 0 26px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* FORM */
+
+.verification-modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.verification-modal__label {
+    color: #111;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.verification-modal__input {
+    width: 100%;
+    min-height: 52px;
+    padding: 13px 15px;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    border-radius: 12px;
+    outline: none;
+    background: #fff;
+    color: #111;
+    font-family: inherit;
+    font-size: 16px;
+    letter-spacing: 5px;
+    text-align: center;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.verification-modal__input::placeholder {
+    color: #b8b8b8;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+
+.verification-modal__input:focus {
+    border-color: #ff914d;
+    box-shadow: 0 0 0 4px rgba(255, 145, 77, 0.12);
+}
+
+/* BUTTON */
+
+.verification-modal__button {
+    width: 100%;
+    min-height: 52px;
+    margin-top: 5px;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 12px;
+    background: #ff914d;
+    color: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background .25s ease, transform .25s ease;
+}
+
+.verification-modal__button:hover:not(:disabled) {
+    background: #f77d37;
+    transform: translateY(-2px);
+}
+
+.verification-modal__button:disabled {
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+/* FEEDBACK */
+
+.verification-modal__feedback {
+    min-height: 22px;
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.verification-modal__feedback--error {
+    color: #c0392b;
+}
+
+.verification-modal__feedback--success {
+    color: #218653;
+}
+
+.verification-modal__feedback--info {
+    color: #666;
+}
+
+/* SUCCESS STATE */
+
+.verification-modal__success {
+    text-align: center;
+}
+
+.verification-modal__success .verification-modal__icon {
+    margin-right: auto;
+    margin-left: auto;
+    color: #218653;
+    background: rgba(33, 134, 83, 0.10);
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+    .verification-modal {
+        padding: 16px;
+    }
+
+    .verification-modal__card {
+        max-width: 100%;
+        padding: 30px 23px;
+        border-radius: 19px;
+    }
+
+    .verification-modal__card::before {
+        left: 23px;
+    }
+
+    .verification-modal__icon {
+        width: 52px;
+        height: 52px;
+        margin-bottom: 20px;
+    }
+
+    .verification-modal__description {
+        font-size: 13px;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .verification-modal,
+    .verification-modal__card,
+    .verification-modal__button {
+        transition: none;
+    }
+}

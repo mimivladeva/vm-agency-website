@@ -55,6 +55,7 @@
         <link rel="stylesheet" href="css/sections/method.min.css">
         <link rel="stylesheet" href="css/sections/about.min.css">
         <link rel="stylesheet" href="css/sections/contact.min.css">
+        <link rel="stylesheet" href="css/sections/verification.css">
        
 
 </head>
@@ -764,68 +765,67 @@
 
                     </div>
 
-                    <form class="contact__form">
+
+                    <form class="contact__form" id="contact-form">
 
                         <div class="contact__field">
-
-                            <label
-                                    data-lang="contact.form.name">
-                            </label>
-
+                            <label for="contact-name" data-lang="contact.form.name"></label>
                             <input
                                     type="text"
-                                    data-placeholder="contact.form.placeholderName">
-
+                                    id="contact-name"
+                                    name="name"
+                                    data-placeholder="contact.form.placeholderName"
+                                    required
+                                    autocomplete="name">
                         </div>
 
                         <div class="contact__field">
-
-                            <label
-                                    data-lang="contact.form.email">
-                            </label>
-
+                            <label for="contact-email" data-lang="contact.form.email"></label>
                             <input
                                     type="email"
-                                    data-placeholder="contact.form.placeholderEmail">
-
+                                    id="contact-email"
+                                    name="email"
+                                    data-placeholder="contact.form.placeholderEmail"
+                                    required
+                                    autocomplete="email">
                         </div>
 
                         <div class="contact__field">
-
-                            <label
-                                    data-lang="contact.form.company">
-                            </label>
-
+                            <label for="contact-company" data-lang="contact.form.company"></label>
                             <input
                                     type="text"
+                                    id="contact-company"
+                                    name="company"
                                     data-placeholder="contact.form.placeholderCompany">
-
                         </div>
 
                         <div class="contact__field">
-
-                            <label
-                                    data-lang="contact.form.message">
-                            </label>
-
+                            <label for="contact-message" data-lang="contact.form.message"></label>
                             <textarea
+                                    id="contact-message"
+                                    name="message"
                                     rows="6"
-                                    data-placeholder="contact.form.placeholderMessage">
-                        </textarea>
+                                    data-placeholder="contact.form.placeholderMessage"
+                                    required></textarea>
+                        </div>
 
+                        <div
+                                id="contact-feedback"
+                                class="contact__feedback"
+                                role="status"
+                                aria-live="polite">
                         </div>
 
                         <button
                                 type="submit"
                                 class="button button--primary contact__submit">
 
-                        <span
-                                data-lang="contact.form.button">
-                        </span>
+                            <span data-lang="contact.form.button"></span>
 
                         </button>
 
                     </form>
+
 
                 </div>
 
@@ -860,7 +860,7 @@
 <script src="js/footer.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/main.js"></script>
-
+<script src="js/contact.js"></script>
 
 
 
