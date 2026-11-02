@@ -34,14 +34,7 @@
         <link rel="stylesheet" href="css/base/typography.min.css">
         <link rel="stylesheet" href="css/base/components.min.css">
 
-        <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBLWMLXZ3Y"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-SBLWMLXZ3Y');
-        </script>
+       
 
         <!-- Favicons - VM Agencia -->
         <link rel="apple-touch-icon" sizes="180x180" href="/vm-agency-website/assets/favicon/apple-touch-icon.png">
@@ -846,9 +839,10 @@
 <!-- LANGUAGES -->
 <!-- ========================================================= -->
 
-<script src="lang/es.js"></script>
-<script src="lang/en.js"></script>
-<script src="lang/bg.js"></script>
+<!-- Language files - Minified -->
+<script src="lang/es.min.js"></script>
+<script src="lang/en.min.js"></script>
+<script src="lang/bg.min.js"></script>
 
 <!-- ========================================================= -->
 <!-- JAVASCRIPT -->
@@ -1410,32 +1404,7 @@
     min-width: 0 !important;
   }
 
-  /* REOPEN PREFERENCES */
-  #vm-cookie-reopen {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 99997;
-    display: none;
-    width: 43px;
-    height: 43px;
-    align-items: center;
-    justify-content: center;
-    color: var(--vm-orange);
-    background: #171717;
-    border: 1px solid rgba(255,107,44,.35);
-    border-radius: 50%;
-    font-size: 17px;
-    cursor: pointer;
-    box-shadow: 0 5px 25px rgba(0,0,0,.3);
-    transition: .25s ease;
-  }
 
-  #vm-cookie-reopen:hover {
-    background: var(--vm-orange);
-    color: white;
-    transform: rotate(15deg);
-  }
 
   /* ANIMATIONS */
   @keyframes vmFadeIn {
@@ -1575,46 +1544,40 @@
 </div>
 
 
-<button id="vm-cookie-reopen" type="button"
-        aria-label="Cookie preferences" title="Cookie preferences">
-  ⚙
-</button>
+
 
 <script>
 (function () {
-  const CONSENT_KEY = 'vmAgencyCookieConsent';
-  const CONSENT_VERSION = '2';
+      const CONSENT_KEY = 'vmAgencyCookieConsent';
+      const CONSENT_VERSION = '2';
 
-  // Replace these with your real tracking IDs.
-  const GOOGLE_ANALYTICS_ID = 'G-XXXXXXXXXX';
-  const META_PIXEL_ID = 'XXXXXXXXXXXXXXXX';
+      // Replace these with your real tracking IDs.
+      const GOOGLE_ANALYTICS_ID = 'G-SBLWMLXZ3Y';
+      const META_PIXEL_ID = 'XXXXXXXXXXXXXXXX';
 
-  const overlay = document.getElementById('vm-cookie-overlay');
-  const reopen = document.getElementById('vm-cookie-reopen');
-  const settings = document.getElementById('vm-cookie-settings');
-  const mainActions = document.getElementById('vm-cookie-main-actions');
-  const analyticsToggle = document.getElementById('vm-cookie-analytics');
-  const marketingToggle = document.getElementById('vm-cookie-marketing');
+      const overlay = document.getElementById('vm-cookie-overlay');
+      const settings = document.getElementById('vm-cookie-settings');
+      const mainActions = document.getElementById('vm-cookie-main-actions');
+      const analyticsToggle = document.getElementById('vm-cookie-analytics');
+      const marketingToggle = document.getElementById('vm-cookie-marketing');
 
-  function readConsent() {
-    try {
-      return JSON.parse(localStorage.getItem(CONSENT_KEY));
-    } catch (error) {
-      return null;
-    }
-  }
+      function readConsent() {
+        try {
+          return JSON.parse(localStorage.getItem(CONSENT_KEY));
+        } catch (error) {
+          return null;
+        }
+      }
 
   function showModal() {
     overlay.classList.add('vm-visible');
     document.body.classList.add('vm-cookie-locked');
-    reopen.style.display = 'none';
-  }
+    }
 
   function hideModal() {
     overlay.classList.remove('vm-visible');
     document.body.classList.remove('vm-cookie-locked');
-    reopen.style.display = 'flex';
-  }
+    }
 
   function openPreferences() {
     const consent = readConsent();
@@ -1726,20 +1689,21 @@
     saveConsent(analyticsToggle.checked, marketingToggle.checked);
   });
 
-  reopen.addEventListener('click', openPreferences);
+  
 
-  const existingConsent = readConsent();
+    const existingConsent = readConsent();
 
-  if (
-    !existingConsent ||
-    existingConsent.version !== CONSENT_VERSION
-  ) {
-    showModal();
-  } else {
-    applyConsent(existingConsent);
-    reopen.style.display = 'flex';
+    if (
+        !existingConsent ||
+        existingConsent.version !== CONSENT_VERSION
+    ) {
+        showModal();
+    } else {
+        applyConsent(existingConsent);
+    }
   }
-})();
+)();
+
 </script>
 <!-- END VM AGENCY COOKIE CONSENT -->
 
